@@ -1,0 +1,1234 @@
+[
+    {
+        "id": 1,
+        "label": [
+            "False Causality (Post Hoc Fallacy)"
+        ],
+        "text": "A Portuguese nurse named Sonia Azevedo died from adverse side effects from the Pfizer-BioNTech COVID-19 vaccine.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 2,
+        "label": [
+            "False Causality (Post Hoc Fallacy)"
+        ],
+        "text": "Nurse passes out on live TV after taking vaccine.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 3,
+        "label": [
+            "False Causality (Post Hoc Fallacy)"
+        ],
+        "text": "A contract from the UK government says the MHRA is seeking an AI software tool to process the expected high volume of Covid-19 vaccine adverse drugs reactions to ensure no details from the adverse drugs reactions' text are missed.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 4,
+        "label": [
+            "False Causality (Post Hoc Fallacy)"
+        ],
+        "text": "Thousands of COVID Vaccine Injuries and 13 U.S. Deaths Reported in December Alone; In December, 3,916 COVID vaccine-related adverse events, including 13 deaths, were reported to VAERS",
+        "claim_type": "Description"
+    },
+    {
+        "id": 5,
+        "label": [
+            "False Causality (Post Hoc Fallacy)"
+        ],
+        "text": "Four volunteers developed Bell's palsy after receiving Pfizer's Covid-19 vaccine.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 6,
+        "label": [
+            "False Causality (Post Hoc Fallacy)"
+        ],
+        "text": "COVID-19 vaccine by Pfizer and BioNTech caused Bell's palsy and deaths",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 7,
+        "label": [
+            "False Causality (Post Hoc Fallacy)"
+        ],
+        "text": "Tennessee nurse Tiffany Dover passed out because of the Pfizer COVID-19 vaccine.",
+        "claim_type": "interpretation"
+    },
+    {
+        "id": 8,
+        "label": [
+            "False Causality (Post Hoc Fallacy)"
+        ],
+        "text": "COVID-19 vaccines caused miscarriages",
+        "claim_type": "Description"
+    },
+    {
+        "id": 9,
+        "label": [
+            "Equivocation"
+        ],
+        "text": "The VAERS system [] established the vaccine court",
+        "claim_type": "Description"
+    },
+    {
+        "id": 10,
+        "label": [
+            "Equivocation"
+        ],
+        "text": "Vaccines are unavoidably unsafe'",
+        "claim_type": "Evaluation Emotional"
+    },
+    {
+        "id": 11,
+        "label": [
+            "Equivocation"
+        ],
+        "text": "According to the 1986 National Childhood Vaccine Injury Act, you cannot sue a vaccine manufacturer if the vaccine has harmed and/or killed someone",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 12,
+        "label": [
+            "Equivocation"
+        ],
+        "text": "After 18 September, the government is going to say that because there were no objections, they will roll out unlicensed vaccines.",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 13,
+        "label": [
+            "Straw Man"
+        ],
+        "text": "On Feb. 16, 2021, U.S. President Joe Biden falsely claimed a COVID-19 vaccine did not exist when he began his term.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 14,
+        "label": [
+            "Straw Man"
+        ],
+        "text": "On Nov. 9, 2020, New York Gov. Andrew Cuomo said it was \"bad news\" that Pfizer had developed what appeared to be a successful COVID-19 vaccine, during U.S. President Donald Trump's tenure.",
+        "claim_type": "Evaluation Emotional"
+    },
+    {
+        "id": 15,
+        "label": [
+            "Straw Man"
+        ],
+        "text": "Wisconsin is second to last in the Midwest in our vaccination rate and the governor says he's satisfied.'",
+        "claim_type": "Description"
+    },
+    {
+        "id": 16,
+        "label": [
+            "Evading the Burden of Proof"
+        ],
+        "text": "Vaccines pose a risk of death to the elderly.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 17,
+        "label": [
+            "Evading the Burden of Proof"
+        ],
+        "text": "Would you take a vaccine with a 33% death rate to feel safe from a virus with a .06% death rate?",
+        "claim_type": "Evaluation Emotional"
+    },
+    {
+        "id": 18,
+        "label": [
+            "Evading the Burden of Proof"
+        ],
+        "text": "These unlicensed vaccines will be administered by non-medical staff, such as your employer.",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 19,
+        "label": [
+            "Evading the Burden of Proof"
+        ],
+        "text": "New Covid-19 vaccines contain levels of mercury that cause brain damage.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 20,
+        "label": [
+            "Evading the Burden of Proof"
+        ],
+        "text": "Ivermectin is a safe and widely available treatment for coronavirus",
+        "claim_type": "Evaluation Rational"
+    },
+    {
+        "id": 21,
+        "label": [
+            "Evading the Burden of Proof"
+        ],
+        "text": "Public health measures aimed at reducing the spread of COVID-19 including face masks, vaccines, and frequent handwashing suppress our immune systems",
+        "claim_type": "Description"
+    },
+    {
+        "id": 22,
+        "label": [
+            "Evading the Burden of Proof"
+        ],
+        "text": "The formation of non-neutralizing antibodies can lead to an exaggerated immune reaction, especially when the person is confronted with the real, wild virus after vaccination. This so-called antibody-dependent amplification, ADE, has long been known from experiments with corona vaccines in cats.",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 23,
+        "label": [
+            "Evading the Burden of Proof"
+        ],
+        "text": "The CDC admitted that over 90 million people that received a polio vaccine came down with a cancer type of circumstance due to a cancer-causing agent known as SV40, also known as simian virus 40 in the polio vaccine.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 24,
+        "label": [
+            "Evading the Burden of Proof"
+        ],
+        "text": "COVID-19 vaccines will cause more severe disease through antibody-dependent enhancement",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 25,
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "text": "In late December 2020, U.S. Rep Ilhan Omar criticized federal politicians including Rep. Alexandria Ocasio-Cortez for getting a COVID-19 vaccine before most Americans.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 26,
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "text": "A UK government document is circulating promoting mandatory Covid-19 vaccination.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 27,
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "text": "Covid Vaccine is Female Sterilization; SARS-CoV-2 vaccines may trigger an immune response against the placenta.",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 28,
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "text": "Dems Pass Bill to Vaccinate Children Without Parental Knowledge, Consent.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 29,
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "text": "The Mental Health Act will be used to section people who refuse to have the Covid-19 vaccine so they can be forced to have it.",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 30,
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "text": "The U.S. CDC encourages the use of a [COVID-19] flu shot on children.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 31,
+        "label": [
+            "Red Herring"
+        ],
+        "text": "The same nurse was pictured vaccinating the first two recipients of the Covid-19 vaccine in the UK, despite them being 20 miles apart.",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 32,
+        "label": [
+            "Red Herring"
+        ],
+        "text": "CNN used a photo of one of the vaccine recipients back in October.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 33,
+        "label": [
+            "Red Herring"
+        ],
+        "text": "The same image of an elderly woman being vaccinated has been used by the media to show a woman called Joan being vaccinated in Manchester and a woman called Susan getting vaccinated in South Africa.",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 34,
+        "label": [
+            "Red Herring"
+        ],
+        "text": "The NHS Covid-19 vaccination card will be used to prove who has been vaccinated.",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 35,
+        "label": [
+            "Red Herring"
+        ],
+        "text": "They have been reducing the standards so they can pass the vaccine no matter what; It does not prevent transmission",
+        "claim_type": "interpretation"
+    },
+    {
+        "id": 36,
+        "label": [
+            "Red Herring"
+        ],
+        "text": "Those administering the Covid vaccines will get 12.58.",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 37,
+        "label": [
+            "False Analogy"
+        ],
+        "text": "It would work like a vaccine",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 38,
+        "label": [
+            "False Analogy"
+        ],
+        "text": "The studies into Covid-19 vaccines are too short to see if there are late effects. There were narcolepsy cases after the swine flu vaccination, and similarly this vaccine could put millions at risk.",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 39,
+        "label": [
+            "False Analogy"
+        ],
+        "text": "The survival rate of Covid-19 without the vaccine is greater than the effectiveness of the vaccine itself.",
+        "claim_type": "Evaluation Rational"
+    },
+    {
+        "id": 40,
+        "label": [
+            "False Analogy"
+        ],
+        "text": "Thalidomide was a rapid approved drug introduced in 1957 to counteract nausea and insomnia in pregnant women. It was [...] withdrawn in 1962 due to malformations in newborns [...] Be very careful with what's coming.",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 41,
+        "label": [
+            "False Analogy"
+        ],
+        "text": "40 years of research, and no vaccine for HIV. At least 100 years of research and no vaccine for cancer. Ongoing research and no vaccine for the common cold. Now in less than a year, there's a vaccine for COVID-19?",
+        "claim_type": "Evaluation Emotional"
+    },
+    {
+        "id": 42,
+        "label": [
+            "Hasty Generalization"
+        ],
+        "text": "The Pfizer vaccine contains syncytin-1 which is vital for the formation of human placenta, so could lead to infertility.",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 43,
+        "label": [
+            "Hasty Generalization"
+        ],
+        "text": "Covid vaccines contain aborted babies.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 44,
+        "label": [
+            "Hasty Generalization"
+        ],
+        "text": "\"People have lost faith in the ability of the vaccine to work. Already, the numbers are really staggeringly low.\"",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 45,
+        "label": [
+            "Hasty Generalization"
+        ],
+        "text": "The Covid-19 spike protein which the Pfizer vaccine causes an immune response against also trains the body to attack syncytin-1, a protein in the placenta, which could lead to infertility in women.",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 46,
+        "label": [
+            "Cherry Picking"
+        ],
+        "text": "In November 2020, Ticketmaster announced that it planned to require event attendees to verify that they have tested negative for the novel coronavirus within a 72-hour time frame.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 47,
+        "label": [
+            "Cherry Picking"
+        ],
+        "text": "Says that the way to reach herd immunity' is for >70% of the population to get vaccinated.",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 48,
+        "label": [
+            "Cherry Picking"
+        ],
+        "text": "The public won't be able to claim compensation if unlicensed vaccines damage our health.",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 49,
+        "label": [
+            "Cherry Picking"
+        ],
+        "text": "vaccinated children appear to be significantly less healthy than the unvaccinated",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 50,
+        "label": [
+            "Cherry Picking"
+        ],
+        "text": "The WHO now says a child's presence in school counts as informed consent for a vaccination and parental presence is not required.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 51,
+        "label": [
+            "Cherry Picking"
+        ],
+        "text": "With the survival rate of COVID-19 close to 100% without a vaccine, what exactly will the purpose of the new vaccine be?",
+        "claim_type": "Evaluation Emotional"
+    },
+    {
+        "id": 52,
+        "label": [
+            "Cherry Picking"
+        ],
+        "text": "Shark Allies, a shark conservation group, estimated that as many as 550,000 wild sharks could be killed for their squalene, a natural chemical found in their liver, to produce a COVID-19 vaccine.",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 53,
+        "label": [
+            "Cherry Picking"
+        ],
+        "text": "MMR vaccine increased autism rate by 236% in African-American boys compared to Caucasian boys",
+        "claim_type": "Description"
+    },
+    {
+        "id": 54,
+        "label": [
+            "False Causality (Post Hoc Fallacy)"
+        ],
+        "text": "Twenty-three people in Norway died as a result of receiving the COVID-19 vaccine.",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 55,
+        "label": [
+            "False Causality (Post Hoc Fallacy)"
+        ],
+        "text": "Four patients who took a trial COVID-19 vaccine developed Bell's palsy.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 56,
+        "label": [
+            "False Causality (Post Hoc Fallacy)"
+        ],
+        "text": "FDA announces 2 deaths of Pfizer vaccine trial participants from serious adverse events.'",
+        "claim_type": "Description"
+    },
+    {
+        "id": 57,
+        "label": [
+            "False Causality (Post Hoc Fallacy)"
+        ],
+        "text": "Pfizer's COVID-19 vaccine caused the death of Florida doctor Gregory Michael.",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 58,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "The pharmaceutical company GlaxoSmithKline owns the Wuhan Institute of Virology in China.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 59,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "Images that show a 90-year-old UK woman receiving the Pfizer COVID-19 vaccine appeared online in a CNN news story in October.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 60,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "CDC COVID-19 survival rates are 99.997% for people ages 0 to 19, 99.98% for people ages 20 to 49, 99.5% for people ages 50 to 69, and 94.6% for people over 70.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 61,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "New York is trying to pass a bill that would allow them to round up non mask wearers and people who don't want to take the vaccine into concentration camps. Then with a court order they can force vaccinate you.",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 62,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "An optional microchip for COVID-19 vaccines would give officials information on who has and has not been vaccinated and tracks the location of the patient.",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 63,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "Former U.S. President Donald Trump released a statement saying that he hopes \"everyone remembers\" that he was responsible for the \"beautiful\" COVID-19 vaccine shot.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 64,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "In fall 2020, the U.S. federal government released plans to force every citizen to get a COVID-19 vaccine.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 65,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "Vaccines will remove parts of your DNA and replace it with GENETIC CODING (TECHNOLOGY) that will cause people to HAVE to cooperate with the New World Order.",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 66,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "Johnson & Johnson's COVID-19 vaccine contains aborted fetal cells.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 67,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "American coronavirus vaccine killed five Ukrainians.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 68,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "New Yorkers can sign up for early access to the COVID-19 vaccine.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 69,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "Says the new coronavirus vaccines contain toxic ingredients and are more dangerous than getting COVID-19.",
+        "claim_type": "Evaluation Emotional"
+    },
+    {
+        "id": 70,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "mRNA vaccines are capable of altering or damaging human DNA.",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 71,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "China recovered from COVID-19 without a vaccine.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 72,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "Individual U.S. states would be legally authorized to impose criminal penalties on individuals who refused to undergo a mandatory COVID-19 vaccination.",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 73,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "A participant in a clinical trial of the Pfizer/BioNTech COVID-19 vaccine developed a painful skin reaction on her foot as a result of taking that vaccine.",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 74,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "\"We're the first part of the UK, today, to get the vaccine into care homes.\"",
+        "claim_type": "Description"
+    },
+    {
+        "id": 75,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "The percentage of Americans with natural immunity from getting COVID-19 is a very powerful vaccine in itself.",
+        "claim_type": "Evaluation Rational"
+    },
+    {
+        "id": 76,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "AstraZeneca's COVID-19 vaccine contains aborted fetal cells.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 77,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "People who receive the NHS Covid-19 vaccination card must keep it with them all the time.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 78,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "An email chain documents Canada's Strategic Planning Committee's \"global reset plan\" to deal with COVID-19, including strict lockdowns and mandatory vaccines.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 79,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "21% of people are having serious adverse events from (the Moderna) vaccine.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 80,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "Country music icon Dolly Parton helped fund Moderna's COVID-19 vaccine.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 81,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "Head of Pfizer research: Covid vaccine is female sterilization.",
+        "claim_type": "Evaluation Emotional"
+    },
+    {
+        "id": 82,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "A Russian health official recommended that people being vaccinated with Russia's Sputnik V Covid-19 vaccine abstain from drinking for two weeks before the first shot and 42 days after it.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 83,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "The \"head of Pfizer research\" said the COVID-19 vaccine developed by the pharmaceutical company \"is female sterilization.\"",
+        "claim_type": "Evaluation Emotional"
+    },
+    {
+        "id": 84,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "Pope Francis says covid vaccine will now be required to enter heaven.",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 85,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "A registered nurse in Nashville, Tenn., developed Bell's Palsy after receiving the COVID-19 vaccine.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 86,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "A nurse in Alabama died after receiving a vaccination for the COVID-19 coronavirus disease in December 2020.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 87,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "There is pork in Covid-19 vaccines.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 88,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "An image shows a CNN report on an outbreak of cannibalism among COVID-19 vaccine recipients.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 89,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "\"If all goes 'well' it'll become federal law to get the (COVID-19) vaccine.\"",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 90,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "Nadine Dorries MP's office said that although vaccines aren't mandatory, if you choose not to have a Covid-19 vaccine, you will face short-term restrictions to prevent you infecting anyone else.",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 91,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "Former White House Press Secretary Ari Fleischer said showing identification when getting a COVID-19 vaccine in New York was just as \"sensible\" as voter ID laws being pushed by Republican legislators.",
+        "claim_type": "Evaluation Emotional"
+    },
+    {
+        "id": 92,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "The research and development of Pfizer COVID-19 vaccine, which proved to be 90% effective against SARS-CoV-2 in November 2020, was funded by U.S. President Donald Trump's Operation Warp Speed.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 93,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "Says COVID-19 vaccines have experimental technology never before used on humans and that some contain nanochips which can electronically track recipients.\"",
+        "claim_type": "Evaluation Emotional"
+    },
+    {
+        "id": 94,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "According to research by scientists at the Sloan Kettering Institute, mRNA vaccines may interfere with tumor-suppressing genes in a way that could promote cancer.",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 95,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "Viral text accurately outlines how biotechnology company Moderna is linked to Dr. Anthony Fauci, Bill Gates, George Soros, and Jeffrey Epstein.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 96,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "Ticketmaster is planning mandatory COVID vaccine identification for concert attendance.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 97,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "One of the first nurses to receive the vaccine in AL is now dead.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 98,
+        "label": [
+            "False Causality (Post Hoc Fallacy)"
+        ],
+        "text": "Nurse faints after getting a COVID-19 vaccine",
+        "claim_type": "Description"
+    },
+    {
+        "id": 99,
+        "label": [
+            "False Causality (Post Hoc Fallacy)"
+        ],
+        "text": "Portuguese nurse dies two days after getting the Pfizer Covid vaccine",
+        "claim_type": "Description"
+    },
+    {
+        "id": 100,
+        "label": [
+            "Equivocation"
+        ],
+        "text": "The COVID-19 RNA vaccine is not a vaccine; a vaccine has to disrupt transmission by CDC and FDA standards; the vaccine activate[s] the cell to become a pathogen-manufacturing site",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 101,
+        "label": [
+            "Straw Man"
+        ],
+        "text": "The Government has released their initial plans to force a vaccine on everyone; Three potential vaccines are currently in Stage 3 trials in the United States and could be ready in weeks",
+        "claim_type": "Description"
+    },
+    {
+        "id": 102,
+        "label": [
+            "Evading the Burden of Proof"
+        ],
+        "text": "The Covid vaccine will make you infertile.",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 103,
+        "label": [
+            "Evading the Burden of Proof"
+        ],
+        "text": "Aluminium in vaccines can cause Alzheimer's disease.",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 104,
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "text": "Make sure you and your family all dig out your NHS number and have a copy of it immediately to hand for the Covid jab. NHS staff on the front line say this is the biggest bottleneck when it comes to administering the vaccine to as many people as quickly as possible.",
+        "claim_type": "Evaluation Rational"
+    },
+    {
+        "id": 105,
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "text": "The COVID-19 pandemic is not a real medical pandemic; The COVID-19 vaccine is not proven safe or effective",
+        "claim_type": "Evaluation Emotional"
+    },
+    {
+        "id": 106,
+        "label": [
+            "Red Herring"
+        ],
+        "text": "Can't make a vaccine that works for influenza. No vaccine for RSV. Can't cure cancer. But they sure as shit can make a vaccine in 6 months for an illness that they STILL don't understand",
+        "claim_type": "Evaluation Emotional"
+    },
+    {
+        "id": 107,
+        "label": [
+            "False Analogy"
+        ],
+        "text": "refusal to make these medicines available is no different than murdering the patients who need them.",
+        "claim_type": "Evaluation Emotional"
+    },
+    {
+        "id": 108,
+        "label": [
+            "Hasty Generalization"
+        ],
+        "text": "The Biden administration had to \"start from scratch\" with a comprehensive COVID-19 vaccine distribution plan because the Trump administration had no working plan.",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 109,
+        "label": [
+            "Cherry Picking"
+        ],
+        "text": "Coronavirus horror: Volunteer in Oxford University's COVID-19 vaccine trial DIES",
+        "claim_type": "Evaluation Emotional"
+    },
+    {
+        "id": 110,
+        "label": [
+            "Cherry Picking"
+        ],
+        "text": "CONFIRMED - aborted male fetus in [COVID-19] vaccine",
+        "claim_type": "Description"
+    },
+    {
+        "id": 111,
+        "label": [
+            "False Causality (Post Hoc Fallacy)"
+        ],
+        "text": "An infertility drug [in the tetanus vaccine] sterilized over 500,000 Kenyan women under the Bill and Melinda Gates Foundationt",
+        "claim_type": "Description"
+    },
+    {
+        "id": 112,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "Mandatory vaccines became law from Wednesday 6 January 2021.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 113,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "Margaret Keenan, the first recipient of the Pfizer/BioNTech COVID-19 vaccine in December 2020, was featured in a news report two months earlier, providing evidence of wrongdoing or deception.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 114,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "Donald Trump owns stock in the vaccine developer Moderna, Inc.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 115,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "Pfizer vaccine \"page 132\" warns not to have unprotected sex for 28 days after the second dose of the COVID-19 vaccine because \"genetic manipulation\" may cause birth defects.",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 116,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "Brazilian President Jair Bolsonaro said, In the Pfizer contract it's very clear: 'we're not responsible for any side effects.' If you turn into a crocodile, it's your problem.",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 117,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "Two scientific studies found that men should inject the COVID-19 vaccine into the penis, and that the vaccine increased penis size among some men.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 118,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "An image represents a schematic for a 'COVID 5G Chip.'",
+        "claim_type": "Description"
+    },
+    {
+        "id": 119,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "U.S. President-elect Joe Biden said he will get the COVID-19 vaccination in public on television.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 120,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "The Covid-19 test is the vaccine and if you get tested you have been vaccinated.",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 121,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "The new Covid-19 vaccine will be the first of its kind ever. It will be an mRNA vaccine which will literally alter your DNA. It will wrap itself into your system. You will become a genetically modified human being.",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 122,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "The Vatican said it's morally acceptable for Catholics to receive a coronavirus vaccine, even though the vaccines were developed using research on cells from fetuses that were aborted \"in the last century.\"",
+        "claim_type": "Evaluation Rational"
+    },
+    {
+        "id": 123,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "The storyline of \"I Am Legend\" takes place in 2021 and centers on a zombie outbreak that was caused by a vaccine.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 124,
+        "label": [
+            "False Causality (Post Hoc Fallacy)"
+        ],
+        "text": "Hank Aaron died as a result of a COVID-19 vaccination.",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 125,
+        "label": [
+            "False Causality (Post Hoc Fallacy)"
+        ],
+        "text": "Amazon waited until former U.S. President Donald Trump left office to offer help distributing COVID-19 vaccines.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 126,
+        "label": [
+            "False Causality (Post Hoc Fallacy)"
+        ],
+        "text": "23 people in Norway died after getting the Pfizer Covid-19 vaccine.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 127,
+        "label": [
+            "Equivocation"
+        ],
+        "text": "U.S. President Donald Trump promised a COVID-19 vaccination would be readily available to the public by Nov. 3, 2020.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 128,
+        "label": [
+            "Equivocation"
+        ],
+        "text": "Everyone is going to be issued a digital health or vaccine passport. If you allow them to vaccinate you and test you regularly, you will be given more personal freedoms.",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 129,
+        "label": [
+            "Straw Man"
+        ],
+        "text": "President Joe Biden said that minorities don't know how to register online for vaccines.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 130,
+        "label": [
+            "Evading the Burden of Proof"
+        ],
+        "text": "Former U.S. President Donald Trump received the COVID-19 vaccine before he left office in January 2021.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 131,
+        "label": [
+            "Evading the Burden of Proof"
+        ],
+        "text": "Florida will provide COVID-19 vaccinations to Canadian visitors specifically to increase tourism in the state.",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 132,
+        "label": [
+            "Evading the Burden of Proof"
+        ],
+        "text": "The vaccinations are expected to produce antibodies against spike proteins of SARS-CoV-2. However, spike proteins also contain syncytin-homologous proteins, which are essential for the formation of the placenta in mammals such as humans.",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 133,
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "text": "Michael Yeadon, who wrote that \"there is absolutely no need for vaccines to extinguish the pandemic,\" was once Pfizer's chief scientific officer.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 134,
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "text": "A U.S. law allows children as young as 11 to get vaccinated without their parents' consent.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 135,
+        "label": [
+            "Red Herring"
+        ],
+        "text": "Photographs that circulated in mid-December 2020 showed U.S. House Speaker Nancy Pelosi, a Democrat from California, receiving her COVID-19 vaccination with a needle that was still sealed with its orange cap.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 136,
+        "label": [
+            "Red Herring"
+        ],
+        "text": "A photograph shows a large anti-mask protest in Germany.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 137,
+        "label": [
+            "False Analogy"
+        ],
+        "text": "A rapidly approved drug known as thalidomide was not rigorously tested before being prescribed to pregnant women, ultimately leading to malformations in newborns born to women who were prescribed the drug. The so-called thalidomide tragedy provides a possible case study for the undetermined effects of COVID-19 vaccinations administered under emergency-use authorizations in the U.S.",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 138,
+        "label": [
+            "False Analogy"
+        ],
+        "text": "Remember, in I Am Legend,' the sickness didn't make the zombies. The vaccination did.",
+        "claim_type": "interpretation"
+    },
+    {
+        "id": 139,
+        "label": [
+            "Hasty Generalization"
+        ],
+        "text": "\"The vaccine is not safe for pregnant women or women planning on becoming pregnant within a few months of taking the vaccine we are the lab rats.",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 140,
+        "label": [
+            "Hasty Generalization"
+        ],
+        "text": "The mRNA vaccines from BioNTech/Pfizer contain polyethylene glycol (PEG). 70% of people develop antibodies against this substancethis means many people can develop allergic, potentially fatal reactions to the vaccination.",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 141,
+        "label": [
+            "Cherry Picking"
+        ],
+        "text": "Researchers warned in The Lancet that a form COVID-19 vaccine in development (and approved for limited use in China) could potentially increase the risk of acquiring HIV.",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 142,
+        "label": [
+            "Cherry Picking"
+        ],
+        "text": "New York State threw away COVID-19 vaccine doses that could have been otherwise used.",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 143,
+        "label": [
+            "Cherry Picking"
+        ],
+        "text": "It's illegal to sue those behind covid vaccines.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 144,
+        "label": [
+            "False Causality (Post Hoc Fallacy)"
+        ],
+        "text": "The Covid-19 vaccine will cause infertility in younger men.",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 145,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "The Israeli Ministry of Health said that the COVID-19 vaccine developed by Pfizer has \"killed 40 times more elderly\" people than the virus itself.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 146,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "The Covid vaccine is an RNA vaccine. This will actually change your DNA.",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 147,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "COVID-19 stands for Certificate of Vaccination ID, with the number 19 representing the letters AI, for Artificial Intelligence.",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 148,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "According to a \"National Mask Code,\" unvaccinated people will have to wear red masks, be restricted from travel, voting, and commerce, and undergo a three-month lockdown. Vaccinated people will wear blue masks and be allowed some travel, regulated commerce, automated voting, and required social distancing.",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 149,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "An image shows a German pilot's flight path in the shape of a syringe.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 150,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "A photograph shows a Pfizer vape cartridge containing a single dose of the COVID-19 vaccine.",
+        "claim_type": "Description"
+    },
+    {
+        "id": 151,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "Biden confirms agenda to microchip the masses",
+        "claim_type": "Description"
+    },
+    {
+        "id": 152,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "Receiving the COVID-19 vaccination could disqualify policyholders from receiving life insurance benefits if they died as result of the vaccine because the immunization is considered experimental.",
+        "claim_type": "Interpretation"
+    },
+    {
+        "id": 153,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "COVID-19 mRNA vaccines will become deadly a few months after administration because the antibodies they create have been shown to cause deadly immune reactions resulting in damage to the lungs.",
+        "claim_type": "Prediction"
+    },
+    {
+        "id": 154,
+        "label": [
+            "No Fallacy"
+        ],
+        "text": "Says that guidance urging vaccinated people to avoid travel and continue wearing masks is \"profoundly anti-science.\"",
+        "claim_type": "Evaluation Emotional"
+    }
+]

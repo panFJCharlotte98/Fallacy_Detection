@@ -1,0 +1,26 @@
+[
+    {
+        "id": 363,
+        "text": "A persuasive technique meant to influence a person's emotions.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 2638,
+        "title": "Liberals Agree  Trump Tougher on Putin than Obama Was",
+        "pre_text": [
+            "President Trump has sent lethal arms to Ukrainea crucial issue for Putinwhich President Obama refused to do.",
+            "President Trump has bombed the Assad forces in Syria, a client state of Putin, something that Obama refused to do because he didn't want to provoke Putin."
+        ],
+        "fal_span": "more",
+        "text": "Trump has expelled <more> Russian diplomats and sanctioned <more> Russian oligarchs than [Obama] has.",
+        "post_text": [
+            "Trump undid the Iran deal, which Russia favored, while Obama worked with Russia in order to do the Iran deal.",
+            "So this idea that Trump is some kind of a puppet of Putin, that he controls him with blackmail, is the kind of stuff that you believe if you read too many"
+        ],
+        "label": [
+            "Repetition"
+        ]
+    },
+]

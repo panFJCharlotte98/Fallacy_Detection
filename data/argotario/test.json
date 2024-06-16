@@ -1,0 +1,2814 @@
+[
+    {
+        "id": 2,
+        "text": "A: Is it justified to develop nuclear energy for commercial use?\nB: The green party in Germany has the opinion, that nuclear reactors are bad for us. It is not ok",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 4,
+        "text": "A: Should driving under the influence of alcohol be forbidden?\nB: Yes, whoever drinks and drives has a bad reaction time. People might die.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 8,
+        "text": "A: Do we need a global environment task force?\nB: The global taskforce for human rights is doing a good job. Thats why we need one for environment, too.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 11,
+        "text": "A: Is the oppression of women by men a serious problem?\nB: We shouldn't allow men to oppress women.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 22,
+        "text": "A: Is it reasonable to be in talks with Baschar al-Assad?\nB: Absolutely not. My father has always told me that you should not negotiate with dictators.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 29,
+        "text": "A: Has anyone been on the moon?\nB: No, i saw a video from a guy on youtube. Therein he presents, that the landing is completely faked. The state seems to have organized this in order to beat the russians.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 31,
+        "text": "A: Is there a good reason for the American war on terror?\nB: If you fight once you will never stop fighting. Never start!",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 40,
+        "text": "A: Is the oppression of women by men a serious problem?\nB: They should have the same rights, but it is fact, that they have not. Look at India, women are raped there on a daily basis.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 42,
+        "text": "A: Is global warming really an issue?\nB: Yes, all the polar-bears are dying, and we are next.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 43,
+        "text": "A: Should we allow animal testing for medical purposes?\nB: I am a hunter. Animals need to die in order to keep balance in the forest.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 44,
+        "text": "A: Should the fight versus the Islamic State include military operations?\nB: Yeah, and you are a guy who loves war, thats it. You like it when people die.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 49,
+        "text": "A: Should cellphones be used during class?\nB: Children should learn in classroom. Our land needs more well educated people.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 53,
+        "text": "A: Should the title of a univsersity-doctor be shown on the identification-card?\nB: No, because all people are the same. You are not worth more than me, just because you are a doctor.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 59,
+        "text": "A: Did Titanic really deserve 11 oscars at once?\nB: I cried so hard when i watched titanic, obviously it deserves these oscars.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 66,
+        "text": "A: Is the Deutsche Post-strike justified?\nB: Striking is an important tool of freedom.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 69,
+        "text": "A: Should jobs be subcontracted into developing countries?\nB: I own a computer-factory. And im outsourcing my support-callcenter to india. I dont want those people to work like animals. I pay less money than in germany, yes, but it is still a lot of money for the workers there.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 71,
+        "text": "A: Is there a good reason for the American war on terror?\nB: Yes, look at the Internet-Videos of the Islamic State. They decapitate people, they separate young women from their families and make them slaves. It is so sad, i cried when i watched these Videos.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 72,
+        "text": "A: Should gorillas be held in zoos\nB: They are not suffering. I got a dog, i know what i am talking about.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 73,
+        "text": "A: Is television an effective tool in building the minds of children?\nB: Television is great if you are bored. you can just sit there and watch.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 77,
+        "text": "A: Will flying cars ever become a reality?\nB: Of course, with unlimited amount of time everything is possible. We came from fire to rockets in just some thousand years.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 78,
+        "text": "A: Is it beneficial for the development of young children to study together with people with mental handicaps?\nB: My little treasure shall get the best education opportunities. And excuse me but studies with challenged childs is not the best choice.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 79,
+        "text": "A: Is television an effective tool in building the minds of children?\nB: Television is a waste of time.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 80,
+        "text": "A: Should smoking at home be illegal?\nB: Home is the place of love and peace. how can you fog it with smoke?",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 87,
+        "text": "A: Are Quentin Tarantinos movies too violent?\nB: I watched Reservoir Dogs. The movie was too violent for me. Im sure his movies are all too violent.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 102,
+        "text": "A: Is it justified to develop nuclear energy for commercial use?\nB: IT IS HORRIBLE TO USE NUCLEAR ENERGY.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 103,
+        "text": "A: Should smoking at home be illegal?\nB: As long as they take the precautions and responsibilities, it is the householders who should decide together whether to smoke inside or not.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 107,
+        "text": "A: Is it beneficial for the development of young children to study together with people with mental handicaps?\nB: I do not think so because there is always the danger that the normal childs bully the handicaped one because of their mental weakness.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 108,
+        "text": "A: Should gorillas be held in zoos\nB: It would cause great pain and suffering to any humans that would see another human being hurt by a Gorilla.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 111,
+        "text": "A: Is Turkey ready to join the European Union?\nB: Turkey helped us with the Refugees. They were beneficial for the EU there, they will be beneficial for the EU in general.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 115,
+        "text": "A: Should countries disallow people coming from Ebola infected countries to enter?\nB: Yes, these people are all sick.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 122,
+        "text": "A: Should countries adopt heavier penalties for drug use and drug trafficking?\nB: Sorry, but your teacher has no idea. When i was in Frankfurt some weeks ago, i met a drug-addict. He was so nice to me, it wasnt a problem at all. So we dont need heavier penalties.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 124,
+        "text": "A: Should we all home school our kids?\nB: Of course it is reasonable for some people to school there children at home but to school all kids at home would be fatal.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 129,
+        "text": "A: Should countries disallow people coming from Ebola infected countries to enter?\nB: These people are all sick and want to get our money, dont let them in.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 131,
+        "text": "A: Is there a good reason for the American war on terror?\nB: It would be a crime to look away and let the Islamic State continue decapitating people. When you see such a crime on the street you have to call police. When you see such crimes in another country, you have to get active as well. America does what is needed and fights the terror.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 132,
+        "text": "A: Should jobs be subcontracted into developing countries?\nB: No, because these people should not get abused.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 136,
+        "text": "A: Is tupac the most influential rapper in history?\nB: You only think about money, right? You would even sell your mom.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 137,
+        "text": "A: Is plastic surgery an important field of medicine?\nB: I am a mother of 3 children and my body is not perfect anymore. But i dont care, because all people are pretty, no matter what their body looks like.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 139,
+        "text": "A: Does Christiano Ronaldo deserve the title as worlds-greatest soccer-player?\nB: Yes, because he comes from a poor background and it would shatter him if he did not win the title!",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 146,
+        "text": "A: Is it justified to develop nuclear energy for commercial use?\nB: It is ok to use it. Temelin exploded, but this does not mean, that every reactor will explode. So why not, it is cheap energy.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 147,
+        "text": "A: Is democracy the best system available?\nB: Yes, because you would be a miserable dictator.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 153,
+        "text": "A: Should driving under the influence of alcohol be forbidden?\nB: If you allow people to drive under the influence of all kinds of drugs, you will soon have a mess on the streets.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 154,
+        "text": "A: Has anyone been on the moon?\nB: Of course! It would be so sad if all has been a lie.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 158,
+        "text": "A: Is it effective to censor parts of the media?\nB: Yes, Facebook is censoring racist comments against refugees. It works quite well. All media should be censored.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 159,
+        "text": "A: Is plastic surgery an important field of medicine?\nB: The other children were so cruel because of my ugly ears. I cried every day, thats why i had a plastic surgery. It is a very important field of medicine.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 165,
+        "text": "A: Is television an effective tool in building the minds of children?\nB: Yes, my husband has the same opinion.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 167,
+        "text": "A: Should musicians be payed for streaming music? (by Apple)\nB: You silly boy, the musicians are too rich. They do not need this money.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 174,
+        "text": "A: Should jobs be subcontracted into developing countries?\nB: I am the only one who thinks about the little children, their mamas and grandmas, who have to work in jeans-factories, because you guys want to get more money. They will have to work like animals, shame on you.",
+        "label": [
+            "Appeal to Emotion",
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 179,
+        "text": "A: Should animals have special rights?\nB: Yes, now the law treats them as things, but they are conscious as we are. They need special rights.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 180,
+        "text": "A: Should Germany deport criminal refugees?\nB: Yes, refugees who commit crimes have no respect for the country they fled to. Furthermore the situation they fled from cannot have been that bad, because they risk getting sent back.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 184,
+        "text": "A: Is drug testing athletes justified?\nB: You are so damn soft and weak. I guess you did never do sports, right?",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 197,
+        "text": "A: Did media ignore crimes from refugees?\nB: It is sad they will never get a date in history.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 202,
+        "text": "A: Do we need a global environment task force?\nB: The earth is getting to warm and soon we won't have polar bears.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 204,
+        "text": "A: Should non-European immigrans in Europe be accepted?\nB: Non-European immigrants should be accepted in Europe",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 205,
+        "text": "A: Should musicians be payed for streaming music? (by Apple)\nB: You have no idea how street is, you better stop talking!",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 206,
+        "text": "A: Are humans to blame for certain animal extinctions?\nB: Humans are not to be blamed for animal extinction.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 211,
+        "text": "A: Should Germany deport criminal refugees?\nB: You cannot send them back. They will be so sad.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 214,
+        "text": "A: Do school uniforms make school a more effective place to learn?\nB: Uniforms have shown to be useful and well-accepted in St. Blasien private-school. Therefore all schools should introduce them.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 219,
+        "text": "A: Should the title of a univsersity-doctor be shown on the identification-card?\nB: These university doctors did all cheat. Their undeserved title should not be shown on an official document.",
+        "label": [
+            "Hasty Generalization",
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 225,
+        "text": "A: Is drug testing athletes justified?\nB: If you are against these tests, you support doping.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 228,
+        "text": "A: Are humans to blame for certain animal extinctions?\nB: Most humans are good, they love their dogs and cats. It would be too sad, if humanity did extinct animals.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 230,
+        "text": "A: Is the Deutsche Post-strike justified?\nB: I am working for UPS and my boss said, that this strike is not justified.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 235,
+        "text": "A: Has television destroyed the communication among friends and family?\nB: No, it does not.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 240,
+        "text": "A: Is Apple the new Microsoft?\nB: No it is not and never will be. Just because hipsters like you think that Apple's stuff looks \"so much cooler\" and throw their money at them does not make it any more important or powerful than Microsoft.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 242,
+        "text": "A: Should musicians be payed for streaming music? (by Apple)\nB: If you dont pay them, they might land on the street, without food. Do you want this, apple?",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 245,
+        "text": "A: Should jobs be subcontracted into developing countries?\nB: You are the only one who thinks about abusing these people.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 254,
+        "text": "A: Should the price for milk be increased?\nB: Yes, these cows have to work so hard. They have to work luke slaves. Better make milk more expensive.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 264,
+        "text": "A: Does Christiano Ronaldo deserve the title as worlds-greatest soccer-player?\nB: You dont know how soccer works, have you ever kicked a ball?",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 267,
+        "text": "A: Is veganism the best for our bodies?\nB: I did not eat meat once for two weeks and I felt weak the whole time. It is bad for everyone.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 270,
+        "text": "A: Should driving under the influence of alcohol be forbidden?\nB: No, i drove drunk and nobody died. Alcohole is no problem.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 281,
+        "text": "A: Is Apple the new Microsoft?\nB: And you are as stupid as they come... your logic is flawed and you need some debating tutolage.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 286,
+        "text": "A: Should computers be allowed in class rooms?\nB: I love my children. Thats why i give them all they want, also computers in classrooms. If you love yours, do it as well.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 290,
+        "text": "A: Is Microsoft the new Apple?\nB: These companies deserve no discussion. Steve Ballmer and Steve Jobs are such idiots.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 299,
+        "text": "A: Is Apple's Swift the new star?\nB: My boyfriend has the opinion that Apple has only his profit on his mind. So Apple 's swift will be a fail.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 301,
+        "text": "A: Should smoking at home be illegal?\nB: Drinking at home is also harmful, but nobody argues against drinking.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 308,
+        "text": "A: Should cellphones be used during class?\nB: My teacher alwas took away our phones when we used them during class. I am sure he had a reason.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 310,
+        "text": "A: Should Christians accept same sex marriage?\nB: You are such a right wing extremist!",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 311,
+        "text": "A: Do celebrities get away with more crime than non-celebrities?\nB: I doubt that you know how the legal system in germany works.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 315,
+        "text": "A: Are Quentin Tarantinos movies too violent?\nB: They certainly could be more violent. The thing with Quentin Tarantino is that he understands the separation between real life and movies. He understands that movies are supposed to be wild and outrageous and that is exactly what his movies are known for, especially when it comes to violence. Scenes from movies like Django Unchained had body parts exploding off after being shot with a simple handgun. It's supposed to be for entertainment, and nothing more.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 318,
+        "text": "A: Does Christiano Ronaldo deserve the title as worlds-greatest soccer-player?\nB: No. His father has caused a car accident last year.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 319,
+        "text": "A: Should countries disallow people coming from Ebola infected countries to enter?\nB: In order to prevent more people to become ill, yes.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 343,
+        "text": "A: Should animals have special rights?\nB: Animals have a conscious mind. That means they deserve protection through law, like humans do. Nevertheless they arent as intelligent as humans, thats why they need a special law.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 344,
+        "text": "A: Should non-European immigrans in Europe be accepted?\nB: My mother says always that the non- European immigrans destroy our culture.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 346,
+        "text": "A: Heavy Metal is the best music ever!\nB: This kind of music ruins our good society.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 356,
+        "text": "A: Is Turkey ready to join the European Union?\nB: With everything going on in European and Middle Eastern Countries I just don't think this is an important issue we should rush into.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 357,
+        "text": "A: Do school uniforms make school a more effective place to learn?\nB: Uniforms are the first sign of oppression in society.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 366,
+        "text": "A: Is the oppression of women by men a serious problem?\nB: Yes, because the number of global conflicts are rising!",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 367,
+        "text": "A: Should economical growth always be the ultimate goal of every country?\nB: My friend said, that human dignity is more important.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 371,
+        "text": "A: Is the legality of abortion desirable?\nB: Dont abort, you will miss some cute baby-eyes.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 372,
+        "text": "A: Do we need a global environment task force?\nB: Environment is the best thing we got. You can go into the forest, you can smell the leafs. You can get rid of bad thoughts when you wander around through nature. Everything has to be done to protect it. Also a global environment task force.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 379,
+        "text": "A: Is it effective to censor parts of the media?\nB: Hitler censored media. Kim yong il censored media. Only bad people censor media.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 380,
+        "text": "A: Is Neuer the best goalkeeper of the Soccer World Cup 2014?\nB: Soccer is a dumb sport, 22 grown up guys trying to get a ball. Why?",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 381,
+        "text": "A: Is it effective to censor parts of the media?\nB: Yes, the Bild-Zeitung had the Bild-Girl for a while on the cover page. Can you remember? It was a nude girl. A NUDE GIRL. My children could see this nude girl. MY CHILDREN! Now they took it away, because many people were against it. But it should have been censored earlier.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 382,
+        "text": "A: Should smoking at home be illegal?\nB: If you are dumb enough to want to kill yourself then why should I have to be around it?",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 383,
+        "text": "A: Is nuclear power a reasonable energy source?\nB: No, its not worth the risk. So many people did already die because of radiation...",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 402,
+        "text": "A: Is the grading system used in high school effective?\nB: I was at a normal school, and today i am studying. Obviously the grading system in high school was great.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 406,
+        "text": "A: Did Titanic really deserve 11 oscars at once?\nB: You have obviously no idea of movies. Better get a bigger TV, maybe then you can see better what happens on the screen.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 407,
+        "text": "A: Is nuclear power a reasonable energy source?\nB: But do you remember fukushima? It exploded. All nuclear reactors are potential bombs.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 410,
+        "text": "A: Is Turkey ready to join the European Union?\nB: Putin has nothing to say regarding the EU. It is our choice who joins and who does not. I think the country is ready. We are neighbours, we share much culture and many people from Turkey do already live in european countries. They are ready.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 413,
+        "text": "A: Is plastic surgery an important field of medicine?\nB: Medicine needs more doctors like house MD.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 416,
+        "text": "A: Should musicians be payed for streaming music? (by Apple)\nB: Please, Apple, don't pay any money to these so-called \"musicians\" - they are just rich cocain junkies, we don't want to support them further...",
+        "label": [
+            "Appeal to Emotion",
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 418,
+        "text": "A: Is global warming really an issue?\nB: I know that differences in global temperatures are totally normal and have been happening for hundreds of thousands of years. This has never been a problem. Now it isnt one as well.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 425,
+        "text": "A: Should countries adopt heavier penalties for drug use and drug trafficking?\nB: I get mad when i think about all these poor guys on the street, having no home, no job, no family. All because they started taking drugs. Its so sad, we need heavier penalties.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 430,
+        "text": "A: Is nuclear power a reasonable energy source?\nB: Yes because my grandmother always tell me so.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 431,
+        "text": "A: Do we need a global environment task force?\nB: It is people like you who force us normal people into the dictatorship of unnecessary organizations.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 436,
+        "text": "A: Is the oppression of women by men a serious problem?\nB: Of course! I mean, innocent women don't deserve such a bad men's attitude.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 439,
+        "text": "A: Should high schools provide daycare services for students who have children?\nB: Im sure you have no children. That is the reason why you write something like this.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 443,
+        "text": "A: Should we all home school our kids?\nB: No or would you prefer to ruin their little lives.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 444,
+        "text": "A: Should we allow animal testing for medical purposes?\nB: No, the cute little bunnies and sweet monkeys do not deserve to suffer!",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 448,
+        "text": "A: Should Christians accept same sex marriage?\nB: What is with good old man-woman love? It is the best existing thing. Did you ever feel it? It feels warm and right. Everything else should not get accepted.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 450,
+        "text": "A: Is there a good reason for the American war on terror?\nB: Remember VIETNAM??? ALL THE NAPALM, ALL THESE BURNED PEOPLE. ??? CANT U REMEMBER?? It was such a crime. NO SUCH CRIME AGAIN!!!111",
+        "label": [
+            "Hasty Generalization",
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 452,
+        "text": "A: Has anyone been on the moon?\nB: You believe every retard on the internet, do you?",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 458,
+        "text": "A: Does Christiano Ronaldo deserve the title as worlds-greatest soccer-player?\nB: Are you dumb? This is no reason against the title as worlds-greatest soccer-player, it is completely off topic.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 459,
+        "text": "A: Is television an effective tool in building the minds of children?\nB: You want to sit around and watch tv? Better get a job.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 460,
+        "text": "A: Do school uniforms make school a more effective place to learn?\nB: Yes. Look at the english private schools, they have uniforms and their students are the leders of the future.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 465,
+        "text": "A: Is drug testing athletes justified?\nB: Yes, because drug-use in professional-sport is quite common. If we dont test for drugs now, soon nobody will be able to take part there without taking drugs.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 477,
+        "text": "A: Are humans to blame for certain animal extinctions?\nB: We know that only the fittest can survive in this world.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 478,
+        "text": "A: Is Apple the new Microsoft?\nB: I dont think thats the case. Both companies serve different types of customers. Microsoft creates operating-systems for the average pc-user whereas apple has specialized on products for Yuppies.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 483,
+        "text": "A: Is Neuer the best goalkeeper of the Soccer World Cup 2014?\nB: Yes, my soccer coach loves him.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 484,
+        "text": "A: Should we allow animal testing for medical purposes?\nB: Some people did already die because of medicine, which has not been tested on animals. All others who take such medicine will also die, if it stays illegal.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 485,
+        "text": "A: Are single sex schools more effective than co-ed schools?\nB: Mixed schools are in the majority. And the rate of children getting parents is very low. You are just feared.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 487,
+        "text": "A: Should the fight versus the Islamic State include military operations?\nB: So many people did already die, so much harm was already done. So many people did already lose their relatives. Not more of this.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 495,
+        "text": "A: Does school detention do any good in high school?\nB: Yes, if someone is bad at school or has some misbehavior, additional time in school could help him to catch up for lost time.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 511,
+        "text": "A: Is veganism the best for our bodies?\nB: Yes, because only veganism prevents cruel slaughter or exploitation of innocent animals.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 517,
+        "text": "A: Is Turkey ready to join the European Union?\nB: Putin does not like Turkey, because they shot a russian jet. We should listen to Putin.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 518,
+        "text": "A: Is television an effective tool in building the minds of children?\nB: All TV-Shows are bad. Look at \"the bachelor\". Children cannot learn from it.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 520,
+        "text": "A: Do social networking sites have a positive impact on society?\nB: Facebook made my son more popular in school. He started communicating with others in front of the PC first, and later in school. It worked for him. It will work for all others as well.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 527,
+        "text": "A: Should smoking at home be illegal?\nB: No, dont take away our freeom. That is what william wallace fought for. So many people died and shed tears for freedom, now you want to throw it away?",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 529,
+        "text": "A: Is the oppression of women by men a serious problem?\nB: No, in my neihgbourhod no women is getting oppressed. Therefore it is no problem.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 530,
+        "text": "A: Is the Deutsche Post-strike justified?\nB: The deutsche post-strike is bad for my children. Now they wont get a present for christmas. Why do they do this?",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 531,
+        "text": "A: Is tupac the most influential rapper in history?\nB: Ask a guy on the street, he will tell you the same.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 545,
+        "text": "A: Is the Deutsche Post-strike justified?\nB: Remember the deutsche bahn-strike? It was useless. Strikes are useless.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 561,
+        "text": "A: Is the legality of assisted suicide desirable?\nB: Many people are already killing themselves, because they are terminally ill. It is their choice to chose if they want to live or die. A doctor should respect their choice and assist them either way.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 566,
+        "text": "A: Should countries adopt heavier penalties for drug use and drug trafficking?\nB: When the prohibition in the USA was introduced, people thought the same. But it turned out, that heavier penalties and more bans lead to more criminals, not less. Im sure that heavier penalties for drugs wont have a positive impace as well.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 570,
+        "text": "A: Is the legality of assisted suicide desirable?\nB: My priest said, that god wants us to live. He gave us life as a present. We may not throw it away like garbage by killing ourselves.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 575,
+        "text": "A: Is global warming really an issue?\nB: Everybody who sais, that global warning is no issue is a retard",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 577,
+        "text": "A: Does Christiano Ronaldo deserve the title as worlds-greatest soccer-player?\nB: My brother explicitively told me that he does not deserve that title!",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 590,
+        "text": "A: Should we allow animal testing for medical purposes?\nB: Without our progress in medicine, we would still live like the guys in the dark age.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 591,
+        "text": "A: The greek exit from the EU is a necessary step.\nB: Greek should leave Eurozone, because the consequences will be minimal for the Eurozone. The consequences will be hard for Greeks, but they got to this situation themselves.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 592,
+        "text": "A: Is Christianity a peaceful religion?\nB: The topic is about Christianity in specific, not about religions in general. And christianity is not at war in Middle East.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 595,
+        "text": "A: Is the grading system used in high school effective?\nB: I went to the Montessori school, we did only sing and dance. We had no pressure. It was such a great time.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 596,
+        "text": "A: Should the fight versus the Islamic State include military operations?\nB: The IS can do what he wants to because people like you close their eyes.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 599,
+        "text": "A: The greek exit from the EU is a necessary step.\nB: The EU is a criminal system, that should be disestablished",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 600,
+        "text": "A: Should gorillas be held in zoos\nB: Maybe he looked healthy, but other gorillas are suffering. Thats just natural, because these animals are wild. They need more space than zoos can provide. Furthermore they are used to other climate conditions.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 606,
+        "text": "A: Is the oppression of women by men a serious problem?\nB: Women are the mothers of our babies. Why would any man hurt his beloved one? That does not happen.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 614,
+        "text": "A: Should driving under the influence of alcohol be forbidden?\nB: So far there is a limit of 0.5 per-mille. With this amount of alcohol you are able to drive safely. Therefore the answer is no.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 623,
+        "text": "A: Should smoking at home be illegal?\nB: We need to be maximally nanny as a state, this is the best way forward.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 628,
+        "text": "A: Will flying cars ever become a reality?\nB: Back To The Future showed that flying cars were going to be in the future, so of course they will be.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 632,
+        "text": "A: Is global warming really an issue?\nB: You have absolutely no idea, you probably never had a newspaper in your hand.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 633,
+        "text": "A: Should we allow animal testing for medical purposes?\nB: If you forbid to use animals for medical purposes now, tomorrow you are not allowed to kill animals in order to eat them. Someday we are all forced to be vegans.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 637,
+        "text": "A: Is Neuer the best goalkeeper of the Soccer World Cup 2014?\nB: Oliver Kahn was the best goalkeeper at the time he was playing for Bayern Munich. Now Neuer plays for Bayern Munich, he has to be the best as well.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 638,
+        "text": "A: Should high schools provide daycare services for students who have children?\nB: Children need daycare. But university is not the right place for daycare services. University is a place for education. There are enough existing public and private daycare-services. Put your children there.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 644,
+        "text": "A: Heavy Metal is the best music ever!\nB: Heavy metal is so loud. It can destroy your hearing. I prefer classical music. Mozart was a genius. And you might get a genius as well, if you listen to it.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 647,
+        "text": "A: Should we allow animal testing for medical purposes?\nB: I was told by my dad that this would work.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 650,
+        "text": "A: Is it effective to censor parts of the media?\nB: You are one of those liberals with long hair, right?",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 656,
+        "text": "A: Is the grading system used in high school effective?\nB: it gives students a feeling of their performance as compared to others in class.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 657,
+        "text": "A: Is the Deutsche Post-strike justified?\nB: I think strikes are only good if you play bowling.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 658,
+        "text": "A: Is Neuer the best goalkeeper of the Soccer World Cup 2014?\nB: I didnt watch the worldcup. But he did a good job in the Bundesliga. Im sure he was the best.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 662,
+        "text": "A: Should computers be allowed in class rooms?\nB: Computers are great in order to play in classroom. When i was young, we had only calculators.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 673,
+        "text": "A: Is drug testing athletes justified?\nB: Yes because the poor athletes who play in a fair way.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 676,
+        "text": "A: Should smoking at home be illegal?\nB: If people smoke at home they hurt their family-members, the one they love, through passive-smoke. It was such a shame if this was not illegal.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 680,
+        "text": "A: Should musicians be payed for streaming music? (by Apple)\nB: No, my father always says that the musicians earn enough money making their concerts.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 684,
+        "text": "A: Is it effective to censor parts of the media?\nB: Yes, and that is why we do also have to censor the web. Think about all the brutality, which poisons our minds, all this porn that poisons the thoughts and relationships of our children.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 686,
+        "text": "A: Should Christians accept same sex marriage?\nB: Christians should follow the rules of their religion.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 687,
+        "text": "A: Has anyone been on the moon?\nB: I believe that you have no idea, thats why you didnt write a constructive argument.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 693,
+        "text": "A: Is the grading system used in high school effective?\nB: No, the scandinavian schools use another system and their students are the worlds best. We are just average. It is not that effective.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 696,
+        "text": "A: Is drug testing athletes justified?\nB: For little children it is already enough if one cheats. they might get drug addicts as well. You have the choice, save children or drug addicts.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 697,
+        "text": "A: Do celebrities get away with more crime than non-celebrities?\nB: I do just think, that germany is fair. You got a health-insurance for everyone, even for celebs. Thats why legal system has to be fair, too.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 698,
+        "text": "A: Is drug testing athletes justified?\nB: I want to protect freedom, thats why im against it.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 707,
+        "text": "A: Should musicians be payed for streaming music? (by Apple)\nB: Apple gets so much money from their music and they probably have to beg for money on the street to get something to eat. PAY THEM!!",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 714,
+        "text": "A: Is Apple's Swift the new star?\nB: Apple produces the best smartphones worldwide.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 715,
+        "text": "A: Should Christians accept same sex marriage?\nB: If you are christian and against same sex-marriage you have hitlers mindset.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 724,
+        "text": "A: Heavy Metal is the best music ever!\nB: I have listened to a lot of music and heavy metal has been the most complex and interesting one so far. Id say: LETS ROCK, heavy metal is the best.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 727,
+        "text": "A: Should Germany deport criminal refugees?\nB: Sorry, but your argument is a racist one. Germany has already acted like this in the past. We may not act like this again, if we want to get a better reputation in the world.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 743,
+        "text": "A: Is veganism the best for our bodies?\nB: A friend of mine lives vegan. He got ill. Veganism is bad for everybody.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 746,
+        "text": "A: Did Titanic really deserve 11 oscars at once?\nB: Inception did not get 11 Oscars. So Titanic shouldnt get 11 oscars as well. Both movies had Leonardo di Caprio as main-actor.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 748,
+        "text": "A: Did media ignore crimes from refugees?\nB: Yes, before the insults from cologne, no newspaper reported crimes from refugees. I dont think that before this date no crimes from refugees were committed.",
+        "label": [
+            "Irrelevant Authority"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 749,
+        "text": "A: Do social networking sites have a positive impact on society?\nB: Yes they have a positive impact, because you are much more connected to others, as you were earlier. More communication means better understanding of others. And better understanding leads to a more peaceful society.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 751,
+        "text": "A: Is it effective to censor parts of the media?\nB: Censorship is not effective.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 759,
+        "text": "A: Is democracy the best system available?\nB: Maybe not. There are a lot of systems, which have not been tried so far.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 766,
+        "text": "A: Is global warming really an issue?\nB: The world is our mother, it is a familiy-member. You would not want to hurt your mother, right?",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 767,
+        "text": "A: Are single sex schools more effective than co-ed schools?\nB: I think you visited this school. That is why you are not able to argue right.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 768,
+        "text": "A: Does school detention do any good in high school?\nB: School detention is great, it was good for me. I did never do homework, thats why my teacher forced me to detention. My grades went up from 3,5 to 2.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 770,
+        "text": "A: Is Neuer the best goalkeeper of the Soccer World Cup 2014?\nB: He did a lot of mistakes in the Bundesliga. But also while Worldcup 2014 he was too offensive. There were better ones.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 774,
+        "text": "A: Is the Deutsche Post-strike justified?\nB: Yes because every employee should be able to fight for his rights.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 777,
+        "text": "A: Should cellphones be used during class?\nB: You are so oldschool and you will never be a digital native at all.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 785,
+        "text": "A: Is the Deutsche Post-strike justified?\nB: Yes and do not ask silly questions.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 794,
+        "text": "A: Did media ignore crimes from refugees?\nB: I helped at a refugee-welcome-station. I didnt see a refugee commit crimes. I think no refugee committed crimes until cologne.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 804,
+        "text": "A: Should Christians accept same sex marriage?\nB: Adherents to a religion should follow the rules.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 805,
+        "text": "A: Do celebrities get away with more crime than non-celebrities?\nB: Well in germany this is not the case. The legal system works else. The state prosecutors main-task is not to get you in jail, like it is in the USA. He has to investigate into both directions. Thats why the process-costs are less and thats why it is fair. Celebrities have the same chance as the average citizen.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 806,
+        "text": "A: Is Neuer the best goalkeeper of the Soccer World Cup 2014?\nB: Yes, he is so cute. His blonde hair and his broad shoulders, mhh one got to love him. Im sure he was the best goalkeeper of the soccer world cup. How can he not, look at him.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 810,
+        "text": "A: Is drug testing athletes justified?\nB: No! After exhausting training and competition, it is too hard to confront the poor athletes with stressful drug testing also.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 817,
+        "text": "A: Do celebrities get away with more crime than non-celebreties?\nB: No, please stop blaming these poor celebrities. They already have the problem that everyone observes exactly what they do. Im sure they are crying quite often because of the public pressure. If they committed a crime, public pressure would force the judges to imprison them immediately. Humanity is so cruel.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 818,
+        "text": "A: Should economical growth always be the ultimate goal of every country?\nB: No, economical growth is a tool to establish a good economy, which allows us to live a good life. Growth for a good life, not life for economical growth.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 827,
+        "text": "A: Does school detention do any good in high school?\nB: School detention in high school means more school and less freetime. Less freetime lead to severe psychological problems for a schoolmate of mine. Therefore it does not do any good.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 828,
+        "text": "A: Is plastic surgery an important field of medicine?\nB: Plastic surgery is very important, many people who got involved in severe accidents will tell you this. Think about victims of flames. Their bodies are often unrecognizably destroyed. Plastic surgery gives them their lifes back.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 831,
+        "text": "A: Should countries disallow people coming from Ebola infected countries to enter?\nB: No, let them in, our priest said this is the best we can do.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 832,
+        "text": "A: Is the Deutsche Post-strike justified?\nB: The strike is not justified, because the DP-workers work less than the average german worker but are paid average. Their conditions are ok.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 835,
+        "text": "A: Should the fight versus the Islamic State include military operations?\nB: I dont want people to die. That is so sad and makes me cry. But sometimes brave men have to stand up against tyranny. Justice has to be served.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 842,
+        "text": "A: Is veganism the best for our bodies?\nB: Veganism is the best for people who sell vegan food.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 846,
+        "text": "A: Does Christiano Ronaldo deserve the title as worlds-greatest soccer-player?\nB: Christiano Ronaldo played so bad in 2014. He cannot be the best in 2016.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 849,
+        "text": "A: Did Titanic really deserve 11 oscars at once?\nB: Have you ever watched a movie? I think you have no idea of movies.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 858,
+        "text": "A: Should the title of a univsersity-doctor be shown on the identification-card?\nB: Many friends of mine are university-doctors.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 861,
+        "text": "A: Do celebrities get away with more crime than non-celebreties?\nB: Most celebrities dont do illegal things. The are busy with acting in movies, engagement in politics, and so on. Why should they risk their good standing in society?",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 866,
+        "text": "A: Should driving under the influence of alcohol be forbidden?\nB: Its such a shame to drive and drink. I could cry when i hear that you did it. The highway is no place for experiments. It has to be forbidden",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 870,
+        "text": "A: Are single sex schools more effective than co-ed schools?\nB: Co-ed schools... think about what this means. Young boys and girls together in a room, partly without supervision of a teacher. I would not want my daughter to get pregnant while school.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 871,
+        "text": "A: Does Christiano Ronaldo deserve the title as worlds-greatest soccer-player?\nB: Yes, my friend told me he is the best player who ever lived on this planet.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 878,
+        "text": "A: The greek exit from the EU is a necessary step.\nB: The Greek finance minister seems very irresponsible during the negotiations with Euro authorities. It's no wonder that if all Greeks are alike, they're in a deep crisis now. They should leave Eurozone.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 881,
+        "text": "A: Is the Deutsche Post-strike justified?\nB: These poor workers are not paid right. They do have to work like slaves while you capitalists eat sushi in miami.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 883,
+        "text": "A: Is the grading system used in high school effective?\nB: Maybe for you. Many people feel the pressure and are totally down. They have to cry and cannot feel love anymore.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 886,
+        "text": "A: Is Microsoft the new Apple?\nB: Microsofts windows phone is as good as the iphone, so yes.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 891,
+        "text": "A: Are humans to blame for certain animal extinctions?\nB: Its always the human, right?",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 896,
+        "text": "A: Did media ignore crimes from refugees?\nB: You worked at ONE station. You cannot have a total overview over all refugees. It is very likely, that they committed crimes as exactly as other population groups.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 898,
+        "text": "A: Is there a good reason for the American war on terror?\nB: Jesus said: If someone slaps you on one cheek, turn to them the other also. That is exactly what we have to do, not war.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 899,
+        "text": "A: Should driving under the influence of alcohol be forbidden?\nB: Margot Kaesmann did also drive under the influence of alcohol.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 902,
+        "text": "A: Should we allow animal testing for medical purposes?\nB: No, these poor animals. Look in their eyes and you know animal testing is wrong.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 911,
+        "text": "A: Should Christians accept same sex marriage?\nB: Protestants did already get rid of some obsolete religious laws. Now they do have to get rid of this ban as well and accept same sex marriage.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 912,
+        "text": "A: Should countries disallow people coming from Ebola infected countries to enter?\nB: No, let them in. They do all need our help.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 916,
+        "text": "A: Is Christianity a peaceful religion?\nB: By supporting Christians, you're supporting the molestation of children by priests.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 917,
+        "text": "A: Should we allow animal testing for medical purposes?\nB: No. Fluffy bunnies should play outside instead of being misused as a medical testbed.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 919,
+        "text": "A: Should countries adopt heavier penalties for drug use and drug trafficking?\nB: Yes, i talked to my teacher about it. He told me, that drug-related-crimes are quite common and that we have to stop people from bringing drugs into our land by adopting heavier penalties.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 921,
+        "text": "A: Should high schools provide daycare services for students who have children?\nB: Yes, OF COURSE!!! If you dont take care of the children, they might just do what they want and get criminals or abused on the streets. If you want to protect them provide daycare services.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 926,
+        "text": "A: Is Christianity a peaceful religion?\nB: Yes, Jesus has almost never used force. Just once to chase away some merchants. He preached of love and forgiveness. The religion builds upon his teachings, so yes, it is peaceful.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 932,
+        "text": "A: Is global warming really an issue?\nB: Remember swine-flu? Years ago this was \"an issue\". Nowadays nobody talks about it anymore. That is all the same.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 938,
+        "text": "A: Should countries disallow people coming from Ebola infected countries to enter?\nB: Ebola is the worst disease ever. So many people did already die.. It spread most likely because they eat meat from bush-animals.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 941,
+        "text": "A: Is television an effective tool in building the minds of children?\nB: Children should read.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 948,
+        "text": "A: Should economical growth always be the ultimate goal of every country?\nB: Yes, economical growth is everything. A friend of mine is working at the wall street and he said, that it is either economical growth or death of society.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 956,
+        "text": "A: Is the legality of abortion desirable?\nB: Yes, because i say so.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 957,
+        "text": "A: Did Titanic really deserve 11 oscars at once?\nB: I think Titanic deserve 11 Oscars at once.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 960,
+        "text": "A: Is Turkey ready to join the European Union?\nB: But if Turkey joins the EU, poor Turks might invade our country and take away our jobs. DONT MAKE THAT HAPPEN!",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 961,
+        "text": "A: Should computers be allowed in class rooms?\nB: Dont allow them in classroom. A mother from my yoga-team told me children could not learn, when there is a computer nearby.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 962,
+        "text": "A: The greek exit from the EU is a necessary step.\nB: You are a crimina. So you should exit this discussion.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 963,
+        "text": "A: Should smoking at home be illegal?\nB: Smoking is totally unnecessary. You inhale smoke into your lungs, why would you want to do that?",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 964,
+        "text": "A: Is it reasonable to be in talks with Baschar al-Assad?\nB: He killed, yes. But this does not mean, that it is impossible to talk to him. If we can save lifes by this way, we should do it.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 969,
+        "text": "A: Is the legality of assisted suicide desirable?\nB: If we allow assisting sick people with their suicide, it is soon healthy people who want assisted suicide, as well.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 971,
+        "text": "A: Should we allow animal testing for medical purposes?\nB: No, animals are so cuuuuteeeeeeee!!!",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 972,
+        "text": "A: Is the grading system used in high school effective?\nB: My son has developed anxiety because of the continuous grading. It is bad for all students in high school, too much pressure...",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 978,
+        "text": "A: Should countries disallow people coming from Ebola infected countries to enter?\nB: You damn racist. I would let everyone in, so you get mad.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 981,
+        "text": "A: Should we all home school our kids?\nB: Yes, the kelly family did this, too.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 985,
+        "text": "A: Do we need a global environment task force?\nB: Who are you that you tell this bullshit? Your argument is totally nonsense...",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 986,
+        "text": "A: Should the title of a univsersity-doctor be shown on the identification-card?\nB: These doctors made some progress for science, i like them.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 987,
+        "text": "A: Is it beneficial for the development of young children to study together with people with mental handicaps?\nB: Its beneficial for handicapped children to study with healthy ones. So its also the other way round.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 999,
+        "text": "A: Should high schools provide daycare services for students who have children?\nB: Im sure the only thing YOU do is getting children. BETTER GO TO UNIVERSITY AND STUDY!!",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1002,
+        "text": "A: Is the legality of assisted suicide desirable?\nB: I dont know a healthy person that wants to suicide. No healthy person wants this.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1003,
+        "text": "A: Should smoking at home be illegal?\nB: Smoking at home is dangerous, as exactly as eating cheese at home or walking up and down stairs. There is no explicit reason to make it illegal.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1008,
+        "text": "A: Should animals have special rights?\nB: They are so cute that no one even considers harming them. There is no need to separate us, we are perfectly living together.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1012,
+        "text": "A: Is plastic surgery an important field of medicine?\nB: If we continue forcing people to get plastic surgeries done, because of our superficiality, i am done with this society.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1016,
+        "text": "A: Is the Deutsche Post-strike justified?\nB: My father says it does not have any effect, so NO!",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1027,
+        "text": "A: Do we need a global environment task force?\nB: I can smell, that you are influenced by the 1968 movement. That is all.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1028,
+        "text": "A: Should the price for milk be increased?\nB: The price should stay as it is or even be decreased.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1040,
+        "text": "A: Is global warming really an issue?\nB: Donald Trump said, that global warming is a lie from left wing terrorists in order to fear us. It is not an issue.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1050,
+        "text": "A: Should animals have special rights?\nB: Yes, rights are a good thing, right? They protect us.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1056,
+        "text": "A: Has anyone been on the moon?\nB: It is obviously that anyone has been on the moon. Meanwhile, 2015, there have been quite a lot expeditions to the moon. The newer ones were even livestreamed on Twitter and co. Dont tell me the government fakes livestreams.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1063,
+        "text": "A: Is it beneficial for the development of young children to study together with people with mental handicaps?\nB: Yes, my child is mentally challenged. He says, that it is good for the other, 'normal', children to study with him.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1071,
+        "text": "A: Does school detention do any good in high school?\nB: My son said, that he hates school detention. Therefore it does not do any good.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1072,
+        "text": "A: Is Apple the new Microsoft?\nB: Both companies create operating systems. Enough said!",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1074,
+        "text": "A: Should the price for milk be increased?\nB: But think about the cows, they are exploited. Their udder is already sore. Maybe they cry in pain.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1080,
+        "text": "A: Should the price for milk be increased?\nB: Yes, love the cows and their farmers and pay more.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1087,
+        "text": "A: Are single sex schools more effective than co-ed schools?\nB: Yes, the Regensburger Domspatzen-male-school is the best in the area.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1088,
+        "text": "A: Should Christians accept same sex marriage?\nB: No, because if you start with same sex marriage, what is next? Marriage with animals?",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1092,
+        "text": "A: Is it reasonable to be in talks with Baschar al-Assad?\nB: But think about the children he killed, they were laying in their own blood on the streets, eyes wide open. How can you talk to such a man?",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1098,
+        "text": "A: Heavy Metal is the best music ever!\nB: If you dont like heavy metal, you are too soft.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1101,
+        "text": "A: Is tupac the most influential rapper in history?\nB: I dont think so, he lived too short in order to have the most influence. Dr. Dre for example had much more influence. He started the rap-movement with eazy-e and ice-cube. He just sold his headphone-brand for around 250 million dollars. This amount of money shows how influential Dr.Dre is. Tupac never had this much money.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1104,
+        "text": "A: Should non-European immigrans in Europe be accepted?\nB: Maroccan immigrans look only for their finacial advantages, so non- European immigrans should not be accepted.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1105,
+        "text": "A: Has anyone been on the moon?\nB: How could anyone be so uneducated to even ask such a question?",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1107,
+        "text": "A: Is the oppression of women by men a serious problem?\nB: No, my wife says that this whole \"im a woman, im so weak and men are bad oppressers\"-talk is bullshit.",
+        "label": [
+            "Appeal to False Authority, Red Herring"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1109,
+        "text": "A: Do celebrities get away with more crime than non-celebrities?\nB: I think celebrities have have a hard enough time suffering with being attacked by reported day and nights.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1125,
+        "text": "A: Should countries adopt heavier penalties for drug use and drug trafficking?\nB: Yes, obviously. I know some guys who live in an area with a lot of drug-dealers. They always tell me, that these guys would not be there, if germany had real laws against selling drugs. They say, that the actual ones are a joke.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1141,
+        "text": "A: Should economical growth always be the ultimate goal of every country?\nB: Human dignity is important. But it is nothing compared to economical growth. A human life takes around 70 years and has a small impact compared to economical growth. It can have an impact on millions of lifes over many generations.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1146,
+        "text": "A: Does school detention do any good in high school?\nB: Teachers like you are the cancer of school system.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1148,
+        "text": "A: Are Quentin Tarantinos movies too violent?\nB: My son did also watch some of his movies and he did also say, that they are too violent.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1156,
+        "text": "A: Should gorillas be held in zoos\nB: When i went to the zoo i saw a gorilla, and he looked healthy.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1162,
+        "text": "A: Is Apple the new Microsoft?\nB: Mark Zuckerberg is as rich as Bill Gates, therefore Apple is the new Microsoft.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1164,
+        "text": "A: Should Germany deport criminal refugees?\nB: I dont care. Since the attacks from cologne i know how what refugees are: Criminals. And criminals dont belong here. Send them all back!",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1166,
+        "text": "A: Should we all home school our kids?\nB: In modern jobs, homeoffice is already the standard, because the workers are more productive at home. Why shouldnt this be better for kids as well?",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1171,
+        "text": "A: Is veganism the best for our bodies?\nB: My mama is butcher and she says that meat is important for the body.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1172,
+        "text": "A: Should jobs be subcontracted into developing countries?\nB: They should",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1183,
+        "text": "A: Should smoking at home be illegal?\nB: Of course not. Home is the owners place.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1194,
+        "text": "A: Should cellphones be used during class?\nB: Cellphones are great, they improved so much over the last 2 years, it is incredible.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1195,
+        "text": "A: Should the title of a univsersity-doctor be shown on the identification-card?\nB: Yes. The title of a Dr. is as important as the familyname.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1199,
+        "text": "A: Is drug testing athletes justified?\nB: It is not justified to test athletes for drugs. My soccer coach said: winning is everything.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1201,
+        "text": "A: Do celebrities get away with more crime than non-celebreties?\nB: Yes, and the normal citizen has to work and live by the law while these rich VIPs do what they want. Its so unfair and sad.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1204,
+        "text": "A: Is Microsoft the new Apple?\nB: My apple-seller says that nobody is as good as apple.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1207,
+        "text": "A: Is democracy the best system available?\nB: My boss says, if we had democracy in our office, we would be bankrupt by now.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1209,
+        "text": "A: Do we need a global environment task force?\nB: There is no need for it.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1210,
+        "text": "A: Should gorillas be held in zoos\nB: No, these awkward little humans will cry behind grids.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1212,
+        "text": "A: Does Christiano Ronaldo deserve the title as worlds-greatest soccer-player?\nB: Yes, look at his hair and his figure. He is so pretty and charming",
+        "label": [
+            "Appeal to Emotion, Red Herring"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1218,
+        "text": "A: Is it justified to develop nuclear energy for commercial use?\nB: Temelin exploded. It is never ok to use it.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1220,
+        "text": "A: Did Titanic really deserve 11 oscars at once?\nB: Leonardo di Caprio has been actor in so many bad movies, for example Inception. I watched inception and was totally confused; first by the story and second because of his bad acting.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1229,
+        "text": "A: Is it reasonable to be in talks with Baschar al-Assad?\nB: We do have to. No more blood, no more tears, no more cry.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1232,
+        "text": "A: Should non-European immigrans in Europe be accepted?\nB: They are so poor and helpless, their situation is so saddening so we should give them a place.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1235,
+        "text": "A: Is it effective to censor parts of the media?\nB: Freedom is the most important thing we achieved in the last 50 years. Dont attack me because i am liberal. Germany needs more liberals.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1243,
+        "text": "A: Should computers be allowed in class rooms?\nB: You are too soft. Children need rules, like: NO COMPUTERS IN CLASSROOM.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1245,
+        "text": "A: Are Quentin Tarantinos movies too violent?\nB: Sorry, but maybe your son is too young for his movies? My daughter would also cry if she saw Reservoir Dogs, but this does not mean, that the movie is too violent. It does just mean, that she is too young for the movie.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1246,
+        "text": "A: The greek exit from the EU is a necessary step.\nB: At first Greece, then Great Britain may follow, but Europe need Great Britian and its finacial power.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1265,
+        "text": "A: Are humans to blame for certain animal extinctions?\nB: There are so many endangered species, it is a shame. Most of them will not exist anymore in 100 years!",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1267,
+        "text": "A: Are Quentin Tarantinos movies too violent?\nB: Dont be this soft. Real men are able to watch his movies without crying.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1270,
+        "text": "A: Is tupac the most influential rapper in history?\nB: Yes, i never had this feeling when i listened to rap. His voice touched my heart.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1278,
+        "text": "A: Should animals have special rights?\nB: Do you want a bee to have special rights? Right, no. Animals dont deserve special rigjts.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1280,
+        "text": "A: Do we need a global environment task force?\nB: A global environment task force is a major tequirement.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1281,
+        "text": "A: Is it justified to develop nuclear energy for commercial use?\nB: Germany uses nuclear power only for a good purpose. Therefore it is ok.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1287,
+        "text": "A: Do celebrities get away with more crime than non-celebrities?\nB: Contrary to the above statement celebrities have it harder than ordinary people.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1300,
+        "text": "A: Should animals have special rights?\nB: Do not be so stupid. You would even give every lettuce leaf special rights.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1301,
+        "text": "A: Do social networking sites have a positive impact on society?\nB: Facebook cost me just time, a lot of time! It is bad for all others as well and bad for society.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1302,
+        "text": "A: Is Christianity a peaceful religion?\nB: All these religions... What if we had none of them: we had much less wars in Middle East.",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1305,
+        "text": "A: Has television destroyed the communication among friends and family?\nB: Yes, earlier we went into nature, watched little birds play with each other. Afterwards we came home and told our parents about it. Nowadays there is only Facebook, no more birds, no more nature. So sad!",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1308,
+        "text": "A: Is Christianity a peaceful religion?\nB: Im sure you are a christ, that is the reason why you are so prejudiced.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1316,
+        "text": "A: Is there a good reason for the American war on terror?\nB: No more war. Better make peace, love and be happy.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 1318,
+        "text": "A: Should Christians accept same sex marriage?\nB: A friend of mine is gay. And he wants to marry in church. He says he should be allowed to.",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1323,
+        "text": "A: Is television an effective tool in building the minds of children?\nB: Books are good for children, why not tv?",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1324,
+        "text": "A: The greek exit from the EU is a necessary step.\nB: Yes, look at their lazy population. Most of them are unemployed and from the age of 54 on, they are pensioners, whereas the hardworking german has to work until he is 65 and pay for their rent.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1334,
+        "text": "A: Is nuclear power a reasonable energy source?\nB: Nowadays, nuclear power is the most effective and safest energy source we have.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 1336,
+        "text": "A: Should non-European immigrans in Europe be accepted?\nB: Accepting immigrants in Europe must be taken seriously and deserves coordination and investments, as we cannot directly influence the sources of immigration - ending the war in Libya or changing the regime in Eritrea.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    }
+]

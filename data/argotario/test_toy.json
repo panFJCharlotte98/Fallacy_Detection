@@ -1,0 +1,56 @@
+[
+    {
+        "id": 2,
+        "text": "A: Is it justified to develop nuclear energy for commercial use?\nB: The green party in Germany has the opinion, that nuclear reactors are bad for us. It is not ok",
+        "label": [
+            "Appeal to False Authority"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 4,
+        "text": "A: Should driving under the influence of alcohol be forbidden?\nB: Yes, whoever drinks and drives has a bad reaction time. People might die.",
+        "label": [
+            "No Fallacy"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 8,
+        "text": "A: Do we need a global environment task force?\nB: The global taskforce for human rights is doing a good job. Thats why we need one for environment, too.",
+        "label": [
+            "Hasty Generalization"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 31,
+        "text": "A: Is there a good reason for the American war on terror?\nB: If you fight once you will never stop fighting. Never start!",
+        "label": [
+            "Red Herring"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    },
+    {
+        "id": 42,
+        "text": "A: Is global warming really an issue?\nB: Yes, all the polar-bears are dying, and we are next.",
+        "label": [
+            "Appeal to Emotion"
+        ],
+        "stance": 1,
+        "is_gold": 1
+    },
+    {
+        "id": 44,
+        "text": "A: Should the fight versus the Islamic State include military operations?\nB: Yeah, and you are a guy who loves war, thats it. You like it when people die.",
+        "label": [
+            "Ad Hominem"
+        ],
+        "stance": 0,
+        "is_gold": 1
+    }
+]

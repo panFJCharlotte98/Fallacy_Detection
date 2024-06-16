@@ -1,6 +1,17 @@
 __pycache__
 */__pycache__
 cache
-logical-fallacy
+src/
+UnifiedSKG
 models/llama2_hf
+models/llama3_hf
+models/mistral_hf
+models/download.py
 results
+res_analysis
+error_analysis.ipynb
+error_analysis copy.ipynb
+sh_cmd
+regen_results.py
+run copy.py
+test_prompt.ipynb

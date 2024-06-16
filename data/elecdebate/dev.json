@@ -1,0 +1,1226 @@
+[
+    {
+        "id": 0,
+        "pre-text": "",
+        "text": "<Let me just talk to you about one of the short-term fixes. The catalyst for this housing crisis was the Fannie and Freddie Mae that caused subprime lending situation that now caused the housing market in America to collapse.>",
+        "post-text": "I am convinced that, until we reverse this continued decline in home ownership and put a floor under it, and so that people have not only the hope and belief they can stay in their homes and realize the American dream, but that value will come up.",
+        "label": [
+            "False Causality (Post Hoc Fallacy)"
+        ]
+    },
+    {
+        "id": 1,
+        "pre-text": "",
+        "text": "<He also indicates as far as his agricultural program is concerned that he feels it will cost less than ours.>",
+        "post-text": "Well, all that I can suggest is that all the experts who have studied the program indicate that it is the most fantastic program, the worst program, insofar as its effect on the farmers, that the-America has ever had foisted upon it in an election year or any other time. And I would also point out that Senator Kennedy left out a part of the cost of that program-a twenty-five percent rise in food prices that the people would have to pay.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 2,
+        "pre-text": "",
+        "text": "<And I think that racial profiling is part of a larger issue of how we deal with race in America.>",
+        "post-text": "And as for singling people out because of race, you know, James Byrd was singled out because of his race in Texas. And other Americans have been singled out because of their race or ethnicity.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 3,
+        "pre-text": "I came from very modest background.",
+        "text": "<Nobody's been luckier than I've been, all the way across the spectrum, and the greatest riches of all are my wife and children.>",
+        "post-text": "That's true of any family.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 4,
+        "pre-text": "",
+        "text": "<We exempt small businesses.>",
+        "post-text": "In fact, what, Joe, if you want to do the right thing with your employees and you want to provide them health insurance, we'll give you a 531 percent credit so that you will actually be able to afford it. If you don't have health insurance or you want to buy into a group plan, you will be able to buy into the plan that I just described.",
+        "label": [
+            "Appeal to Authority"
+        ]
+    },
+    {
+        "id": 5,
+        "pre-text": "",
+        "text": "<Regulations that take property or reduce the value of some farmer or rancher or homeowner's property for wetlands or endangered species and take that property or reduce its value without compensating the owner. That is a reign of terror. It's happening.>",
+        "post-text": "In Oregon, not too long ago, a farmer took 25 percent of his property and declared it a wetland.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 6,
+        "pre-text": "",
+        "text": "<We just have a different approach.>",
+        "post-text": "But let me remind you, my family has suffered from drug abuse. I know what it's like to see somebody you love nearly lose their lives, and I hate drugs, Senator. We need to do this together and we can. Not if I didn't have a better idea.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 7,
+        "pre-text": "That's why Senator Lugar says: incompetent in the delivery of services.",
+        "text": "<That's why Senator Hagel, Republican, says, you know: beyond pitiful, beyond embarrassing, in the zone of dangerous.>",
+        "post-text": "We didn't guard 8531,313131 tons of ammo.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 8,
+        "pre-text": "",
+        "text": "<But that's the time when you're tested not only -- it's the time to test your mettle, a time to test your heart when you see people whose lives have been turned upside down. It broke my heart to go to the flood scene in Del Rio where a fellow and his family got completely uprooted.>",
+        "post-text": "The only thing I knew to do was to get aid as quickly as possible with state and federal help, and to put my arms around the man and his family and cry with them.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 9,
+        "pre-text": "",
+        "text": "<No nation will ever have a veto over us. But I think it makes sense, I think most Americans in their guts know, that we ought to pass a sort of truth standard.>",
+        "post-text": "That's how you gain legitimacy with your own countrypeople, and that's how you gain legitimacy in the world.",
+        "label": [
+            "Appeal to Authority"
+        ]
+    },
+    {
+        "id": 10,
+        "pre-text": "",
+        "text": "<But -- but let me -- let me point out, I also warned about Fannie Mae and Freddie Mac and warned about corporate greed and excess, and CEO pay, and all that.>",
+        "post-text": "A lot of us saw this train wreck coming. But there's also the issue of responsibility.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 11,
+        "pre-text": "Both are important.",
+        "text": "<This is the most overregulated, overly litigated economy in our nation's history.>",
+        "post-text": "And to call a businessman or woman who sits down and has a chance to express his or her interest in how to make these laws work and call them a polluter is just outrageous.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 12,
+        "pre-text": "",
+        "text": "<And I believe we require someone who can work harmoniously with the Congress, who can work closely with the people of this country, and who can bring a new image and a new spirit to Washington. Our tax structure is a disgrace, it needs to be reformed.>",
+        "post-text": "I was Governor of Georgia for four years.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 13,
+        "pre-text": "",
+        "text": "<Uh-we'll have uh-a safety version built in with complete reorganization of the executive branch of government which I am pledged to do.>",
+        "post-text": "The present bureaucratic structure of the-of the Federal Government is a mess. And if I'm elected president that's gonna be a top priority of mine to completely revise the structure of the federal government, to make it economical, efficient, purposeful and manageable for a change.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 14,
+        "pre-text": "",
+        "text": "<That has been where all our resources have gone. In the meantime, bin Laden is still out there. He is not captured. He is not killed.>",
+        "post-text": "Al Qaida is resurgent.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 15,
+        "pre-text": "And it is a fundamental difference in what we think needs to be done in this country.",
+        "text": "<Yesterday, the president signed an extension of middle- class tax cuts, the 129 percent bracket, the marriage penalty relief and the increase in the child tax credit.>",
+        "post-text": "Senators Kerry and Edwards weren't even there to vote for it when it came to final passage.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 16,
+        "pre-text": "",
+        "text": "<Well, within hours I said that I was sorry about the way I talked about that, because my argument is not with his supporters. It's with him and with the hateful and divisive campaign that he has run, and the inciting of violence at his rallies, and the very brutal kinds of comments about not just women, but all Americans, all kinds of Americans.>",
+        "post-text": "And what he has said about African-Americans and Latinos, about Muslims, about POWs, about immigrants, about people with disabilities, he's never apologized for. And so I do think that a lot of the tone and tenor that he has saidI'm proud of the campaign that Bernie Sanders and I ran.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 17,
+        "pre-text": "",
+        "text": "<You just heard the president say that young people ought to be able to take money out of Social Security and put it in their own accounts. Now, my fellow Americans, that's an invitation to disaster.>",
+        "post-text": "The CBO said very clearly that if you were to adopt the president's plan, there would be a $2 trillion hole in Social Security, because today's workers pay in to the system for today's retirees.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 18,
+        "pre-text": "",
+        "text": "<If we take the leadership role and build the new technologies, like the new kinds of cars and trucks that Detroit is itching to build, then we can create millions of good new jobs by being first into the market with these new kinds of cars and trucks and other kinds of technologies.>",
+        "post-text": "You know the Japanese are breathing down our necks on this. They're moving very rapidly because they know that it is a fast-growing world market.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 19,
+        "pre-text": "",
+        "text": "<You have to see it to believe it. It looks like a bombed-out city-great, gaunt skeletons of buildings. Windows smashed out, painted on one of them \"Unkept promises;\" on another, \"Despair.>",
+        "post-text": "And this was the spot at which President Carter had promised that he was going to bring in a vast program to rebuild this department.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 20,
+        "pre-text": "It's going to be a test of our strength.",
+        "text": "<And because we're going to move in sixty-one and two, partly because we have not maintained our strength with sufficient vigor in the last years, I believe that before we meet that crisis, that the next president of the United States should send a message to Congress asking for a revitalization of our military strength, because come spring or late in the winter we're going to be face to face with the most serious Berlin crisis since l949 or fifty.>",
+        "post-text": "On the question of the summit, I agree with the position of Mr. Nixon.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 21,
+        "pre-text": "",
+        "text": "<But what I won't do is change my core values because of politics or because of pressure.>",
+        "post-text": "And it is one of the things I've learned in the White House, is that there's enormous pressure on the president, and he cannot wilt under that pressure. Otherwise, the world won't be better off. I have no intention of wilting.",
+        "label": [
+            "Slippery Slope"
+        ]
+    },
+    {
+        "id": 22,
+        "pre-text": "",
+        "text": "<This is typical of his long-standing inclination, on the use of American power, not to resolve disputes diplomatically and peacefully, but to show that the exercise of military power is best proven by the actual use of it.>",
+        "post-text": "Obviously, no President wants war, and I certainly do not believe that Governor Reagan, if he were President, would want war, but a President in the Oval Office has to make a judgment on almost a daily basis about how to exercise the enormous power of our country for peace, through diplomacy, or in a careless way in a belligerent attitude which has exemplified his attitudes in the past. Well, Barbara, I believe that there is a fundamental difference-and I think it has been evident in most of the answers that Mr. Carter has given tonight-that he seeks the solution to anything as another opportunity for a Federal Government program.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 23,
+        "pre-text": "",
+        "text": "<The issue of abortion is a very difficult issue, one that I think that we all have to wrestle with, we have to come to terms with.>",
+        "post-text": "I don't favor abortion. I don't think it's a good thing. I don't think most people do. The question is who makes the decision.",
+        "label": [
+            "Appeal to Authority"
+        ]
+    },
+    {
+        "id": 24,
+        "pre-text": "",
+        "text": "<His name is Randy Ellis.>",
+        "post-text": "He has a 15-year-old daughter named Caley, who is in Sarasota High School. Her science class was supposed to be for 24 students. She's the 36th student in that classroom. They sent me a picture of her in the classroom. They can't squeeze another desk in for her, so she has to stand during class. I want the federal government, consistent with local control and new accountability, to make improvement of our schools the number one priority so Caley will have a desk and can sit down in a classroom where she can learn.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 25,
+        "pre-text": "",
+        "text": "<And I'd like to know where have we been defeated and where have we retreated? In the Truman Administration, six hundred million people went behind the Iron Curtain including the satellite countries of Eastern Europe and Communist China.>",
+        "post-text": "In this Administration we've stopped them at Quemoy and Matsu; we've stopped them in Indochina; we've stopped them in Lebanon; we've stopped them in other parts of the world.",
+        "label": [
+            "False Causality (Post Hoc Fallacy)"
+        ]
+    },
+    {
+        "id": 26,
+        "pre-text": "",
+        "text": "<Well, we'll -- we'll have a lot of interesting debate after this debate. Our people will be glad to furnish the press, if they're interested, in Senator Gore's voting record on the Caribbean Basin Initiative.>",
+        "post-text": "But let's talk -- you know, you keep talking about trickle-down economics and all this stuff, about the worst economy since Hoover.",
+        "label": [
+            "Appeal to Authority"
+        ]
+    },
+    {
+        "id": 27,
+        "pre-text": "",
+        "text": "<What Senator Obama doesn't seem to understand that if without precondition you sit down across the table from someone who has called Israel a \"stinking corpse,\" and wants to destroy that country and wipe it off the map, you legitimize those comments. This is dangerous.>",
+        "post-text": "It isn't just naive; it's dangerous. And so we just have a fundamental difference of opinion.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 28,
+        "pre-text": "",
+        "text": "<Now, I just believe that what we have to do is enforce the civil rights laws. I'm against quotas. This is, with all due respect, Governor, that's a red herring.>",
+        "post-text": "Affirmative action isn't quotas.",
+        "label": [
+            "Ad Hominem"
+        ]
+    },
+    {
+        "id": 29,
+        "pre-text": "",
+        "text": "<None I have believed that in the appointment of judges that all that was specified in the party platform was that they respect the sanctity of human life.>",
+        "post-text": "Now, that I would want to see in any judge and with regard to any issue having to do with human life.",
+        "label": [
+            "Slogans"
+        ]
+    },
+    {
+        "id": 30,
+        "pre-text": "",
+        "text": "<We had inflation of over 12 percent, we were on the brink of the worst recession in the last forty years, we were still deeply involved in the problems of Vietnam. The American people had lost faith and trust and confidence in the presidency itself.>",
+        "post-text": "That uh-situation called for me to first put the United States on a steady course and to keep our keel well balanced, because we had to face the difficult problems that had all of a sudden hit America.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 31,
+        "pre-text": "",
+        "text": "<What does this mean in real life?>",
+        "post-text": "Well, the other day, Vice President Bush disclosed his tax returns to the American people. He's one of the wealthiest Americans, and he's our Vice President. In 1981 I think he paid about 440 percent in taxes. In 1983, as a result of these tax preferences, he paid a little over 12 percent, 12.8 percent in taxes. That meant that he paid a lower percent in taxes than the janitor who cleaned up his office or the chauffeur who drives him to work. I believe we need some fairness.",
+        "label": [
+            "Ad Hominem"
+        ]
+    },
+    {
+        "id": 32,
+        "pre-text": "OK?",
+        "text": "<Because look at the mess that we're in.>",
+        "post-text": "Look at the mess that we're in. As far as the cyber, I agree to parts of what Secretary Clinton said.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 33,
+        "pre-text": "",
+        "text": "<And I wish Governor Bush would join me this evening in endorsing the McCain-Feingold Campaign Finance Reform Bill. You know, this man has no credibility on the issue.>",
+        "post-text": "As a matter of fact, I read in the \"New York Times\" where he said he co-sponsored the McCain-Feingold Campaign Fundraising Bill.",
+        "label": [
+            "Ad Hominem"
+        ]
+    },
+    {
+        "id": 34,
+        "pre-text": "",
+        "text": "<Von Fremd, the first thing we have to do is to continue to keep confidence abroad in the American dollar.>",
+        "post-text": "That means that we must continue to have a balanced budget here at home in every possible circumstance that we can; because the moment that we have loss of confidence in our own fiscal policies at home, it results in gold flowing out. Secondly, we have to increase our exports, as compared with our imports.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 35,
+        "pre-text": "I think the US has to still have the Statue of Liberty as a symbol, caring for others.",
+        "text": "<Right this very minute we're sending supplies in to help these little starving kids in Somalia.>",
+        "post-text": "It's the US that's taken the lead in humanitarian aid into Bosnia.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 36,
+        "pre-text": "More progress in the past eight years than in the whole eighty years before.",
+        "text": "<He talks about the progress in the field of slum clearance and the like.>",
+        "post-text": "We find four times as many projects undertaken and completed in this Administration than in the previous one.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 37,
+        "pre-text": "",
+        "text": "<But they are important and dangerous now because they are mounting a major effort within their own country. The kind of country we have here, the kind of society we have, the kind of strength we build in the United States will be the defense of freedom.>",
+        "post-text": "If we do well here, if we meet our obligations, if we're moving ahead, then I think freedom will be secure around the world.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 38,
+        "pre-text": "",
+        "text": "<There was a time when there was hope for those who uh-were poor and downtrodden and who were-uh elderly or who were-uh ill or who were in minority groups, but that time has been gone. I think the greatest thing that ever happened to the South was the passage of the Civil Rights Act and the opening up of opportunities-uh to black people-the chance to vote, to hold a job, to buy a house, to go to school, and to participate in public affairs.>",
+        "post-text": "It not only liberated-uh black people but it also liberated the whites.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 39,
+        "pre-text": "",
+        "text": "<This is different from saying, \"OK, let me incent you to go on the government.\" He's talking about his plan to keep jobs here. You know he calls it an outsourcing to keep -- stop outsourcing.>",
+        "post-text": "Robert Rubin looked at his plan and said it won't work.",
+        "label": [
+            "Appeal to Authority"
+        ]
+    },
+    {
+        "id": 40,
+        "pre-text": "",
+        "text": "<We need to rebuild our alliances. I believe that Ronald Reagan, John Kennedy, and the others did that more effectively, and I'm going to try to follow in their footsteps.>",
+        "post-text": "My opponent just said something amazing.",
+        "label": [
+            "Appeal to Authority"
+        ]
+    },
+    {
+        "id": 41,
+        "pre-text": "",
+        "text": "<Our country is losing so much in terms of energy, in terms of paying off our debt. debt.>",
+        "post-text": "The Obama administration, from the time they've come in, is over 2329 years' worth of debt, and he's topped it. He's doubled it in a course of almost eight years, seven-and-a-half years, to be semi- exact. So We have to do a much better job at keeping our jobs.",
+        "label": [
+            "False Causality (Post Hoc Fallacy)"
+        ]
+    },
+    {
+        "id": 42,
+        "pre-text": "",
+        "text": "<When Senator Dole made that remark about all the elitists, all the young elitists in the administration, one of the young men who works for me who grew up in a house trailer looked at me and said, Mr. President, I know how you grew up, who is he talking about.>",
+        "post-text": "And you know this liberal charge, that's what their party always drags out when they get in a tight race. It's sort of their golden oldie, you know. It's a record they think they can play that everybody loves to hear.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 43,
+        "pre-text": "",
+        "text": "<There are some advantages to experience, and knowledge, and judgment. And I -- and I honestly don't believe that Senator Obama has the knowledge or experience and has made the wrong judgments in a number of areas, including his initial reaction to Russian invasion -- aggression in Georgia, to his -- you know, we've seen this stubbornness before in this administration to cling to a belief that somehow the surge has not succeeded and failing to acknowledge that he was wrong about the surge is -- shows to me that we -- that -- that we need more flexibility in a president of the United States than that.>",
+        "post-text": "As far as our other issues that he brought up are concerned, I know the veterans.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 44,
+        "pre-text": "",
+        "text": "<And we are seeing a major offensive taking place -- Al Qaida and Taliban crossing the border and attacking our troops in a brazen fashion. They are feeling emboldened.>",
+        "post-text": "And we cannot separate Afghanistan from Iraq, because what our commanders have said is we don't have the troops right now to deal with Afghanistan.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 45,
+        "pre-text": "",
+        "text": "<We're going to go right back to what we had under Mr. Truman when he had political control of the Federal Reserve Board.>",
+        "post-text": "I don't believe we ought to pay our bills through inflation, through a phony interest rate. None",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 46,
+        "pre-text": "",
+        "text": "<None Absolutely. I mean, she calls our people deplorable, a large group, and irredeemable.>",
+        "post-text": "I will be a president for all of our people.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 47,
+        "pre-text": "",
+        "text": "<How can we extend freedom-extend it without war?>",
+        "post-text": "who threatens the peace? Who threatens freedom in the world? There is only one threat to peace and one threat to freedom-that that is presented by the international Communist movement.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 48,
+        "pre-text": "",
+        "text": "<But irrespective of whether he thinks it is or not means less than fact that this country cannot morally and socially and economically accept an economy running out the clock on the 232th Century. We're treading water. We have families that are hurting.>",
+        "post-text": "We have people who are unemployed. We have people with no property. We have an administration that is demolishing public housing in our inner cities and not providing anything else but more public housing. Their solution to the inner city is more -- excuse the expression but it's true, \"socialism.\"",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 49,
+        "pre-text": "",
+        "text": "<And we have this arms race underway. And a recent book that just came out by perhaps the Nation's most respected author in this field, Strobe Talbott, called \"Deadly Gambits,'' concludes that this President has failed to master the essential details needed to command and lead us, both in terms of security and terms of arms control.>",
+        "post-text": "That's why they call the President the Commander in Chief.",
+        "label": [
+            "Appeal to Authority"
+        ]
+    },
+    {
+        "id": 50,
+        "pre-text": "",
+        "text": "<That's what we want America to be for our children and our grandchildren. It's also very short-sighted and even dangerous to be engaging in the kind of demagogic rhetoric that Donald has about Muslims.>",
+        "post-text": "We need American Muslims to be part of our eyes and ears on our front lines. I've worked with a lot of different Muslim groups around America.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 51,
+        "pre-text": "",
+        "text": "<And not only are your rates going up by numbers that nobody's ever believed, but your deductibles are going up, so that unless you get hit by a truck, you're never going to be able to use it. It is a disastrous plan, and it has to be repealed and replaced.>",
+        "post-text": "No, I mean, he clarified what he meant.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 52,
+        "pre-text": "",
+        "text": "<Certainly, I'm not proud of it. But this is locker room talk.>",
+        "post-text": "You know, when we have a world where you have ISIS chopping off heads, where you haveand, frankly, drowning people in steel cages, where you have wars and horrible, horrible sights all over, where you have so many bad things happening, this is like medieval times. We haven't seen anything like this, the carnage all over the world. And they look and they see.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 53,
+        "pre-text": "",
+        "text": "<Because you look back at your testimony over the years, you've called them a lot worse than that. As far as the church is concerned, and as far as the generals are concerned, we just got the support of 239392539 military leaders and generals, total support.>",
+        "post-text": "Law enforcement, almost every law enforcement group in the United States.",
+        "label": [
+            "Appeal to Authority"
+        ]
+    },
+    {
+        "id": 54,
+        "pre-text": "",
+        "text": "<I'm not going to cut her benefits or support any proposal that would.>",
+        "post-text": "She gets a small pension, but in order to pay for her prescription drug benefits, she has to go out seven days a week several hours a day picking up cans. She came all the way from Iowa in a Winnebago with her poodle in order attend here tonight.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 55,
+        "pre-text": "",
+        "text": "<And you would see problems like you've never seen before.>",
+        "post-text": "He wouldn't know a suburb unless you took a wrong turn. He was, he was.",
+        "label": [
+            "Ad Hominem"
+        ]
+    },
+    {
+        "id": 56,
+        "pre-text": "",
+        "text": "<I've tried to find the common ground, because that's what makes us strong as Americans. And if Americans trust me with the presidency, I can pledge to you, we will have the most significant effort, openly -- not secret meetings in the White House with special interests, not ideologically driven efforts to push people aside -- but a genuine effort to try to restore America's hope and possibilities by bringing people together.>",
+        "post-text": "And one of the ways we're going to do it is, I'm going to work with my friend, John McCain, to further campaign finance reform so we get these incredible amounts of money out of the system and open it up to average people, so America is really represented by the people who make up America.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 57,
+        "pre-text": "",
+        "text": "<We see them as our opponents. This is the greatest democracy in the world.>",
+        "post-text": "People are watching not only throughout this country, but all over the world as to how this democracy can function with civility and respect, and decency and integrity.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 58,
+        "pre-text": "",
+        "text": "<And the way you get things done is bury yourselves in the room with one another, put together the best program, take it to the American people, use the electronic town hall, the kind of thing you're doing here tonight, build a consensus and then do it and then go on to the next one.>",
+        "post-text": "But don't just sit here slow dancing for 4 years doing nothing. None",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 59,
+        "pre-text": "Thank you Susan.",
+        "text": "<Well, the American people have witnessed what is the greatest failure of any presidential administration in the history of our country.>",
+        "post-text": "And here are the facts.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 60,
+        "pre-text": "",
+        "text": "<One, he clearly has a litmus test for his judges, which I disagree with. And secondly, only a liberal senator from Massachusetts would say that a 49 percent increase in funding for education was not enough.>",
+        "post-text": "We've increased funds.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 61,
+        "pre-text": "",
+        "text": "<She does not have a Wait. The AFL-CIO the other day, behind the blue screen, I don't know who you were talking to, Secretary Clinton, but you were totally out of control.>",
+        "post-text": "I said, there's a person with a temperament that's got a problem.",
+        "label": [
+            "Ad Hominem"
+        ]
+    },
+    {
+        "id": 62,
+        "pre-text": "",
+        "text": "<This is a contest between a Democrat in the mainstream of my party, as exemplified by the actions that I have taken in the Oval Office the last four years, as contrasted with Governor Reagan, who in most cases does typify his party, but in some cases, there is a radical departure by him from the heritage of Eisenhower and others. The most important crucial difference in this election campaign, in my judgment, is the approach to the control of nuclear weaponry and the inclination to control or not to control the spread of atomic weapons to other nations who don't presently have it, particularly terrorist nations.>",
+        "post-text": "The inclination that Governor Reagan has exemplified in many troubled times since he has been running for President-I think since 1968-to inject American military forces in places like North Korea, to put a blockade around Cuba this year, or in some instances, to project American forces into a fishing dispute against the small nation of Ecuador on the west coast of South America.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 63,
+        "pre-text": "",
+        "text": "<Bill Clinton has created high-wage manufacturing jobs at 110 times the national average and in fact according to the statistics coming from the Bush-Quayle Labor Dept, for the last 2 years in a role Bill Clinton's state has been number one among all 547 in the creation of jobs in the private sector. By contrast, in the nation as a whole, during the last 4 years, it is the first time since the presidency of Herbert Hoover, that we have gone for a 4-year period with fewer jobs at the end of that 4-year period than we had at the beginning.>",
+        "post-text": "And look at manufacturing.",
+        "label": [
+            "False Causality (Post Hoc Fallacy)"
+        ]
+    },
+    {
+        "id": 64,
+        "pre-text": "",
+        "text": "<That's my vision for public education all around America. Many of you viewers don't know, but Laura and I sent our girls to public school.>",
+        "post-text": "They went to Austin High School.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 65,
+        "pre-text": "Stand by.' And this is a part of a pattern of Donald Trump's.",
+        "text": "<He was he called Mexicans rapists and criminals.>",
+        "post-text": "He instituted as his first act a Muslim ban.",
+        "label": [
+            "Ad Hominem"
+        ]
+    },
+    {
+        "id": 66,
+        "pre-text": "",
+        "text": "<As a matter of fact, the statement that Senator Kennedy made was that-to the effect that there were trigger-happy Republicans, that my stand on Quemoy and Matsu was an indication of trigger-happy Republicans. I resent that comment.>",
+        "post-text": "I resent it because th- it's an implication that Republicans have been trigger-happy and, therefore, would lead this nation into war.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 67,
+        "pre-text": "",
+        "text": "<But that having been said, I believe that -- well, first of all, let me say that the governor and I agree on some things where this subject is concerned. I will not do anything to affect the rights of hunters or sportsmen.>",
+        "post-text": "I think that homeowners have to be respected and their right to have a gun if they wish to.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 68,
+        "pre-text": "",
+        "text": "<But if everyone here in this audience was dead on in the middle of the middle-class, then the tax cuts for every single one of you all added up would be less than the tax cut his plan would give to just one member of that top wealthiest 1%.>",
+        "post-text": "Now you judge for yourselves whether or not that's fair. Good.",
+        "label": [
+            "Appeal to Authority"
+        ]
+    },
+    {
+        "id": 69,
+        "pre-text": "",
+        "text": "<My answer is that this campaign isn't over yet. And when people vote, I think you're going to see a very strong verdict by the American people that they favor the approach that I'm talking about.>",
+        "post-text": "The American people want arms control.",
+        "label": [
+            "Appeal to Authority"
+        ]
+    },
+    {
+        "id": 70,
+        "pre-text": "",
+        "text": "<It has imposed on the individual freedoms of the people, and there are more of these things that could be solved by the people themselves, if they were given a chance, or by the levels of government that were closer to them. Now, as to why I should be and he shouldn't be, when he was a candidate in 1976, President Carter invented a thing he called the misery index. He added the rate of unemployment and the rate of inflation, and it came, at that time, to 12.5% under President Ford. He said that no man with that size misery index has a right to seek reelection to the Presidency. Today, by his own decision, the misery index is in excess of 2123%, and I think this must suggest something.>",
+        "post-text": "But, when I had quoted a Democratic President, as the President says, I was a Democrat.",
+        "label": [
+            "Ad Hominem"
+        ]
+    },
+    {
+        "id": 71,
+        "pre-text": "",
+        "text": "<I don't ever want to see another generation of young Americans bleed their lives into sandy beachheads in the Pacific, or rice paddies and jungles in the in Asia or the muddy battlefields of Europe. Mr. Stone, I have submitted an economic plan that I have worked out in concert with a number of fine economists in this country, all of whom approve it, and believe that over a five year projection, this plan can permit the extra spending for needed refurbishing of our defensive posture, that it can provide for a balanced budget by 1983 if not earlier, and that we can afford-along with the cuts that I have proposed in Government.>",
+        "post-text": "spending And my tax cut does not come close to eliminating that $86 billion increase.",
+        "label": [
+            "Appeal to Authority"
+        ]
+    },
+    {
+        "id": 72,
+        "pre-text": "",
+        "text": "<Let's not forget that our national security and our economic security go hand in hand.>",
+        "post-text": "We cannot be strong militarily when we're teeter-tottering on top of a mountain of debt which has been created in the past eight years. That's why we need a Democratic administration in Washington in 1989.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 73,
+        "pre-text": "",
+        "text": "<So the point is that we will prevail in Afghanistan, but we need the new strategy and we need it to succeed. But the important thing is, if we suffer defeat in Iraq, which General Petraeus predicts we will, if we adopted Senator Obama's set date for withdrawal, then that will have a calamitous effect in Afghanistan and American national security interests in the region.>",
+        "post-text": "Senator Obama doesn't seem to understand there is a connected between the two.",
+        "label": [
+            "Appeal to Authority"
+        ]
+    },
+    {
+        "id": 74,
+        "pre-text": "And I also believe, sir, that the most personal intimate decision that any woman is ever called upon to make is the decision as to whether or not she shall carry a pregnancy to term.",
+        "text": "<And for the state to interfere in that decision, under whatever guise, and with whatever rationale, for the state to try to take over in that situation, and by edict, command what the individual shall do, and substitute itself for that individual's conscience, for her right to consult her rabbi, her minister, her priest, her doctor-any other counselor of her choice-I think goes beyond what we want to ever see accomplished in this country, if we really believe in the First Amendment: if we really believe in freedom of choice and the right of the individual.>",
+        "post-text": "None",
+        "label": [
+            "Slogans"
+        ]
+    },
+    {
+        "id": 75,
+        "pre-text": "",
+        "text": "<Anybody that's ever built a successful business will tell you you optimize, optimize, optimize after you've put something into effect.>",
+        "post-text": "The reason Medicare and Medicaid are a mess is we froze them. Everybody knows how to fix them.",
+        "label": [
+            "False Causality (Post Hoc Fallacy)"
+        ]
+    },
+    {
+        "id": 76,
+        "pre-text": "And I just, this is very important, Susan and it's just He interrupted me and I'd like to just finish, please.",
+        "text": "<If you have a pre-existing condition, heart disease, diabetes, breast cancer, they're coming for you.>",
+        "post-text": "If you love someone who has a pre-existing condition NonsenseThat's nonsense they're coming for you.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 77,
+        "pre-text": "",
+        "text": "<And I think what others could do for our country and themselves if we did the welfare reform thing in the proper way.>",
+        "post-text": "I think of the man who grabbed me by the shoulder once with tears in his eyes and said his daughter was dying of cancer and he thanked me for giving him a chance to spend some time with her without losing his job because of the Family and Medical Leave Act. I think of all the people I grew up with and went to school with and who I stay in touch with and who nerve let me forget how what we do in Washington affects all of you out there in America.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 78,
+        "pre-text": "",
+        "text": "<We'll have a debate in 4 days and we can talk about this character thing again.>",
+        "post-text": "But the Washington Post ran a long editorial today saying they couldn't believe Mr. Bush was making character an issue and they said he was the greatest quote \"political chameleon\" for changing his positions of all times. Now, I don't want to get into that -- Please don't get into the Washington Post.",
+        "label": [
+            "Appeal to Authority"
+        ]
+    },
+    {
+        "id": 79,
+        "pre-text": "I'll be glad to respond.",
+        "text": "<I strongly support term limits for members of the US Congress.>",
+        "post-text": "I believe it would return the government closer to the people, the way that Ross Perot is talking about.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 80,
+        "pre-text": "",
+        "text": "<He can provide an injunction if there's a national emergency for eighty days, then the strike can go on; and there are no other powers or actions that the president could take unless he went to the Congress.>",
+        "post-text": "This is a difficult and sensitive matter. But to state my view precisely, the president should have a variety of things he could do.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 81,
+        "pre-text": "",
+        "text": "<But never have we ever, nor would we, support the idea of someone closing down a factory here and moving overseas. That's just totally ridiculous.>",
+        "post-text": "It's going on right now; it happened in Tennessee, in Decaturville, Tennessee.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 82,
+        "pre-text": "",
+        "text": "<None Well, I would suggest, Mr. Vanocur, that uh-if you know the President, that was probably a facetious remark.>",
+        "post-text": "Uh-I would also suggest that insofar as his statement is concerned, that I think it would be improper for the President of the United States to disclose uh-the instances in which members of his official family had made recommendations, as I have made them through the years to him, which he has accepted or rejected.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 83,
+        "pre-text": "",
+        "text": "<We landed on this Eastern shore and then went out over the mountains and the prairies and the deserts and the far western mountains to the Pacific, building cities and towns and farms, and schools and churches. If wind, water or fire destroyed them, we built them again.>",
+        "post-text": "And in so doing, at the same time, we built a new breed of human called an American-a proud, an independent., and a most compassionate individual, for the most part.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 84,
+        "pre-text": "Well, you didn't do very well in Swine Flu.",
+        "text": "<H1-N1, you were a disaster.>",
+        "post-text": "Your own Chief of Staff said you were a disaster.14,232323 people died, not 22727,272727.A far less lethal disease, by the way.",
+        "label": [
+            "Ad Hominem"
+        ]
+    },
+    {
+        "id": 85,
+        "pre-text": "",
+        "text": "<I have not suggested there's a connection between Iraq and 9/11, but there's clearly an established Iraqi track record with terror. And the point is that that's the place where you're most likely to see the terrorists come together with weapons of mass destruction, the deadly technologies that Saddam Hussein had developed and used over the years.>",
+        "post-text": "Now, the fact of the matter is, the big difference here, Gwen, is they are not prepared to deal with states that sponsor terror.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 86,
+        "pre-text": "",
+        "text": "<Today in America more minorities own a home than ever before. And that's hopeful, and that's positive.>",
+        "post-text": "Well, I respect everything that the president has said and certainly respect his faith.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 87,
+        "pre-text": "",
+        "text": "<I mean, whether we like it or not, and we could be very politically correct, but whether we like it or not, there is a problem.>",
+        "post-text": "And we have to be sure that Muslims come in and report when they see something going on. When they see hatred going on, they have to report it. As Horribly wounded.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 88,
+        "pre-text": "",
+        "text": "<But here's something that we can take great pride in because it really does get to what you're talking about. Our home initiative -- our home ownership initiative -- HOPE -- that passed the Congress is a good start for having people own their own homes instead of living in these deadly tenements.>",
+        "post-text": "Our enterprise zones, that we hear a lot of lip service about in Congress, would bring jobs into the inner city.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 89,
+        "pre-text": "",
+        "text": "<Sometimes people who are very idealistic and have great dreams, as young people do, are apt to stay at arm's length from the political process because they think their good hearts might be brittle, and if they invest their hopes and allow themselves to believe, then they're gonna be let down and disappointed. But thank goodness we've always had enough people who have been willing in every generation to push past the fear of a broken heart and become deeply involved in forming a more perfect union.>",
+        "post-text": "We're America, and we believe in our future and we know we have the ability to shape our future.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 90,
+        "pre-text": "As far as child care is concerned and so many other things, I think Hillary and I agree on that. We probably disagree a little bit as to numbers and amounts and what we're going to do, but perhaps we'll be talking about that later.",
+        "text": "<But we have to stop our jobs from being stolen from us.>",
+        "post-text": "We have to stop our companies from leaving the United States and, with it, firing all of their people.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 91,
+        "pre-text": "",
+        "text": "<We saw him after the first debate spend nearly a week denigrating a former Miss Universe in the harshest, most personal terms.>",
+        "post-text": "So, yes, this is who Donald Trump is. But it's not only women, and it's not only this video that raises questions about his fitness to be our president, because he has also targeted immigrants, African-Americans, Latinos, people with disabilities, POWs, Muslims, and so many others. So this is who Donald Trump is. And the question for us, the question our country must answer is that this is not who we are.",
+        "label": [
+            "Ad Hominem"
+        ]
+    },
+    {
+        "id": 92,
+        "pre-text": "Senator.",
+        "text": "<If America shows uncertainty or weakness in this decade, the world will drift toward tragedy.>",
+        "post-text": "That's not going to happen, so long as I'm your president.",
+        "label": [
+            "Slippery Slope"
+        ]
+    },
+    {
+        "id": 93,
+        "pre-text": "",
+        "text": "<And a free Iraq is going to make this world a more peaceful place.>",
+        "post-text": "What I think troubles a lot of people in our country is that the president has just sort of described one kind of mistake. But what he has said is that, even knowing there were no weapons of mass destruction, even knowing there was no imminent threat, even knowing there was no connection with Al Qaida, he would still have done everything the same way.",
+        "label": [
+            "Appeal to Authority"
+        ]
+    },
+    {
+        "id": 94,
+        "pre-text": "",
+        "text": "<Yes, it is. It has truly pained me in the last week to watch the unrest and the death occurring in the Middle East between the Israelis and the Palestinians.>",
+        "post-text": "So much work has been done by the people there with the support of this administration.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 95,
+        "pre-text": "",
+        "text": "<So I sure hope you will get out and vote as though your future depended on it, because I think it does. I want to make America great again.>",
+        "post-text": "We are a nation that is seriously troubled.",
+        "label": [
+            "Slogans"
+        ]
+    },
+    {
+        "id": 96,
+        "pre-text": "",
+        "text": "<There are all kinds of ways to create jobs in the inner city.>",
+        "post-text": "I'm not a politician, but I think I could go to Washington in a week and get everybody holding hands and get this bill signed because I talk to the Democratic leaders and they want it. I talk to the Republican leaders and they want it. But since they're bred from childhood to fight with one another rather than get results, you know, I would be glad to drop out and spend a little time and see if we couldn't build some bridges.",
+        "label": [
+            "Appeal to Authority"
+        ]
+    },
+    {
+        "id": 97,
+        "pre-text": "",
+        "text": "<I wish I knew the law that said all of us would be good parents.>",
+        "post-text": "One of the things the next president must do is to remind people that if we are going to have a responsible period in America, that each of us must love our children with all our heart and all our soul. I happened to believe strong accountability encourages parental involvement, though.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 98,
+        "pre-text": "",
+        "text": "<And that's the debate. That's the argument between Mr. Nixon and myself and on that issue the American people have to make their judgment and I think it's a important judgment.>",
+        "post-text": "I think in many ways this election is more important than any since 1932, or certainly almost any in this century.",
+        "label": [
+            "Appeal to Authority"
+        ]
+    },
+    {
+        "id": 99,
+        "pre-text": "They invited the lobbyists for the biggest polluters in America to come into the Congress and literally rewrite the Clean Water Act and the Clean Air Act.",
+        "text": "<President Clinton stopped them dead in their tracks.>",
+        "post-text": "We have a positive agenda on the environment because we believe very deeply that it's about our children and our future.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 100,
+        "pre-text": "",
+        "text": "<My concern would be, frankly, that you haven't been as -- as consistent as you had been in the past.>",
+        "post-text": "That a lot of your good friends like Bill Bennett and others of us who had admired your firmness of purpose over the years have felt that you're not quite the crusader for that cause that you once were. Bernie, you'll not be surprised to hear that I disagree.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 101,
+        "pre-text": "",
+        "text": "<-- the military portions of our plan, even though he was the chairman of the Joint Chiefs under George Bush, and John White has endorsed the economic aspects of our plan, even though I believe he was the architect of Ross Perot's economic plan. Now when I heard George Bush say at the convention in Houston, that when he heard the phrase \"we won the Cold War,\" it made him wonder who the \"we\" was. Well, I want to tell you, President Bush, the \"we\" is the people of the US of America.>",
+        "post-text": "This wasn't a partisan victory that came suddenly, a few months after you took the oath of office.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 102,
+        "pre-text": "",
+        "text": "<2 million women $3,833 a year, but he doesn't hesitate to fight for $136,131313 to a millionaire. One percent of America got $89 billion last year in a tax cut, but people working hard, playing by the rules, trying to take care of their kids, family values, that we're supposed to value so much in America -- I'm tired of politicians who talk about family values and don't value families.>",
+        "post-text": "What we need to do is raise the minimum wage.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 103,
+        "pre-text": "And yet, his 1983 economic message stated that we would reduce productivity and gross national product and increase unemployment in order to get a handle on inflation, because in January, at the beginning of the year, it was more than 18%.",
+        "text": "<Since then, he has blamed the people for inflation, OPEC, he has blamed the Federal Reserve system, he has blamed the lack of productivity of the American people, he has then accused the people of living too well and that we must share in scarcity, we must sacrifice and get used to doing with less.>",
+        "post-text": "We don't have inflation because the people are living too well.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 104,
+        "pre-text": "",
+        "text": "<I have talked in every speech about the fact that these are going to be very difficult times in the nineteen-sixties and that we're going to have to meet our responsibilities as citizens.>",
+        "post-text": "I'm talking about a national mood. I'm talking about our willingness to bear any burdens in order to maintain our own freedom and in order to meet our freedom around the globe.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 105,
+        "pre-text": "",
+        "text": "<As a matter of fact, Mr. Bush was the Chairman of a task force on international terrorism which issued a report shortly before that decision was made and said, and rightly so, that we never ever can make concessions to terrorists and hostage takers. And, yet, after sitting through meeting after meeting, he endorsed that decision, endorsed the sale of arms to the Ayatollah in exchange for hostages, one of the most tragic, one of the most mistaken foreign policy decisions we've ever made in this country and I dare say encouraged others to take hostages as we now know.>",
+        "post-text": "So, there can be no concessions under any circumstances, because if we do it's an open invitation to others to do the same.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 106,
+        "pre-text": "",
+        "text": "<There was no doubt in my mind that Saddam Hussein was hoping that the world would turn a blind eye. And if he had been in power, in other words, if we would have said, \"Let the inspectors work, or let's, you know, hope to talk him out.>",
+        "post-text": "Maybe an 18th resolution would work,\" he would have been stronger and tougher, and the world would have been a lot worse off. There's just no doubt in my mind we would rue the day, had Saddam Hussein been in power. So we use diplomacy every chance we get, believe me.",
+        "label": [
+            "Slippery Slope"
+        ]
+    },
+    {
+        "id": 107,
+        "pre-text": "",
+        "text": "<I'm not here to call out his lies.>",
+        "post-text": "Everybody knows he's a liar. But you agree.",
+        "label": [
+            "Ad Hominem"
+        ]
+    },
+    {
+        "id": 108,
+        "pre-text": "",
+        "text": "<I do think that sensible gun safety measures are warranted now. Look, this is the year -- this is in the aftermath of Columbine, and Paducah, and all the places in our country where the nation has been shocked by these weapons in the hands of the wrong people.>",
+        "post-text": "The woman who bought the guns for the two boys who did that killing at Columbine said that if she had had to give her name and fill out a form there, she would not have bought those guns.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 109,
+        "pre-text": "",
+        "text": "<But thank goodness we've always had enough people who have been willing in every generation to push past the fear of a broken heart and become deeply involved in forming a more perfect union. We're America, and we believe in our future and we know we have the ability to shape our future.>",
+        "post-text": "Now, we've got to address one of the biggest threats to our democracy.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 110,
+        "pre-text": "",
+        "text": "<Mr. Kemp has voted 47 out of 47 times to have such an amendment and to restrict this completely, no matter what the circumstances, even where rape and incest is involved.>",
+        "post-text": "We will never allow a woman's right to choose to be taken away. There is no consensus.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 111,
+        "pre-text": "Mr. Reagan, as you saw tonight -- President Reagan takes the position it will disappear by magic.",
+        "text": "<It was once called voodoo economics.>",
+        "post-text": "I wish the President would say: Yes, the CBO is right.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 112,
+        "pre-text": "But let me just address what the president just said.",
+        "text": "<Ladies and gentlemen, that's just not true what he said.>",
+        "post-text": "The Wall Street Journal said 96 percent of small businesses are not affected at all by my plan. And you know why he gets that count? The president got $84 from a timber company that owns, and he's counted as a small business. Dick Cheney's counted as a small business. That's how they do things. That's just not right.",
+        "label": [
+            "Ad Hominem"
+        ]
+    },
+    {
+        "id": 113,
+        "pre-text": "",
+        "text": "<And so I think that my closing statement is that I think I'm in a room with people that aren't the life of reality. The US is in deep trouble.>",
+        "post-text": "We've got to have somebody that can get up there and bring out the firehoses and get it stopped, and that's what we're about in the Perot campaign.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 114,
+        "pre-text": "",
+        "text": "<I believe in local control of governments, and obviously if they don't there needs to be a consequence at the federal level. But it's very important that we not overstep our bounds and I think most people -- most police officers are good, dedicated, honorable citizens who are doing their job, putting their lives at risk who aren't bigoted or aren't prejudiced.>",
+        "post-text": "I don't think they ought to be held guilty.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 115,
+        "pre-text": "",
+        "text": "<You graduated last in your class not first in your class.>",
+        "post-text": "God, I want to make sure-No, he doesn't know how to do that. You'd be surprised.",
+        "label": [
+            "Ad Hominem"
+        ]
+    },
+    {
+        "id": 116,
+        "pre-text": "",
+        "text": "<But the important thing is, if we suffer defeat in Iraq, which General Petraeus predicts we will, if we adopted Senator Obama's set date for withdrawal, then that will have a calamitous effect in Afghanistan and American national security interests in the region.>",
+        "post-text": "Senator Obama doesn't seem to understand there is a connected between the two. A testimony to you, Jim.",
+        "label": [
+            "Ad Hominem"
+        ]
+    },
+    {
+        "id": 117,
+        "pre-text": "Nobody could.",
+        "text": "<But I do know that if the president of the United States and the Congress of the United States and the people of the United States said, \"I believe our nation is greater than what we are now.\">",
+        "post-text": "I believe that if we are inspired, if we can achieve a degree of unity, if we can set our goals high enough and work toward recognized goals with industry and labor and agriculture along with government at all levels, then we can achieve great things.",
+        "label": [
+            "Slogans"
+        ]
+    },
+    {
+        "id": 118,
+        "pre-text": "",
+        "text": "<In the course of that, I think the president's campaign has tried to characterize me as -- as someone who's very different than who I am. I care about 12929 percent of the American people. I want 13737 percent of the American people to have a bright and prosperous future.>",
+        "post-text": "I care about our kids.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 119,
+        "pre-text": "",
+        "text": "<We have seen progress during the last four years because policies like these have been working.>",
+        "post-text": "This risky scheme that I've described tonight has been said by many objective observers to not add up, it would be a serious risk. Our plan, by contrast, has been working and will work more.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 120,
+        "pre-text": "Well, there's seven million people that contracted COVID.",
+        "text": "<What does it mean for them going forward if you strike down the Affordable Care Act?Joe, you've had 3268,262626 military people dying because you couldn't provide them proper healthcare in the military.>",
+        "post-text": "So don't tell me about this.",
+        "label": [
+            "Ad Hominem"
+        ]
+    },
+    {
+        "id": 121,
+        "pre-text": "This has already passed the House, and it has an excellent prospect to pass the Senate.",
+        "text": "<Mr. Ellis, I think this idea that has been spawned here in our country that inflation somehow came upon us like a plague and therefore it's uncontrollable and no one can do anything about it, is entirely spurious and it's dangerous to say this to the people.>",
+        "post-text": "When Mr. Carter became President, inflation was 4.8%, as you said.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 122,
+        "pre-text": "",
+        "text": "<And right now, the commanders in Afghanistan, as well as Admiral Mullen, have acknowledged that we don't have enough troops to deal with Afghanistan because we still have more troops in Iraq than we did before the surge. Admiral Mullen suggests that Senator Obama's plan is dangerous for America.>",
+        "post-text": "That's not the case.",
+        "label": [
+            "Appeal to Authority"
+        ]
+    },
+    {
+        "id": 123,
+        "pre-text": "",
+        "text": "<I happen to like the idea of having technology for the TV, easy for parents to use so you can tune out these programs you don't want in your house.>",
+        "post-text": "I'll remind mothers and dads the best weapon is the off/on button, and paying attention to your children, and eating dinner with them and being -- I'm sorry. I was on my peroration.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 124,
+        "pre-text": "",
+        "text": "<The reason it's shut down is because, look, you folks at home. How many of you got up this morning and had an empty chair at the kitchen table because someone died of COVID?>",
+        "post-text": "How many of you are in a situation where you lost your mom or dad and you couldn't even speak to them, you had a nurse holding a phone up so you could in fact say goodbye?We would have lost far more people, far more people.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 125,
+        "pre-text": "",
+        "text": "<He never did a thing except in 1994, when he did such harm to the Black community. And they were called, and he called them, super predators.>",
+        "post-text": "And he said that, he said it super predators.",
+        "label": [
+            "Ad Hominem"
+        ]
+    },
+    {
+        "id": 126,
+        "pre-text": "",
+        "text": "<Governor Reagan's proposal, the Reagan-Kemp-Roth proposal, is one of the most highly inflationary ideas that ever has been presented to the American public.>",
+        "post-text": "He would actually have to cut Government spending by at least $1338 billion in order to balance the budget under this ridiculous proposal. I notice that his task force that is working for his future plans had some of their ideas revealed in The Wall Street Journal this week.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 127,
+        "pre-text": "",
+        "text": "<Again, can't you just say you support the right of a woman to choose?>",
+        "post-text": "I would like to get in -- I feel like I'm an observer at a pingpong game, where they're talking about well, you know, they're expert professional politicians that massage these intricate plots and know every nuance to 'em. And meantime, we're facing a desperate situation in our economy.",
+        "label": [
+            "Ad Hominem"
+        ]
+    },
+    {
+        "id": 128,
+        "pre-text": "",
+        "text": "<By the way, just so you understand, when she said 3 o'clock in the morning, take a look at Benghazi. She said who is going to answer the call at 3 o'clock in the morning? Guess what? She didn't answer it, because when Ambassador Stevens Well, she said she was awake at 3 o'clock in the morning, and she also sent a tweet out at 3 o'clock in the morning, but I won't even mention that.>",
+        "post-text": "",
+        "label": [
+            "Ad Hominem"
+        ]
+    },
+    {
+        "id": 129,
+        "pre-text": "",
+        "text": "<Governor Reagan's approach to our energy policy, which has already proven its effectiveness, is to repeal, or to change substantially, the windfall profits tax-to return a major portion of $227 billion back to the oil companies; to do away with the Department of Energy; to short-circuit our synthetic fuels program; to put a minimal emphasis on solar power; to emphasize strongly nuclear power plants as a major source of energy in the future.>",
+        "post-text": "He wants to put all our eggs in one basket and give that basket to the major oil companies. That is a misstatement, of course, of my position.",
+        "label": [
+            "Ad Hominem"
+        ]
+    },
+    {
+        "id": 130,
+        "pre-text": "",
+        "text": "<I think, to close out this discussion, it would be better to put into perspective what we're talking about.>",
+        "post-text": "I had a discussion with my daughter, Amy, the other day, before I came here, to ask her what the most important issue was. She said she thought nuclear weaponry-and the control of nuclear arms. This is a formidable force. Some of these weapons have 166 megatons of explosion.",
+        "label": [
+            "Appeal to Authority"
+        ]
+    },
+    {
+        "id": 131,
+        "pre-text": "",
+        "text": "<Now, I will not allow somebody to come in and change Roe v. Wade.>",
+        "post-text": "The president has never said whether or not he would do that. But we know from the people he's tried to appoint to the court he wants to. I will not.",
+        "label": [
+            "Ad Hominem"
+        ]
+    },
+    {
+        "id": 132,
+        "pre-text": "",
+        "text": "<We have much more manpower and much more equipment there. He just doesn't understand how the borders work, evidently, to say that. That is an outrageous claim.>",
+        "post-text": "And we'll continue to protect our borders.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 133,
+        "pre-text": "",
+        "text": "<Secondly, that you get a $2,555 rebate from the government if you're a family of $315,151515 or less -- it scales down as you get higher -- that you can use to purchase health care in the private markets. It will be a huge down payment for a pretty darn good system.>",
+        "post-text": "If you allow -- also allow -- convince states to -- allow states to allow the mother to match some of the children's health insurance money with it, the pool purchasing power.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    },
+    {
+        "id": 134,
+        "pre-text": "",
+        "text": "<There is a problem for our youngsters, a real problem. And if we don't act today, the problem will be valued in the trillions.>",
+        "post-text": "And so I think we need to think differently.",
+        "label": [
+            "Slippery Slope"
+        ]
+    },
+    {
+        "id": 135,
+        "pre-text": "",
+        "text": "<Every President who has served in the Oval Office since Harry Truman has been dedicated to the proposition of controlling nuclear weapons. To negotiate with the Soviet Union a balanced, controlled, observable, and then reducing levels of atomic weaponry, there is a disturbing pattern in the attitude of Governor Reagan.>",
+        "post-text": "He has never supported any of those arms control agreements-the limited test ban, SALT I, nor the Antiballistic Missile Treaty, nor the Vladivostok Treaty negotiated with the Soviet Union by President Ford-and now he wants to throw into the wastebasket a treaty to control nuclear weapons on a balanced and equal basis between ourselves and the Soviet Union, negotiated over a seven-year period, by myself and my two Republican predecessors.",
+        "label": [
+            "Appeal to Emotion"
+        ]
+    }
+]

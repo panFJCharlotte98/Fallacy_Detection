@@ -5,6 +5,7 @@ import copy
 import json
 import os
 import logging
+import utils
 logger = logging.getLogger(__name__)
 
 class EvalPrediction(NamedTuple):
@@ -14,9 +15,10 @@ class EvalPrediction(NamedTuple):
 client = OpenAI()
 def do_inference(
     args, 
-    dataset,
-    evaluator
+    dataset
 ):
+    model_tag = args.exp_args.model.model_tag
+        
     predictions, gold, failed = [], [], []
     for i in tqdm(range(len(dataset))):
         js = dataset[i] # js is a dict
@@ -24,7 +26,7 @@ def do_inference(
         try:
             # Create a chat completion using the question and context
             response = client.chat.completions.create(
-                model=args.model_tag,
+                model=model_tag,
                 messages=js['chat_history'],
                 temperature=args.temperature,
                 max_tokens=args.max_new_tokens,
@@ -50,8 +52,9 @@ def do_inference(
             with open(f"{args.output_dir}/gen_error.json", "w") as f:
                 json.dump(failed, f, indent=4)
                 f.close()
-
+        
     if args.should_evaluate: 
+        evaluator = utils.tool.get_evaluator(args.exp_args.evaluate.tool)(args)
         eval_prediction = EvalPrediction(predictions=predictions, items=gold)
         evaluator.evaluate(preds=eval_prediction.predictions, golds=eval_prediction.items, section='inference')
 

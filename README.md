@@ -1,2 +1,2 @@
-# Fallacy_Detection
-CE7455 Project
+# EMNLP 2024
+

@@ -4,29 +4,43 @@ from transformers import TrainingArguments
 
 @dataclass
 class WrappedTrainingArguments(TrainingArguments):
-    task:str = field(
-        default="argotario",
-        metadata={
-            "help":"which dataset to use?", 
-            "choices": ["argotario", "logic"]}
+    cfg: str = None
+    regen_results_to:Optional[str] = field(
+        default="", 
+        metadata={"help": ""}
     )
-    model_tag:str = field(
-        default="llama2-13bf", 
-        metadata={
-            "help":"which model to use?", 
-            "choices": ['llama2-13b','llama2-13bf', 'gpt-3.5-turbo']}
+    which_task:str = field(
+        default="all", 
+        metadata={"help":"what tasks (datasets) to run.",}
+    )
+    scheme:str = field(
+        default="", 
+        metadata={"help":"experiment scheme, used for the selection prompt formats and result saving",}
+    )
+    split: str = field(
+        default="test", 
+        metadata={"help":"which dataset split to run inference on",}
+    )
+    context_window: int = field(
+        default=2, 
+        metadata={"help":""}
+    )
+    load_weights_from: Optional[str] = field(
+        default=None, 
+        metadata={"help": "The directory to load the model weights from."}
+    )
+    do_not_save_results: Optional[bool] = field(
+        default=False, 
+        metadata={"help": ""}
+    )
+    use_dataset_cache: bool = field(
+        default=False, 
+        metadata={"help":"use cached dataset."}
     )
     quantization:Optional[bool] = field(
         default=True, 
         metadata={"help":"whehter to load quantized model."}
     ) 
-    which_gpu:str = field(
-        default="4,5",
-        metadata={"help":"which gpus to use?"}
-    )
-    use_dataset_cache: bool = field(default=True, metadata={"help":"use cached dataset."})
-    use_argotario_gold: bool = field(default=False, metadata={"help":"Use only the gold data of argotario."})
-    max_input_length : Optional[int] = field(default=600, metadata={"help":""})
     max_new_tokens: Optional[int] = field(
         default=128, 
         metadata={"help":"The maximum numbers of tokens to generate"}
@@ -62,20 +76,8 @@ class WrappedTrainingArguments(TrainingArguments):
         default=1, 
         metadata={"help": "[optional] Exponential penalty to the length that is used with beam-based generation."}
     )
-    run_baseline: bool = field(default=False, metadata={"help":""})
-    run_multiprompt: bool = field(default=False, metadata={"help":""})
-    multipt_start_from: Optional[int] = field(
-        default=0, metadata={"help": ""}
-    )
     cache_dir: Optional[str] = field(
         default="",
         metadata={"help": "Optional directory to store the pre-trained models downloaded from s3 (instread of the default one)"},
     )
-    do_not_save_results: Optional[bool] = field(
-        default=False, 
-        metadata={"help": ""}
-    )
-    # n_gpu_layers : Optional[int] = field(
-    #     default=10, 
-    #     metadata={"help": ""}
-    # )
+    
