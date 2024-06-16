@@ -14,4 +14,4 @@ error_analysis copy.ipynb
 sh_cmd
 regen_results.py
 run copy.py
-test_prompt.ipynb
+testprompt.ipynb
