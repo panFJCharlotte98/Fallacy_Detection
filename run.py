@@ -87,7 +87,7 @@ def prepare_output_dir(args):
         # Set up result reporting dir 
         if args.local_rank <= 0:
             dict_args = vars(args)
-            if args.exp_args.model.model_tag != 't5':
+            if not args.exp_args.model.model_tag.startswith('t5'):
                 args_used_in_name = [
                     ['max_new_tokens','len'],
                     ['seed', 'seed'],
@@ -134,7 +134,7 @@ def prepare_output_dir(args):
         torch.distributed.broadcast_object_list(folder_name_no_date, src=0, device=args.device)#dist.send(param.data, dst=sibling)
         folder_name_no_date = folder_name_no_date[0]
         
-        if (args.regen_results_to == "") and (args.exp_args.model.model_tag != 't5') and (args.output_dir != "./results/test/"):
+        if (args.regen_results_to == "") and (not args.exp_args.model.model_tag.startswith('t5')) and (args.output_dir != "./results/test/"):
             folder_name_no_date = '_'.join(folder_name_no_date)
             run_dir = os.path.join(args.output_dir, args.exp_args.model.model_tag, args.task)
             os.makedirs(run_dir,exist_ok=True)
@@ -488,7 +488,7 @@ def main():
     active_task_list = TASK_LIST if args.which_task == 'all' else [t.strip() for t in args.which_task.split(',')] 
     args.active_task_list = active_task_list
     print(args.active_task_list)
-    if args.exp_args.model.model_tag == 't5':
+    if args.exp_args.model.model_tag.startswith('t5'):
         args.should_evaluate = True
         if args.exp_args.model.do_multitask:
             args = prepare_output_dir(make_cache_root(args, "multi-task"))
