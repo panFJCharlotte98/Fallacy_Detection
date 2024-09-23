@@ -13,6 +13,14 @@ Definitions:
 Snippet:
 {snippet}
 Focused comment:
+{comment}''',
+'''Given the following fallacy definitions and a snippet of reddit comments, determine which of the fallacies defined below occurs in the focused comment.
+Fallacies: {fallacies}
+Definitions:
+{definitions}
+Snippet:
+{snippet}
+Focused comment:
 {comment}'''
 ]
 
@@ -107,6 +115,7 @@ def prompt_reddit(args, js):
     if args.exp_args.model.model_tag.startswith('t5'):
         text = snippet.lower()
         js['seq_in'] = T5_PROMPTS[0].format(snippet=text, comment=js['fal_text'].lower(), definitions=fal_def_str.lower())
+        #js['seq_in'] = T5_PROMPTS[0].format(snippet=text, comment=js['fal_text'].lower(), definitions=fal_def_str.lower(), fallacies=fal_name_str.lower())
     else:
         dialog = []
         sys_pt = {"role": "system", "content": SYSTEM_PROMPT[0]}

@@ -9,8 +9,16 @@ argo_fals = list(FALDEFS.keys())
 fal_def_str = "\n".join([f"{str(i+1)}. {fal} is {FALDEFS[fal]}" for i, fal in enumerate(argo_fals)])    
 fal_name_str = ", ".join([f"{str(i+1)}. {fal}" for i, fal in enumerate(argo_fals)])
 
+# We only include fallacy definitions in T5 prompts, meaning that fallacy names only occur once
+# each fallacy name appears once and is followed by its definition.
 T5_PROMPTS = [
 '''Given the question and answer below, which of the fallacies defined below occurs in the answer?
+Definitions:
+{definitions}
+Question and Answer:
+{dialog}''',
+'''Given the question and answer below, which of the fallacies defined below occurs in the answer?
+Fallacies: {fallacies}
 Definitions:
 {definitions}
 Question and Answer:
@@ -39,7 +47,12 @@ Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation
 {dialog}
 determine whether any of the fallacies listed below is present in B's argument replied to A? Fallacies: {fallacies}. 
 Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. If none of the fallacies is found, output {{"fallacy": "No Fallacy", "explanation": in_a_sentence_or_two}}. Only output JSON.''',
-
+    'w_ls_def':'''Based on the definitions of fallacies {fal_list} as below,
+{fallacies}
+Given the conversation below,
+{dialog}
+Determine whether any of the fallacies defined above is present in B's argument replied to A?
+Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. If none of the fallacies is found, output {{"fallacy": "No Fallacy", "explanation": in_a_sentence_or_two}}. Only output JSON.''',
 }
 
 SINGLE_PROMPTS = {
@@ -179,6 +192,7 @@ def prompt_argotario(args, js):
         assert len(regex.findall('\nB: ', js['text'])) == 1
         text = js['text'].replace("A: ", "Question: ").replace("\nB: ", "\nAnswer: ").lower()
         js['seq_in'] = T5_PROMPTS[0].format(dialog=text, definitions=fal_def_str.lower())
+        #js['seq_in'] = T5_PROMPTS[0].format(dialog=text, definitions=fal_def_str.lower(), fallacies=fal_name_str.lower())
     else:
         dialog = []
         sys_pt = {"role": "system", "content": SYSTEM_PROMPT[0]}
@@ -199,7 +213,10 @@ def prompt_argotario(args, js):
             text = js['text']
             fallacies = fal_def_str if args.scheme == 'w_def' else fal_name_str
             if args.exp_args.model.run_baseline:
-                usr_pt = {"role": "user", "content": BASELINE_PROMPTS[args.scheme].format(fallacies=fallacies, dialog=text)}
+                if args.scheme == 'w_ls_def':
+                    usr_pt = {"role": "user", "content": BASELINE_PROMPTS[args.scheme].format(fallacies=fal_def_str, dialog=text, fal_list=fal_name_str)}
+                else:
+                    usr_pt = {"role": "user", "content": BASELINE_PROMPTS[args.scheme].format(fallacies=fallacies, dialog=text)}
             else:
                 content = SINGLE_PROMPTS[args.scheme].format(dialog=text, fallacies=fallacies)
                 usr_pt = {"role": "user", "content": content}

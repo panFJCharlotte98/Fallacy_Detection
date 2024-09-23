@@ -23,7 +23,11 @@ class WrappedTrainingArguments(TrainingArguments):
     )
     context_window: int = field(
         default=2, 
-        metadata={"help":""}
+        metadata={"help":"context window for propaganda."}
+    )
+    context_window_elecdebate: int = field(
+        default=2, 
+        metadata={"help":"context window for elecdebate."}
     )
     load_weights_from: Optional[str] = field(
         default=None, 
@@ -41,6 +45,7 @@ class WrappedTrainingArguments(TrainingArguments):
         default=True, 
         metadata={"help":"whehter to load quantized model."}
     ) 
+    # --------------------- Generation-specific args ---------------------- #
     max_new_tokens: Optional[int] = field(
         default=128, 
         metadata={"help":"The maximum numbers of tokens to generate"}
@@ -76,6 +81,7 @@ class WrappedTrainingArguments(TrainingArguments):
         default=1, 
         metadata={"help": "[optional] Exponential penalty to the length that is used with beam-based generation."}
     )
+    # --------------------- Generation-specific args ---------------------- #
     cache_dir: Optional[str] = field(
         default="",
         metadata={"help": "Optional directory to store the pre-trained models downloaded from s3 (instread of the default one)"},

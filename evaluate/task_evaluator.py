@@ -24,7 +24,7 @@ class EvaluateTool(object):
             self.task = self.args.task
         
 
-        if args.exp_args.model.model_tag == 't5':
+        if args.exp_args.model.model_tag.startswith('t5'):
             self.output_dir = os.path.join(args.output_dir, self.task)
             os.makedirs(self.output_dir, exist_ok=True)
         else:
@@ -273,7 +273,7 @@ class EvaluateTool(object):
         
         if (int(os.environ["LOCAL_RANK"]) <= 0):
             if not args.do_not_save_results:
-                if args.exp_args.model.model_tag == 't5':
+                if args.exp_args.model.model_tag.startswith('t5'):
                     if epoch is not None:
                         self.output_dir = os.path.join(self.output_dir, section+'_', 'epoch_' + str(int(epoch)))
                     else:

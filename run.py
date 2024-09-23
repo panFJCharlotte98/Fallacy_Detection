@@ -122,6 +122,14 @@ def prepare_output_dir(args):
                 folder_name.append('{}-{}'.format(rename, dict_args[arg_name]))
             sys_dt = datetime.now().strftime("%Y%m%d%H%M%S")
             folder_name_no_date = copy.deepcopy(folder_name[:-1])
+            if args.exp_args.model.model_tag.startswith('t5'):
+                if args.exp_args.model.do_multitask:
+                    if len(args.active_task_list) == 4:
+                        folder_name.append('ALEP')
+                    else:
+                        folder_name.append('ALR')
+                else:
+                    folder_name.append('single')
             folder_name.append(sys_dt)
             folder_name = '_'.join(folder_name)
             output_dir = os.path.join(args.output_dir, args.exp_args.model.model_tag, args.task, folder_name)
@@ -497,10 +505,12 @@ def main():
             for task, task_arg_path in args.exp_args.arg_paths:
                 if task in active_task_list:
                     print(task)
-                    if task in ['argotario', 'elecdebate']:
-                        args.gradient_accumulation_steps = 8
-                    elif task in ['logic', 'propaganda', 'reddit']:
-                        args.gradient_accumulation_steps = 16
+                    if task in ['argotario', 'elecdebate', 'reddit']:
+                        #args.gradient_accumulation_steps = 8 #batch size=32
+                        args.gradient_accumulation_steps = int((32 / args.world_size) / args.per_device_train_batch_size)
+                    elif task in ['logic', 'propaganda']:
+                        #args.gradient_accumulation_steps = 16 #batch size=64
+                        args.gradient_accumulation_steps = int((64 / args.world_size) / args.per_device_train_batch_size)
                     args.output_dir = ori_output_dir
                     args.task_arg_path = task_arg_path
                     args = prepare_output_dir(make_cache_root(args, task))

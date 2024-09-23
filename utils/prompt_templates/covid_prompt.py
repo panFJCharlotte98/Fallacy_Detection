@@ -11,6 +11,12 @@ T5_PROMPTS = [
 Definitions:
 {definitions}
 Segment:
+{segment}''',
+'''Given the below segment of discourse about covid pandemic, which of the following fallacies defined occurs in the segment?
+Fallacies: {fallacies}
+Definitions:
+{definitions}
+Segment:
 {segment}'''
 ]
 
@@ -102,6 +108,7 @@ def prompt_covid(args, js):
     if args.exp_args.model.model_tag.startswith('t5'):
         text = js['text'].lower()
         js['seq_in'] = T5_PROMPTS[0].format(segment=text, definitions=fal_def_str.lower())
+        #js['seq_in'] = T5_PROMPTS[0].format(segment=text, definitions=fal_def_str.lower(), fallacies=fal_name_str.lower())
     else:
         dialog = []
         sys_pt = {"role": "system", "content": SYSTEM_PROMPT[0]}

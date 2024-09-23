@@ -62,9 +62,10 @@ def tokenize_input(args, idx, js, tokenizer):
             seq_in = "{} ; {}".format(js["description"], seq_in)
         tokenized_input = tokenizer(
             text=seq_in,
-            #padding="max_length",
-            #truncation=True,
-            #max_length=t5_mtask_args.model.max_input_length,
+            # Enable truncation to max length for t5-3b
+            padding="max_length",
+            truncation=True,
+            max_length=t5_mtask_args.model.max_input_length,
             # We found that set it as large as possible can boost the performance significantly
             # , meanwhile, due to the t5 uses a relative position coding, we need to manually
             # assign the max input length into some large numbers, instead of using the "max_model_length"

@@ -16,6 +16,14 @@ Definitions:
 News article segment:
 {segment}
 Focused fragment: 
+{fragment}''',
+'''Given the following segment of a news article with a focused fragment and some definitions of fallacies, determine which of the fallacies defined below occurs in the focused fragment of the news.
+Fallacies: {fallacies}
+Definitions:
+{definitions}
+News article segment:
+{segment}
+Focused fragment: 
 {fragment}'''
 ]
 
@@ -199,6 +207,7 @@ def prompt_propaganda(args, js):
         text = segment.lower()
         fragment = js['text'].lower()
         js['seq_in'] = T5_PROMPTS[0].format(segment=text, fragment=fragment, definitions=fal_def_str.lower())
+        #js['seq_in'] = T5_PROMPTS[0].format(segment=text, fragment=fragment, definitions=fal_def_str.lower(), fallacies=fal_name_str.lower())
     else:
         dialog = []
         sys_pt = {"role": "system", "content": SYSTEM_PROMPT[0]}

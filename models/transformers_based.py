@@ -7,7 +7,8 @@ from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer,
     LlamaConfig, LlamaForCausalLM, LlamaTokenizer,
-    BitsAndBytesConfig
+    BitsAndBytesConfig,
+    T5Config, T5ForConditionalGeneration, T5Tokenizer
 )
 from transformers.models.llama.convert_llama_weights_to_hf import write_model
 from utils.configure import Configure
@@ -16,7 +17,8 @@ MODEL_CLASSES = {
     'llama2': (LlamaConfig, LlamaForCausalLM, LlamaTokenizer),
     'llama3': (AutoConfig, AutoModelForCausalLM, AutoTokenizer),
     'mistral': (AutoConfig, AutoModelForCausalLM, AutoTokenizer),
-    't5': (AutoConfig, AutoModelForSeq2SeqLM, AutoTokenizer)
+    #'t5': (AutoConfig, AutoModelForSeq2SeqLM, AutoTokenizer),
+    't5': (T5Config, T5ForConditionalGeneration, T5Tokenizer)
 }
 LLMs = ['llama2', 'llama3', 'mistral']
 
@@ -30,7 +32,11 @@ class Model(nn.Module):
             args.model_size = args.exp_args.model.model_tag.split("-")[1]
             model_id = f"./models/{args.model_type}_hf/{args.model_size}"
         if args.model_type == "t5":
+            model_size = args.exp_args.model.model_tag.split("-")[1]
             t5_mtask_args = args.exp_args
+            # if model_size == '3b':
+            #     model_id = "local model path"
+            # else:
             model_id = t5_mtask_args.bert.location
             tokenizer_kwargs = {"model_max_length":t5_mtask_args.model.max_input_length, "use_fast": False}
         
@@ -77,7 +83,7 @@ class Model(nn.Module):
         # print(model.config)
         # exit()
         print(f"{args.model_type} model from {model_id} loaded successfully...")
-    
+        
     def forward(
         self, 
         input_ids, 

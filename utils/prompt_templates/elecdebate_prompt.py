@@ -15,6 +15,14 @@ Definitions:
 Speech:
 {argument}
 Focused segment:
+{segment}''',
+'''Given the following fallacy definitions and a part of a political speech extracted from one of the US presidential campaign debates, determine which of the fallacies defined below occurs in the focused segment.
+Fallacies: {fallacies}
+Definitions:
+{definitions}
+Speech:
+{argument}
+Focused segment:
 {segment}'''
 ]
 
@@ -123,13 +131,14 @@ def prompt_elecdebate(args, js):
         js is one data sample in the format of dictionary
         js['text'] is a string of QA in a format like : "A: ....\nB: ..."
     """
-    if args.context_window > 0:
+    if args.context_window_elecdebate > 0:
         argument = " ".join([js['pre-text'], js['text'], js['post-text']]).strip()
     else:
         argument = js['text']
     if args.exp_args.model.model_tag.startswith('t5'):
         text = argument.lower()
         js['seq_in'] = T5_PROMPTS[0].format(argument=text, segment=js['text'], definitions=fal_def_str.lower())
+        #js['seq_in'] = T5_PROMPTS[0].format(argument=text, segment=js['text'], definitions=fal_def_str.lower(), fallacies=fal_name_str.lower())
     else:
         dialog = []
         sys_pt = {"role": "system", "content": SYSTEM_PROMPT[0]}
