@@ -41,6 +41,15 @@ Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation
     'wo_def':'''Given eight types of fallacies, namely, {fallacies}, and a snippet of reddit comments for a certain topic as below,
 {snippet}
 Determine which of the fallacies given is present in the part(s) of comment highlighted by '<>'?
+Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. Only output JSON.''',
+
+    'w_def_qf':'''Based on the following definitions of fallacies,
+{fallacies}
+Given a snippet of reddit comments for a certain topic as below, determine which of the fallacies defined above is present in the part(s) of comment highlighted by '<>'?
+Snippet: {snippet}
+Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. Only output JSON.''',
+    'wo_def_qf':'''Given eight types of fallacies, namely, {fallacies}, and given a snippet of reddit comments for a certain topic as below, determine which of the fallacies given is present in the part(s) of comment highlighted by '<>'?
+Snippet: {snippet}
 Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. Only output JSON.'''
 }
 
@@ -86,6 +95,22 @@ and the following eight types of fallacies, namely, {fallacies}, which of the li
 1: '''Output your previous conclusion in JSON format {"fallacy": name_of_the_fallacy}. Only output JSON.'''
 }
 
+v3_cot_w_def = {
+0:'''Based on the following definitions of 8 types of fallacies,
+{fallacies}
+Given the following snippet of reddit comments for a certain topic,
+[]
+Which of the listed fallacies is present in the comment's argument highlighted by '<>'? Now, let's think step by step.'''.format(fallacies=fal_def_str),
+1: '''Output your previous conclusion in JSON format {"fallacy": name_of_the_fallacy}. Only output JSON.'''
+}
+
+v3_cot_wo_def_ff = {
+0:'''Given the following eight types of fallacies, namely, {fallacies}, and given a snippet of reddit comments for a certain topic as below,
+[]
+Which of the listed fallacies is present in the comment's argument highlighted by '<>'? Now, let's think step by step.'''.format(fallacies=fal_name_str),
+1: '''Output your previous conclusion in JSON format {"fallacy": name_of_the_fallacy}. Only output JSON.'''
+}
+
 v4_wo_def = {
 0:'''Given the following eight types of fallacies, namely, {fallacies},
 and given the following snippet of reddit comments for a certain topic,
@@ -102,6 +127,8 @@ reddit_multiround_prompts = {
     'v2_gen_def': v2_gen_def,
     'v21_gen_def': v21_gen_def,
     'v3_cot_wo_def': v3_cot_wo_def,
+    'v3_cot_w_def': v3_cot_w_def,
+    'v3_cot_wo_def_ff': v3_cot_wo_def_ff,
     'v4_wo_def': v4_wo_def
 }
 
@@ -135,7 +162,7 @@ def prompt_reddit(args, js):
         else:
             text = snippet
             if args.exp_args.model.run_baseline:
-                fallacies = fal_def_str if args.scheme == 'w_def' else fal_name_str
+                fallacies = fal_def_str if args.scheme.startswith('w_def') else fal_name_str
                 content = BASELINE_PROMPTS[args.scheme].format(fallacies=fallacies, snippet=text)
             else:
                 content = SINGLE_PROMPT_TEMPLATE[0].format(argument=text, definitions=fal_def_str)

@@ -36,6 +36,14 @@ Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation
     'wo_def':'''Given 9 types of fallacies, namely, {fallacies}, and a segment of discourse about covid pandemic below, determine which of the fallacies given is present in the argument of the discourse?
 Segment:\n{segment}
 Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. If none of the fallacies is found, output {{"fallacy": "No Fallacy", "explanation": in_a_sentence_or_two}}. Only output JSON.''',
+    'w_def_cf':'''Based on the following definitions of fallacies,
+{fallacies}
+Given the below segment of discourse about covid pandemic, 
+Discourse: {segment}
+Determine which of the fallacies defined above is present in the argument of the discourse? Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. If none of the fallacies is found, output {{"fallacy": "No Fallacy", "explanation": in_a_sentence_or_two}}. Only output JSON.''',
+    'wo_def_cf':'''Given 9 types of fallacies, namely, {fallacies}, and given a segment of discourse about covid pandemic below, 
+Discourse: {segment}
+Determine which of the fallacies given is present in the argument of the discourse? Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. If none of the fallacies is found, output {{"fallacy": "No Fallacy", "explanation": in_a_sentence_or_two}}. Only output JSON.''',
 }
 
 # Version 1: GPT-3.5 Multi-prompt
@@ -80,6 +88,22 @@ and the following 9 types of fallacies, namely, {fallacies}. Which of the listed
 1: '''Output your previous conclusion in JSON format {"fallacy": name_of_the_fallacy}. If none of the listed fallacies is present, output {"fallacy": "No Fallacy"}. Only output JSON.'''
 }
 
+v3_cot_w_def = {
+0:'''Based on the following definitions of fallacies,
+{fallacies}
+Given a segment of discourse about covid pandemic below,
+[]
+Which of the defined fallacies is present in the focal argument of the discourse? Now, let's think step by step.'''.format(fallacies=fal_def_str),
+1: '''Output your previous conclusion in JSON format {"fallacy": name_of_the_fallacy}. If none of the listed fallacies is present, output {"fallacy": "No Fallacy"}. Only output JSON.'''
+}
+
+v3_cot_wo_def_ff = {
+0:'''Given the following 9 types of fallacies, namely, {fallacies}, and given a segment of discourse about covid pandemic below,
+[]
+Which of the listed fallacies is present in the focal argument of the discourse? Now, let's think step by step.'''.format(fallacies=fal_name_str),
+1: '''Output your previous conclusion in JSON format {"fallacy": name_of_the_fallacy}. If none of the listed fallacies is present, output {"fallacy": "No Fallacy"}. Only output JSON.'''
+}
+
 v4_wo_def = {
 0:'''Given the following 9 types of fallacies, namely, {fallacies},
 and given the following segment of discourse about covid pandemic,
@@ -96,6 +120,8 @@ covid_multiround_prompts = {
     'v2_gen_def': v2_gen_def,
     'v21_gen_def': v21_gen_def,
     'v3_cot_wo_def': v3_cot_wo_def,
+    'v3_cot_w_def': v3_cot_w_def,
+    'v3_cot_wo_def_ff': v3_cot_wo_def_ff,
     'v4_wo_def': v4_wo_def
 }
 
@@ -127,12 +153,12 @@ def prompt_covid(args, js):
                 dialog = js['chat_history'] + [{"role":"assistant", "content":last_prediction}] + [usr_prompt]  
         else:
             text = js['text']
-            fallacies = fal_def_str if args.scheme == 'w_def' else fal_name_str
+            fallacies = fal_def_str if args.scheme.startswith('w_def') else fal_name_str
             if args.exp_args.model.run_baseline:
                 usr_pt = {"role": "user", "content": BASELINE_PROMPTS[args.scheme].format(fallacies=fallacies, segment=text)}
-            else:
-                content = SINGLE_PROMPTS[args.scheme].format(segment=text, fallacies=fallacies)
-                usr_pt = {"role": "user", "content": content}
+            # else:
+            #     content = SINGLE_PROMPTS[args.scheme].format(segment=text, fallacies=fallacies)
+            #     usr_pt = {"role": "user", "content": content}
             dialog = [sys_pt, usr_pt]
         js['chat_history'] = dialog
         js['arg_path'] = args.task_arg_path

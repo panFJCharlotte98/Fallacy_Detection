@@ -37,18 +37,15 @@ Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation
     'wo_def':'''Given 13 types of fallacies, namely, {fallacies}, and a segment of discourse below, determine which of the fallacies given is present in the argument?
 Segment:\n{segment}
 Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. Only output JSON.''',
-#     'w_def':'''Based on the following definitions of fallacies,
-# {fallacies}
-# Given a segment of discourse below,
-# {segment}
-# Determine which of the fallacies defined above is present in the argument?
-# Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. Only output JSON.
-# ''',
-#     'wo_def':'''Given 13 types of fallacies, namely, {fallacies}, and a segment of discourse below,
-# {segment}
-# Determine which of the fallacies given is present in the argument?
-# Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. Only output JSON.
-# '''
+
+    'w_def_cf':'''Based on the following definitions of fallacies,
+{fallacies}
+Given a segment of discourse below,
+Discourse: {segment}
+Determine which of the fallacies defined above is present in the argument of the discourse? Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. Only output JSON.''',
+    'wo_def_cf':'''Given 13 types of fallacies, namely, {fallacies}, and given a segment of discourse below,
+Discourse: {segment}
+Determine which of the fallacies given is present in the argument of the discourse? Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. Only output JSON.'''
 }
 
 # Version 1: GPT-3.5 Multi-prompt
@@ -93,6 +90,22 @@ and the following 13 types of fallacies, namely, {fallacies}. Which of the liste
 1: '''Output your previous conclusion in JSON format {"fallacy": name_of_the_fallacy}. Only output JSON.'''
 }
 
+v3_cot_w_def = {
+0:'''Based on the following definitions of 13 types of fallacies,
+{fallacies}
+Given a segment of discourse below,
+[]
+Which of the listed fallacies is present in the focal argument of the discourse? Now, let's think step by step.'''.format(fallacies=fal_def_str),
+1: '''Output your previous conclusion in JSON format {"fallacy": name_of_the_fallacy}. Only output JSON.'''
+}
+
+v3_cot_wo_def_ff = {
+0:'''Given the following 13 types of fallacies, namely, {fallacies} and given a segment of discourse below,
+[]
+Which of the listed fallacies is present in the focal argument of the discourse? Now, let's think step by step.'''.format(fallacies=fal_name_str),
+1: '''Output your previous conclusion in JSON format {"fallacy": name_of_the_fallacy}. Only output JSON.'''
+}
+
 v4_wo_def = {
 0:'''Given the following 13 types of fallacies, namely, {fallacies},
 and given a segment of discourse below,
@@ -109,6 +122,8 @@ logic_multiround_prompts = {
     'v2_gen_def': v2_gen_def,
     'v21_gen_def': v21_gen_def,
     'v3_cot_wo_def': v3_cot_wo_def,
+    'v3_cot_w_def': v3_cot_w_def,
+    'v3_cot_wo_def_ff': v3_cot_wo_def_ff,
     'v4_wo_def': v4_wo_def,
 }
 
@@ -134,8 +149,11 @@ def prompt_w_few_shot_examples(args, text):
         "Doubt Credibility": 2,
         "Intentional (Intentionally Wrong Argument)":2,
     }
+    fs_classes = list(n_shots_per_class.keys())
     few_shots = []
-    for name, num in n_shots_per_class.items():
+    #for name, num in n_shots_per_class.items():
+    for name in fs_classes:
+        num = args.n_fewshots
         for js in random.sample(fal_examples[name.lower()], num):
             few_shots.append((name, js['text']))
     prompt = '''Given 13 types of fallacies, namely, {fallacies}, and a segment of discourse, determine which of the fallacies given is present in the discourse's argument? Output your answer in JSON format {{"fallacy": name_of_the_fallacy}}. Only output JSON.\n'''.format(fallacies = fal_name_str) + \
@@ -172,7 +190,7 @@ def prompt_logic(args, js):
         else:
             text = js['text']
             if args.exp_args.model.run_baseline:
-                fallacies = fal_def_str if args.scheme == 'w_def' else fal_name_str
+                fallacies = fal_def_str if args.scheme.startswith('w_def') else fal_name_str
                 content = BASELINE_PROMPTS[args.scheme].format(fallacies=fallacies, segment=text)
             else:
                 #content = SINGLE_FEWSHOT_PROMPTS[args.scheme] + '''\nSegment: {segment}. Fallacy: '''.format(segment=text)

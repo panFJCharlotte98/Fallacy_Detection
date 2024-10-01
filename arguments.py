@@ -21,6 +21,11 @@ class WrappedTrainingArguments(TrainingArguments):
         default="test", 
         metadata={"help":"which dataset split to run inference on",}
     )
+    n_fewshots: int = field(
+        default=1, 
+        metadata={"help":"N-way K-shot examples to prompt LLMs for few-shot experiments. K examples for each of the N classes."}
+    )
+    
     context_window: int = field(
         default=2, 
         metadata={"help":"context window for propaganda."}

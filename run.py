@@ -93,7 +93,7 @@ def prepare_output_dir(args):
                     ['seed', 'seed'],
                     ['per_device_eval_batch_size','ebs'],
                 ]
-                setting = 'fewshot'
+                setting = f"{args.n_fewshots}-shot"
                 if args.exp_args.model.run_multiprompt:
                     setting = "multipt"
                 if args.exp_args.model.run_baseline:
@@ -388,6 +388,7 @@ def run_gpt(args):
         args.last_output_dir = "" if args.exp_args.model.multipt_start_from == 0 else os.path.join(args.output_dir.split("round_")[0], "round_"+str(args.exp_args.model.multipt_start_from-1))
         args.log_dir = args.output_dir.split("round_")[0]
         setup_logging(args)
+        cost = 0
         for round in tqdm(range(args.exp_args.model.multipt_start_from, n_rounds)):
             args.current_round = round
             args.should_evaluate = False
@@ -395,7 +396,8 @@ def run_gpt(args):
             if args.current_round == (n_rounds - 1):
                 args.should_evaluate = True
             test_dataset = FormattedDataset(args)
-            do_inference(args=args, dataset=test_dataset)
+            one_round_cost = do_inference(args=args, dataset=test_dataset)
+            cost += one_round_cost
             args.last_output_dir = args.output_dir
             args.output_dir = os.path.join(args.output_dir.split("round_")[0], "round_"+str(round+1))
             #break
@@ -403,7 +405,9 @@ def run_gpt(args):
         args.should_evaluate = True
         setup_logging(args)
         test_dataset = FormattedDataset(args)
-        do_inference(args=args, dataset=test_dataset)
+        cost = do_inference(args=args, dataset=test_dataset)
+
+    return cost
 
 def run_llama(args, model):
     if args.exp_args.model.run_multiprompt:
@@ -420,7 +424,8 @@ def run_llama(args, model):
             args.should_evaluate = False
             os.makedirs(args.output_dir, exist_ok=True)
             if args.current_round == (n_rounds - 1):
-                args.per_device_eval_batch_size = args.per_device_eval_batch_size - 2 if args.task == 'mafalda' else args.per_device_eval_batch_size - 1
+                if args.per_device_eval_batch_size > 2:
+                    args.per_device_eval_batch_size = args.per_device_eval_batch_size - 2 if args.task == 'mafalda' else args.per_device_eval_batch_size - 1
                 args.should_evaluate = True
             run(args, model)
             args.last_output_dir = args.output_dir
@@ -496,6 +501,8 @@ def main():
     active_task_list = TASK_LIST if args.which_task == 'all' else [t.strip() for t in args.which_task.split(',')] 
     args.active_task_list = active_task_list
     print(args.active_task_list)
+    # api cost-specific statistic
+    run_cost = 0
     if args.exp_args.model.model_tag.startswith('t5'):
         args.should_evaluate = True
         if args.exp_args.model.do_multitask:
@@ -511,45 +518,50 @@ def main():
                     elif task in ['logic', 'propaganda']:
                         #args.gradient_accumulation_steps = 16 #batch size=64
                         args.gradient_accumulation_steps = int((64 / args.world_size) / args.per_device_train_batch_size)
+                    
                     args.output_dir = ori_output_dir
                     args.task_arg_path = task_arg_path
                     args = prepare_output_dir(make_cache_root(args, task))
                     run(args)
     else: 
-        model_size = ""
-        #if args.exp_args.model.model_tag.startswith('llama'):
-        if args.exp_args.model.model_tag.split('-')[0] in ['llama2', 'llama3', 'mistral']:
+        model_size=0
+        model_type = args.exp_args.model.model_tag.split("-")[0]
+        if model_type in ['llama2', 'llama3', 'mistral', 'qwen2.5']:
             model = Model(args)
-            model_size = args.exp_args.model.model_tag.split("-")[-1]
+            model_size = int(args.exp_args.model.model_tag.split("-")[-1].strip('bf'))
         for task, task_arg_path in args.exp_args.arg_paths:
-            #print(task)
             if task in active_task_list:
                 args.per_device_eval_batch_size = ori_per_device_eval_batch_size
                 args.max_new_tokens = ori_max_new_tokens
                 args.output_dir = ori_output_dir
                 ## allow large output window
-                if task in ['logic', 'propaganda', 'mafalda', 'covid']:
-                    if args.exp_args.model.model_tag.startswith("llama2"):
-                        args.per_device_eval_batch_size = 2 if model_size.startswith("13") else 16
-                        #args.per_device_eval_batch_size = 4 if model_size.startswith("13") else 16
-                    if args.exp_args.model.model_tag.startswith("mistral"):
+                if not model_type.startswith('gpt') and (task in ['reddit','logic', 'propaganda', 'mafalda', 'covid']):
+                    if model_size >= 13:
+                        args.per_device_eval_batch_size = 2
+                    if (model_type in ["mistral"]):
                         args.per_device_eval_batch_size = 16
+                    # if  (args.exp_args.model.model_tag == 'qwen2.5-7bf'):
+                    #     args.per_device_eval_batch_size = 8
                     if args.scheme in ["v2_gen_def", "v21_gen_def", "v4_wo_def"]:
                         args.max_new_tokens = 1536
                     if args.scheme == "v21_gen_def" and task == 'propaganda':
-                        #print("here")
-                        if args.exp_args.model.model_tag.startswith("llama2"):
-                            args.per_device_eval_batch_size = 2 if model_size.startswith("13") else 12
-                        if args.exp_args.model.model_tag.startswith("mistral") or args.exp_args.model.model_tag.startswith("llama3"):
+                        if model_size >= 13:
+                            args.per_device_eval_batch_size = 2
+                        if model_type in ["mistral", "llama3"]:
                             args.per_device_eval_batch_size = 12
-                #print(args.per_device_eval_batch_size)
+     
                 args.task_arg_path = task_arg_path
-                #print(args.task_arg_path)
+
                 args = prepare_output_dir(make_cache_root(args, task))
-                if args.exp_args.model.model_tag.startswith('gpt'):
-                    run_gpt(args)
+                if model_type.startswith('gpt'):
+                    cost = run_gpt(args)
+                    if (cost != 0) and (args.local_rank <= 0):
+                        print(f"Spent ${cost} running one Scheme={args.scheme} on Task={args.task}.")
+                    run_cost += cost
                 else:
                     run_llama(args, model)
-
+        
+        if (run_cost != 0) and (args.local_rank <= 0):
+            print(f"Spent a total of ${round(run_cost,3)} running {args.exp_args.model.model_tag} on {args.active_task_list}.")
 if __name__ == "__main__":
     main()

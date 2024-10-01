@@ -50,13 +50,11 @@ Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation
     'w_def_qf':'''Based on the following definitions of fallacies,
 {fallacies}
 Given a segment of a news article below, determine which of the fallacies defined above is present in the news fragment highlighted by '<>'?
-News article segment:
-{segment}
+News article segment: {segment}
 Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. Only output JSON.''',
     
-    'wo_def_qf':'''Given 13 types of fallacies, namely, {fallacies}, and a segment of a news article below, determine which of the fallacies given is present in the news fragment highlighted by '<>'?
-News article segment:
-{segment}
+    'wo_def_qf':'''Given 13 types of fallacies, namely, {fallacies}, and given a segment of a news article below, determine which of the fallacies given is present in the news fragment highlighted by '<>'?
+News article segment: {segment}
 Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. Only output JSON.
 '''
 }
@@ -103,6 +101,22 @@ and the following 13 types of fallacies, namely, {fallacies}, which of the liste
 1: '''Output your previous conclusion in JSON format {"fallacy": name_of_the_fallacy}. Only output JSON.'''
 }
 
+v3_cot_w_def = {
+0:'''Based on the following definitions of 13 types of fallacies,
+{fallacies}
+Given the following segment of a news article below,
+[]
+Which of the listed fallacies is present in the news fragment highlighted by '<>'? Now, let's think step by step.'''.format(fallacies=fal_def_str),
+1: '''Output your previous conclusion in JSON format {"fallacy": name_of_the_fallacy}. Only output JSON.'''
+}
+
+v3_cot_wo_def_ff = {
+0:'''Given the following 13 types of fallacies, namely, {fallacies}, and given a segment of a news article below,
+[]
+Which of the listed fallacies is present in the news fragment highlighted by '<>'? Now, let's think step by step.'''.format(fallacies=fal_name_str),
+1: '''Output your previous conclusion in JSON format {"fallacy": name_of_the_fallacy}. Only output JSON.'''
+}
+
 v4_wo_def = {
 0:'''Given the following 13 types of fallacies, namely, {fallacies},
 and given a segment of a news article below, where a fragment is highlighted by '<>',
@@ -119,6 +133,8 @@ propaganda_multiround_prompts = {
     'v2_gen_def': v2_gen_def,
     'v21_gen_def': v21_gen_def,
     'v3_cot_wo_def': v3_cot_wo_def,
+    'v3_cot_w_def': v3_cot_w_def,
+    'v3_cot_wo_def_ff': v3_cot_wo_def_ff,
     'v4_wo_def': v4_wo_def
 }
 
@@ -163,19 +179,22 @@ def prompt_w_few_shot_examples(args, text):
         'Name-calling': 0,
         'Doubt Credibility': 1,
         'Appeal to Fear': 0,
-        'Flag-waving': 0,
+        'Flag-waving': 1,
         'Causal Oversimplification': 0,
         'Appeal to False Authority': 1,
         'False Dilemma': 1,
         'Whataboutism': 0,
-        'Reductio Ad Hitlerum': 0,
+        'Reductio Ad Hitlerum': 1,
         'Red Herring': 1,
         'Straw Man': 1,
-        'Ad Populum': 1,
+        'Ad Populum': 0,
         'Equivocation': 1,
     } # for llama2
+    fs_classes = list(n_shots_per_class.keys())
     few_shots = []
-    for name, num in n_shots_per_class.items():
+    #for name, num in n_shots_per_class.items():
+    for name in fs_classes:
+        num = args.n_fewshots
         for js in random.sample(fal_examples[name.lower()], num):
             few_shots.append((name, format_segment(js)))
     prompt = '''Given 13 types of fallacies, namely, {fallacies}, and a segment of a news article, determine which of the fallacies given is present in the news fragment highlighted by '<>'? Output your answer in JSON format {{"fallacy": name_of_the_fallacy}}. Only output JSON.\n'''.format(fallacies = fal_name_str) + \
@@ -227,7 +246,7 @@ def prompt_propaganda(args, js):
         else:
             text = segment
             if args.exp_args.model.run_baseline:
-                fallacies = fal_def_str if args.scheme == 'w_def' else fal_name_str
+                fallacies = fal_def_str if args.scheme.startswith('w_def') else fal_name_str
                 content = BASELINE_PROMPTS[args.scheme].format(fallacies=fallacies, segment=text)
             else:
                 #content = SINGLE_FEWSHOT_PROMPTS[args.scheme] + '''\nNews Article Segment: {segment}. Fallacy: '''.format(segment=text)
@@ -239,6 +258,6 @@ def prompt_propaganda(args, js):
     return js
     
 SINGLE_FEWSHOT_PROMPTS = {
-    'wo_def': '''Given 18 types of propaganda techniques or fallacies, namely, {fallacies}, and a segment of a news article, determine which of the propaganda techniques or fallacies given is present in the news fragment highlighted by '<>'? Output your answer in JSON format {{"fallacy": name_of_the_fallacy}}. Only output JSON.\n'''.format(fallacies = fal_name_str) + \
+    'wo_def': '''Given 13 types of fallacies, namely, {fallacies}, and a segment of a news article below, determine which of the fallacies given is present in the news fragment highlighted by '<>'? Output your answer in JSON format {{"fallacy": name_of_the_fallacy}}. Only output JSON.'''.format(fallacies = fal_name_str) + \
     "\n".join(['''News Article Segment: {example}. Fallacy: {{"fallacy": "{fal_name}" }}'''.format(example=fal_exp, fal_name=fal_n) for fal_n, fal_exp in PROPAGANDA_FEWSHOTS.items()]),
 }

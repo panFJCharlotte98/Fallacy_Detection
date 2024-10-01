@@ -18,7 +18,10 @@ def do_inference(
     dataset
 ):
     model_tag = args.exp_args.model.model_tag
-        
+    if args.local_rank <= 0:
+        print(f"Model --- Run inference with {model_tag}.")
+
+    total_n_gen_tks, total_n_prompt_tks = 0, 0
     predictions, gold, failed = [], [], []
     for i in tqdm(range(len(dataset))):
         js = dataset[i] # js is a dict
@@ -35,13 +38,20 @@ def do_inference(
                 presence_penalty=0
             )
             prediction = response.choices[0].message.content.strip()
+            total_n_gen_tks += response.usage.completion_tokens
+            total_n_prompt_tks += response.usage.prompt_tokens
+            print(f"Token usage --- input={total_n_prompt_tks} gen={total_n_gen_tks}")
+            
             predictions.append(prediction)
             gold.append(copy.deepcopy(js))
             js['prediction'] = prediction
+
         except Exception as e:
-            logger.info(f"Failed to infer on Example {js['id']} because {e}")
+            logger.info(f"Error --- Failed to infer on Example {js['id']} because {e}")
             failed.append(js)
-        
+    
+    total_cost = compute_cost(model_tag, total_n_gen_tks, total_n_prompt_tks)
+
     if (args.local_rank <= 0) and (not args.do_not_save_results):
         os.makedirs(args.output_dir, exist_ok=True)
         with open(f"{args.output_dir}/predictions.json", "w") as f:
@@ -57,4 +67,18 @@ def do_inference(
         evaluator = utils.tool.get_evaluator(args.exp_args.evaluate.tool)(args)
         eval_prediction = EvalPrediction(predictions=predictions, items=gold)
         evaluator.evaluate(preds=eval_prediction.predictions, golds=eval_prediction.items, section='inference')
+    
+    if args.local_rank <= 0:
+        print(f"Spending --- Spent ${total_cost} after iterating over {args.task} once.")
+    return total_cost
 
+def compute_cost(model_type, n_gen, n_input):
+    # pricing in dollars per 1M (1e6) tokens
+    pricing = {
+        'gpt-3.5-turbo': {'input': 0.5, 'output':1.5},
+        'gpt-4-turbo':{'input': 10, 'output': 30}
+    }
+    for model, price in pricing.items():
+        if model_type.startswith(model):
+            return (n_input / 1e6) * price['input'] + (n_gen / 1e6) * price['output']
+            

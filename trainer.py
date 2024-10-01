@@ -198,7 +198,11 @@ class EvaluateFriendlyTrainer(Trainer):
             # if labels.shape[-1] < gen_kwargs["max_length"]:
             #     labels = self._pad_tensors_to_max_len(labels, gen_kwargs["max_length"])
             return (loss, generated_tokens, labels)
-        else:
+        else:   
+            if self.args.exp_args.model.model_tag.startswith("qwen2.5"):
+                gen_kwargs = {
+                    "max_new_tokens": self.args.max_new_tokens,
+                } 
             if self.args.exp_args.model.model_tag.startswith("mistral"):
                 gen_kwargs = {
                     "max_new_tokens": self.args.max_new_tokens,
@@ -230,9 +234,12 @@ class EvaluateFriendlyTrainer(Trainer):
                 }
             with torch.no_grad():
                 generated_tokens = self.model.model.generate(
-                    inputs["input_ids"],
+                    **inputs,
                     **gen_kwargs,
                 )
+                # extract response in batch
+                generated_tokens = generated_tokens[:, inputs.input_ids.shape[1]:]
+                
                 loss, labels = None, None
                 return (loss, generated_tokens, labels)
 
@@ -241,39 +248,32 @@ class EvaluateFriendlyTrainer(Trainer):
         dataset: Dataset, 
         predictions: np.ndarray, 
         stage: str
-    ) -> EvalPrediction:
-        # def extract_last_output(pred):
-        #     if self.args.exp_args.model.model_tag.startswith("llama3"):
-        #         return " ".join(pred.split(END_INST)[-1].strip().replace("\n", " ").strip(END_OF_TURN).split())
-        #     return " ".join(pred.split(E_INST)[-1].strip().replace("\n", " ").split())
-        
-        # skip_special_tokens = False if self.args.exp_args.model.model_tag.startswith("llama3") else True
-        
+    ) -> EvalPrediction:        
         assert isinstance(dataset, Dataset)
-        # Extract generative LLM's response from the output
-        if not self.args.exp_args.model.model_tag.startswith("t5"):
-            extracted_predictions = []
-            for i, one_pred in enumerate(predictions):
-                input_prompt_len = dataset.examples[i].attrs['input_prompt_len']
-                if self.args.exp_args.model.model_tag.startswith("llama3"):
-                    for j, token_id in enumerate(one_pred):
-                        if (token_id == self.tokenizer.bos_token_id) and (one_pred[j+1] == self.tokenizer.encode('<|start_header_id|>')):
-                            input_start_index = j
-                            break
-                if self.args.exp_args.model.model_tag.split('-')[0] in ["llama2", "mistral"]: # 
-                    for j, token_id in enumerate(one_pred):
-                        if (token_id == self.tokenizer.bos_token_id) and (one_pred[j+1] != self.tokenizer.bos_token_id):
-                            input_start_index = j
-                            break
-                response_start_index = input_start_index + input_prompt_len
-                extracted_predictions.append(one_pred[response_start_index:].tolist())
-        else:
-            extracted_predictions = predictions
-
-        predictions = self.tokenizer.batch_decode(extracted_predictions, skip_special_tokens=True)
-        # for pred in predictions:
-        #     print(f"{pred}\n")
-        # exit()
+        # # Extract generative LLM's response from the output
+        # if not self.args.exp_args.model.model_tag.startswith("t5"):
+        #     if self.args.exp_args.model.model_tag.startswith("qwen2.5"):
+        #         extracted_predictions = predictions
+        #     else:
+        #         extracted_predictions = []
+        #         for i, one_pred in enumerate(predictions):
+        #             input_prompt_len = dataset.examples[i].attrs['input_prompt_len']
+        #             if self.args.exp_args.model.model_tag.startswith("llama3"):
+        #                 for j, token_id in enumerate(one_pred):
+        #                     if (token_id == self.tokenizer.bos_token_id) and (one_pred[j+1] == self.tokenizer.encode('<|start_header_id|>')):
+        #                         input_start_index = j
+        #                         break
+        #             if self.args.exp_args.model.model_tag.split('-')[0] in ["llama2", "mistral"]: # 
+        #                 for j, token_id in enumerate(one_pred):
+        #                     if (token_id == self.tokenizer.bos_token_id) and (one_pred[j+1] != self.tokenizer.bos_token_id):
+        #                         input_start_index = j
+        #                         break
+        #             response_start_index = input_start_index + input_prompt_len
+        #             extracted_predictions.append(one_pred[response_start_index:].tolist())
+        # else:
+        #     extracted_predictions = predictions
+        predictions = self.tokenizer.batch_decode(predictions, skip_special_tokens=True)
+        
         # Save locally.
         if (stage == 'predict' or stage.startswith('eval_')) and (self.args.local_rank <= 0) and (not self.args.do_not_save_results):
             if self.args.exp_args.model.model_tag.startswith("t5"):

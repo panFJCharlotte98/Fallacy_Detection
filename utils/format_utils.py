@@ -19,25 +19,41 @@ B_SYS, E_SYS = "<<SYS>>\n", "\n<</SYS>>\n\n"
 def mistral_format_tokens(dialog, tokenizer):
     # split the system prompt as one round of user-assitant conversation
     assert dialog[0]['role'] == 'system'
-    chat_history = dialog[1:]
-    sys_instructions = dialog[0]['content'].split('\n')
-    new_sys_inst = '\n'.join([sys_instructions[0].replace("You are", "I will be"),
-               sys_instructions[1].replace("Please ensure that your responses are", "I will give responses that are"),
-               sys_instructions[2].replace("Your response should", "My response will"),
-               "I will always " + sys_instructions[3].replace("Answer", "answer"),
-               ])
-    pseudo_system = [
-        {"role": "user", "content": "Hi, I'm User. In the following conversations, you should take the role as a fallacy detection expert."},
-        {"role": "assistant", "content": "Hi, User! Sure, in the following conversations, " + new_sys_inst}
-    ]
-    dialog = pseudo_system + chat_history
+    # chat_history = dialog[1:]
+    # sys_instructions = dialog[0]['content'].split('\n')
+    # new_sys_inst = '\n'.join([sys_instructions[0].replace("You are", "I will be"),
+    #            sys_instructions[1].replace("Please ensure that your responses are", "I will give responses that are"),
+    #            sys_instructions[2].replace("Your response should", "My response will"),
+    #            "I will always " + sys_instructions[3].replace("Answer", "answer"),
+    #            ])
+    # pseudo_system = [
+    #     {"role": "user", "content": "Hi, I'm User. In the following conversations, you should take the role as a fallacy detection expert."},
+    #     {"role": "assistant", "content": "Hi, User! Sure, in the following conversations, " + new_sys_inst}
+    # ]
+    # dialog = pseudo_system + chat_history
+    
     dialog_tokens = tokenizer.apply_chat_template(
         dialog,
-        return_tensors="np"
+        return_tensors="np",
+        add_generation_prompt=True,
     )[0].tolist()
-    # print(dialog_tokens)
-    # exit()
+
     return dialog_tokens
+
+def qwen2_format_tokens(dialog, tokenizer):
+    assert dialog[0]['role'] == 'system'
+    formatted_dialog = tokenizer.apply_chat_template(
+        dialog,
+        tokenize=False,
+        add_generation_prompt=True
+    )
+    model_inputs = tokenizer([formatted_dialog], return_tensors="np")
+    
+    dialog_tokens = model_inputs.input_ids.tolist()[0]
+    
+    attention_mask = model_inputs.attention_mask.tolist()[0]
+    
+    return (dialog_tokens, attention_mask)
 
 def llama2_format_tokens(dialog, tokenizer):
     if dialog[0]["role"] == "system":
@@ -172,6 +188,9 @@ def format_tokens(args, dialogs, tokenizer):#PreTrainedTokenizerBase = None
         if args.exp_args.model.model_tag.startswith('mistral'): 
             dialog_tokens = mistral_format_tokens(dialog, tokenizer)
         
+        if args.exp_args.model.model_tag.startswith('qwen'): 
+            dialog_tokens = qwen2_format_tokens(dialog, tokenizer)
+
         prompt_tokens.append(dialog_tokens)
     return prompt_tokens
         

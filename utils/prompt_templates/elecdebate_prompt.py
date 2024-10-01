@@ -43,7 +43,15 @@ Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation
     'wo_def':'''Given five types of fallacies, namely, {fallacies}, and a part of a political speech extracted from a US presidential campaign debate as below,
 {argument}
 Determine which of the fallacies given is present in the speech's argument highlighted by '<>'?
-Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. Only output JSON.'''
+Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. Only output JSON.''',
+    'w_def_qf':'''Based on the following definitions of fallacies,
+{fallacies}
+Given a part of a political speech extracted from a US presidential campaign debate as below, determine which of the fallacies defined above is present in the speech's argument highlighted by '<>'?
+Speech: {argument}
+Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. Only output JSON.''',
+    'wo_def_qf':'''Given five types of fallacies, namely, {fallacies}, and given a part of a political speech extracted from a US presidential campaign debate as below, determine which of the fallacies given is present in the speech's argument highlighted by '<>'?
+Speech: {argument}
+Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. Only output JSON.''',
 }
 
 # Version 1: GPT-3.5 Multi-prompt
@@ -81,10 +89,35 @@ v21_gen_def = {
 2:'''According to your previous analysis, summarize whether any of these given fallacies is present in the speech's argument highlighted by '<>', output your final decision in JSON format {"fallacy": name_of_the_fallacy}. Only output JSON.'''
 }
 
+v3_cot_w_def = {
+0:'''Based on the following definitions of five fallacies,
+{fallacies}
+Given the following part of a political speech extracted from one of the US presidential campaign debates,
+[]
+Which of the defined fallacies is present in the speech's argument highlighted by '<>'? Now, let's think step by step.'''.format(fallacies=fal_def_str),
+1: '''Output your previous conclusion in JSON format {"fallacy": name_of_the_fallacy}. Only output JSON.'''
+}
+
 v3_cot_wo_def = {
 0:'''Given the following part of a political speech extracted from one of the US presidential campaign debates,
 []
 and the following five types of fallacies, namely, {fallacies}, which of the listed fallacies is present in the speech's argument highlighted by '<>'? Now, let's think step by step.'''.format(fallacies=fal_name_str),
+1: '''Output your previous conclusion in JSON format {"fallacy": name_of_the_fallacy}. Only output JSON.'''
+}
+
+v3_cot_w_def = {
+0:'''Based on the following definitions of fallacies,
+{fallacies}
+Given the following part of a political speech extracted from one of the US presidential campaign debates,
+[]
+Which of the listed fallacies is present in the speech's argument highlighted by '<>'? Now, let's think step by step.'''.format(fallacies=fal_def_str),
+1: '''Output your previous conclusion in JSON format {"fallacy": name_of_the_fallacy}. Only output JSON.'''
+}
+
+v3_cot_wo_def_ff = {
+0:'''Given the following five types of fallacies, namely, {fallacies}, and given a part of a political speech extracted from one of the US presidential campaign debates as below,
+[]
+Which of the listed fallacies is present in the speech's argument highlighted by '<>'? Now, let's think step by step.'''.format(fallacies=fal_name_str),
 1: '''Output your previous conclusion in JSON format {"fallacy": name_of_the_fallacy}. Only output JSON.'''
 }
 
@@ -104,6 +137,8 @@ elecdebate_multiround_prompts = {
     'v2_gen_def': v2_gen_def,
     'v21_gen_def': v21_gen_def,
     'v3_cot_wo_def': v3_cot_wo_def,
+    'v3_cot_w_def': v3_cot_w_def,
+    'v3_cot_wo_def_ff': v3_cot_wo_def_ff,
     'v4_wo_def': v4_wo_def
 }
 
@@ -114,9 +149,13 @@ def prompt_w_few_shot_examples(args, text):
     for data in train_data:
         assert data['label'][0].lower() in fal_examples
         fal_examples[data['label'][0].lower()].append(data)
-    n_shots_per_class = {"Appeal to Emotion": 1, "Ad Hominem": 2, "Appeal to False Authority": 2, "False Causality (Post Hoc Fallacy)": 3, "Slippery Slope": 3}
+    
+    n_shots_per_class = {"Appeal to Emotion": 1, "Ad Hominem": 1, "Appeal to False Authority": 1, "False Causality (Post Hoc Fallacy)": 1, "Slippery Slope": 1}
+    fs_classes = list(n_shots_per_class.keys())
     few_shots = []
-    for name, num in n_shots_per_class.items():
+    #for name, num in n_shots_per_class.items():
+    for name in fs_classes:
+        num = args.n_fewshots
         for js in random.sample(fal_examples[name.lower()], num):
             argument = " ".join([js['pre-text'], js['text'], js['post-text']]).strip()
             few_shots.append((name, argument))
@@ -158,7 +197,7 @@ def prompt_elecdebate(args, js):
         else:
             text = argument
             if args.exp_args.model.run_baseline:
-                fallacies = fal_def_str if args.scheme == 'w_def' else fal_name_str
+                fallacies = fal_def_str if args.scheme.startswith('w_def') else fal_name_str
                 content = BASELINE_PROMPTS[args.scheme].format(fallacies=fallacies, argument=text)
             else:
                 #content = SINGLE_PROMPT_TEMPLATE[0].format(argument=text, definitions=fal_def_str)

@@ -92,7 +92,11 @@ def tokenize_input(args, idx, js, tokenizer):
         attention_mask=None
         label = js['label']
         dialog = js['chat_history'] # list of messages
-        input_ids = format_tokens(args, [dialog], tokenizer)[0]
+        if args.exp_args.model.model_tag.startswith("qwen"):
+            # Qwen2.5 has pad_token equal to eos_token, thus need attention mask to behave normally
+            input_ids, attention_mask = format_tokens(args, [dialog], tokenizer)[0]
+        else:
+            input_ids = format_tokens(args, [dialog], tokenizer)[0]
         js['input_prompt_len'] = len(input_ids)
         
     return DataItem(idx, input_ids, attention_mask, label, js)
@@ -202,7 +206,7 @@ class TokenizedDataset(Dataset):
             # print(self.examples[0].input_ids)
             # print(self.examples[0].attrs)
         else:
-            print(f"**** Generating tokenized {args.task}-{self.split} dataset for {args.model_type} from prompted seq2seq data ****")
+            print(f"**** Generating tokenized {args.scheme}-{args.task}-{self.split} dataset for {args.model_type} from prompted seq2seq data ****")
             if args.exp_args.model.model_tag.startswith("t5"):
                 seq2seq_dataset = generate_t5_seq2seq_datasets(args, self.split, cache_folder)
             else:
@@ -229,6 +233,11 @@ class TokenizedDataset(Dataset):
                 'attention_mask': torch.LongTensor(self.examples[i].attention_mask),
                 'labels': self.examples[i].label
             }   
+        elif self.model_tag.startswith('qwen'):
+            item = {
+                'input_ids': torch.LongTensor(self.examples[i].input_ids),
+                'attention_mask': torch.LongTensor(self.examples[i].attention_mask)
+            }
         else:
             item = {
                 'input_ids': torch.LongTensor(self.examples[i].input_ids),

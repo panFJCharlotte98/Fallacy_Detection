@@ -42,9 +42,13 @@ Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation
 Determine whether or not any of the fallacies given is present in the argument of the text?
 Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. If none of the fallacies is found, output {{"fallacy": "No Fallacy", "explanation": in_a_sentence_or_two}}. Only output JSON.''',
     
-    'wo_def_tf':'''Given the following segment of text,
-{segment}
-determine whether or not any of the fallacies listed below is present in the argument of the text? Fallacies: {fallacies}. 
+    'w_def_qf':'''Based on the following definitions of fallacies,
+{fallacies}
+Given the segment of text below, determine whether or not any of the fallacies defined above is present in the argument of the text?
+Segment: {segment}
+Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. If none of the fallacies is found, output {{"fallacy": "No Fallacy", "explanation": in_a_sentence_or_two}}. Only output JSON.''',
+    'wo_def_qf':'''Given the following types of fallacies, namely, {fallacies}, and given the below segment of text, determine whether or not any of the fallacies given is present in the argument of the text?
+Segment: {segment}
 Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. If none of the fallacies is found, output {{"fallacy": "No Fallacy", "explanation": in_a_sentence_or_two}}. Only output JSON.''',
     
     'w_logic_def': '''An argument consists of an assertion called the conclusion and one or more assertions called premises, where the premises are intended to establish the truth of the conclusion. Premises or conclusions can be implicit in an argument. A fallacy is an argument where the premises do not entail the conclusion. Following the notations:
@@ -96,6 +100,13 @@ v21_gen_def = {
 }
 
 # Version 3: Think step by step, #max_new_tokens = 512
+v3_cot_wo_def = {
+0:'''Given the segment of text below,
+[]
+and given the following types of fallacies, namely, {fallacies}. Is any of the fallacies listed present in the argument of the text? Now, let's think step by step.'''.format(fallacies=fal_name_str),
+1: '''Output your previous conclusion in JSON format {"fallacy": name_of_the_fallacy}. If none of the listed fallacies is present, output {"fallacy": "No Fallacy"}. Only output JSON.'''
+}
+
 v3_cot_w_def = {
 0:'''Based on the following definitions of various types of fallacies,
 {fallacies}
@@ -105,11 +116,11 @@ Is any of the fallacies defined above is present in the argument of the text? No
 1: '''Output your previous conclusion in JSON format {"fallacy": name_of_the_fallacy}. If none of the defined fallacies is present, output {"fallacy": "No Fallacy"}. Only output JSON.'''
 }
 
-v3_cot_wo_def = {
-0:'''Given the segment of text below,
+v3_cot_wo_def_ff = {
+0:'''Given the following types of fallacies, namely, {fallacies} and given a segment of text below,
 []
-and given the following types of fallacies, namely, {fallacies}. Is any of the fallacies listed present in the argument of the text? Now, let's think step by step.'''.format(fallacies=fal_name_str),
-1: '''Output your previous conclusion in JSON format {"fallacy": name_of_the_fallacy_listed}. If none of the listed fallacies is present, output {"fallacy": "No Fallacy"}. Only output JSON.'''
+Is any of the fallacies listed present in the argument of the text? Now, let's think step by step.'''.format(fallacies=fal_name_str),
+1: '''Output your previous conclusion in JSON format {"fallacy": name_of_the_fallacy}. If none of the listed fallacies is present, output {"fallacy": "No Fallacy"}. Only output JSON.'''
 }
 
 v4_wo_def = {
@@ -141,8 +152,9 @@ mafalda_multiround_prompts = {
     'v14_wo_def': v14_wo_def,
     'v2_gen_def': v2_gen_def,
     'v21_gen_def': v21_gen_def,
-    'v3_cot_w_def': v3_cot_w_def,
     'v3_cot_wo_def': v3_cot_wo_def,
+    'v3_cot_w_def': v3_cot_w_def,
+    'v3_cot_wo_def_ff': v3_cot_wo_def_ff,
     'v4_wo_def': v4_wo_def
 }
 
@@ -184,7 +196,7 @@ def prompt_mafalda(args, js):
                     content = pt.format(segment=text, fallacies=fal_name_str)
                 usr_pt = {"role": "user", "content": content}
             else:
-                fallacies = fal_def_str if args.scheme == 'w_def' else fal_name_str
+                fallacies = fal_def_str if args.scheme.startswith('w_def') else fal_name_str
                 content = SINGLE_PROMPTS[args.scheme].format(segment=text, fallacies=fallacies)
                 usr_pt = {"role": "user", "content": content}
             dialog = [sys_pt, usr_pt]

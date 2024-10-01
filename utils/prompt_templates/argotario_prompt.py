@@ -43,10 +43,19 @@ Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation
 {dialog}
 Determine whether any of the fallacies given is present in B's argument replied to A?
 Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. If none of the fallacies is found, output {{"fallacy": "No Fallacy", "explanation": in_a_sentence_or_two}}. Only output JSON.''',
-    'wo_def_tf':'''Given the following conversation,
+    
+    # question comes before discourse
+    'w_def_qf':'''Based on the following definitions of fallacies,
+{fallacies}
+Given the conversation below, determine whether any of the fallacies defined above is present in B's argument replied to A?
 {dialog}
-determine whether any of the fallacies listed below is present in B's argument replied to A? Fallacies: {fallacies}. 
 Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. If none of the fallacies is found, output {{"fallacy": "No Fallacy", "explanation": in_a_sentence_or_two}}. Only output JSON.''',
+    # discourse text comes before fallacies ()
+    'wo_def_tf':'''Given the conversation below,
+{dialog}
+and the following five types of fallacies, namely, {fallacies}, determine whether any of the fallacies given is present in B's argument replied to A?
+Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. If none of the fallacies is found, output {{"fallacy": "No Fallacy", "explanation": in_a_sentence_or_two}}. Only output JSON.''',
+    # Provide both fallacy name list and fallacy definitions (not necessary for LLMs)
     'w_ls_def':'''Based on the definitions of fallacies {fal_list} as below,
 {fallacies}
 Given the conversation below,
@@ -122,15 +131,6 @@ v21_gen_def = {
 # v2_gen_def.update(def_questions)
 
 # Version 3: Think step by step, #max_new_tokens = 512
-v3_cot_w_def = {
-0:'''Based on the following definitions of five fallacies,
-{fallacies}
-Given the conversation below,
-[]
-Is any of the fallacies defined above present in B's argument replied to A? Now, let's think step by step.'''.format(fallacies=fal_def_str),
-1: '''Output your previous conclusion in JSON format {"fallacy": name_of_the_fallacy_defined}. If none of the defined fallacies is present, output {"fallacy": "No Fallacy"}. Only output JSON.'''
-}
-
 v3_cot_wo_def = {
 0:'''Given the conversation below,
 []
@@ -138,6 +138,23 @@ and the following five types of fallacies, namely, {fallacies}. Is any of the fa
 1: '''Output your previous conclusion in JSON format {"fallacy": name_of_the_fallacy}. If none of the listed fallacies is present, output {"fallacy": "No Fallacy"}. Only output JSON.'''
 }
 
+v3_cot_w_def = {
+0:'''Based on the following definitions of five fallacies,
+{fallacies}
+Given the conversation below,
+[]
+Is any of the fallacies defined above present in B's argument replied to A? Now, let's think step by step.'''.format(fallacies=fal_def_str),
+1: '''Output your previous conclusion in JSON format {"fallacy": name_of_the_fallacy}. If none of the defined fallacies is present, output {"fallacy": "No Fallacy"}. Only output JSON.'''
+}
+
+v3_cot_wo_def_ff = {
+0:'''Given the following five types of fallacies, namely, {fallacies}, and given a conversation below,
+[]
+Is any of the fallacies listed present in B's argument replied to A? Now, let's think step by step.'''.format(fallacies=fal_name_str),
+1: '''Output your previous conclusion in JSON format {"fallacy": name_of_the_fallacy}. If none of the listed fallacies is present, output {"fallacy": "No Fallacy"}. Only output JSON.'''
+}
+
+# Other variants (Mixed but underperformed)
 v4_wo_def = {
 0:'''Given the following five types of fallacies, namely, {fallacies},
 and given the conversation below,
@@ -174,8 +191,9 @@ argotario_multiround_prompts = {
     'v14_wo_def': v14_wo_def,
     'v2_gen_def': v2_gen_def,
     'v21_gen_def': v21_gen_def,
-    'v3_cot_w_def': v3_cot_w_def,
     'v3_cot_wo_def': v3_cot_wo_def,
+    'v3_cot_w_def': v3_cot_w_def,
+    'v3_cot_wo_def_ff': v3_cot_wo_def_ff,
     'v4_wo_def': v4_wo_def,
     'v5_wo_def': v5_wo_def,
     'v6_wo_def': v6_wo_def,
@@ -211,7 +229,7 @@ def prompt_argotario(args, js):
                 dialog = js['chat_history'] + [{"role":"assistant", "content":last_prediction}] + [usr_prompt]  
         else:
             text = js['text']
-            fallacies = fal_def_str if args.scheme == 'w_def' else fal_name_str
+            fallacies = fal_def_str if args.scheme.startswith('w_def') else fal_name_str
             if args.exp_args.model.run_baseline:
                 if args.scheme == 'w_ls_def':
                     usr_pt = {"role": "user", "content": BASELINE_PROMPTS[args.scheme].format(fallacies=fal_def_str, dialog=text, fal_list=fal_name_str)}

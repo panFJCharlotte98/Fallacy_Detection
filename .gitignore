@@ -6,7 +6,9 @@ UnifiedSKG
 models/llama2_hf
 models/llama3_hf
 models/mistral_hf
-models/download.py
+models/qwen2.5_hf
+models/download_from_hub.py
+models
 results
 res_analysis
 error_analysis.ipynb

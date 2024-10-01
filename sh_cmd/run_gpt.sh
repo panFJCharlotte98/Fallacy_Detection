@@ -1,11 +1,54 @@
-export CUDA_VISIBLE_DEVICES=2,3
+export CUDA_VISIBLE_DEVICES=0
 # # Note: if rerun experiments using new seeds, need to remove arg "use_dataset_cache" to re-generate datasets
-for model in gpt gpt4; do
-  for seed in 0 123; do
-    for scheme in w_def wo_def; do
-      torchrun --nproc_per_node 1 --master_port 1235 run.py \
+
+# #,elecdebate,propaganda
+# for seed in 42; do
+#   for model in gpt4; do
+#     for scheme in wo_def; do
+#       torchrun --nproc_per_node 1 --master_port 1236 run.py \
+#         --which_task=propaganda \
+#         --n_fewshots 2 \
+#         --context_window 0 \
+#         --cfg experiment/${model}_fewshot.cfg \
+#         --scheme ${scheme} \
+#         --max_new_tokens 256 \
+#         --report_to none \
+#         --output_dir=./results \
+#         --overwrite_output_dir \
+#         --do_predict \
+#         --per_device_eval_batch_size 1 \
+#         --remove_unused_columns False \
+#         --seed ${seed}
+#     done
+#   done
+# done
+
+# for model in gpt; do
+#   for seed in 42; do
+#     for scheme in w_def w_def_qf; do
+#       torchrun --nproc_per_node 1 --master_port 1236 run.py \
+#         --context_window 0 \
+#         --which_task=reddit,mafalda \
+#         --cfg experiment/${model}_baseline.cfg \
+#         --scheme ${scheme} \
+#         --max_new_tokens 256 \
+#         --report_to none \
+#         --output_dir=./results \
+#         --overwrite_output_dir \
+#         --do_predict \
+#         --per_device_eval_batch_size 1 \
+#         --remove_unused_columns False \
+#         --seed ${seed}
+#     done
+#   done
+# done
+
+for model in gpt4; do
+  for seed in 42; do
+    for scheme in w_def_cf wo_def_cf; do
+      torchrun --nproc_per_node 1 --master_port 1236 run.py \
         --context_window 0 \
-        --which_task=propaganda \
+        --which_task=logic \
         --cfg experiment/${model}_baseline.cfg \
         --scheme ${scheme} \
         --max_new_tokens 256 \
@@ -20,34 +63,16 @@ for model in gpt gpt4; do
   done
 done
 
-for model in gpt gpt4; do
-  for seed in 0 123; do
-    for scheme in v1_wo_def v12_wo_def v2_gen_def v3_cot_wo_def v13_wo_def v14_wo_def; do
-      torchrun --nproc_per_node 1 --master_port 1235 run.py \
-        --context_window 0 \
-        --which_task=propaganda \
-        --cfg experiment/${model}_multiprompt.cfg \
-        --scheme ${scheme} \
-        --max_new_tokens 640 \
-        --report_to none \
-        --output_dir=./results \
-        --overwrite_output_dir \
-        --do_predict \
-        --per_device_eval_batch_size 1 \
-        --remove_unused_columns False \
-        --seed ${seed}
-    done
-  done
-done
-
-# for model in gpt gpt4; do
-#   for seed in 42; do
-#     for scheme in wo_def; do
-#       torchrun --nproc_per_node 1 --master_port 1237 run.py \
-#         --which_task=logic,elecdebate,propaganda \
-#         --cfg experiment/${model}_fewshot.cfg \
+#argotario,logic,elecdebate,reddit,covid,mafalda
+# for model in gpt; do
+#   for seed in 0; do
+#     for scheme in v3_cot_wo_def_ff; do
+#       torchrun --nproc_per_node 1 --master_port 1236 run.py \
+#         --context_window 0 \
+#         --which_task=argotario,covid,elecdebate,logic,mafalda,propaganda,reddit \
+#         --cfg experiment/${model}_multiprompt.cfg \
 #         --scheme ${scheme} \
-#         --max_new_tokens 256 \
+#         --max_new_tokens 512 \
 #         --report_to none \
 #         --output_dir=./results \
 #         --overwrite_output_dir \
