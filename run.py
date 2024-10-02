@@ -540,16 +540,15 @@ def main():
                         args.per_device_eval_batch_size = 2
                     if (model_type in ["mistral"]):
                         args.per_device_eval_batch_size = 16
-                    # if  (args.exp_args.model.model_tag == 'qwen2.5-7bf'):
-                    #     args.per_device_eval_batch_size = 8
-                    if args.scheme in ["v2_gen_def", "v21_gen_def", "v4_wo_def"]:
-                        args.max_new_tokens = 1536
                     if args.scheme == "v21_gen_def" and task == 'propaganda':
                         if model_size >= 13:
                             args.per_device_eval_batch_size = 2
                         if model_type in ["mistral", "llama3"]:
                             args.per_device_eval_batch_size = 12
-     
+                if task in ['reddit','logic', 'propaganda', 'mafalda', 'covid']:
+                    if args.scheme in ["v2_gen_def", "v21_gen_def", "v4_wo_def"]:
+                        args.max_new_tokens = 1536
+
                 args.task_arg_path = task_arg_path
 
                 args = prepare_output_dir(make_cache_root(args, task))

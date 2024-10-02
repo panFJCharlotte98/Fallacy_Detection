@@ -10,6 +10,7 @@ models/qwen2.5_hf
 models/download_from_hub.py
 models
 results
+camera-ready
 res_analysis
 error_analysis.ipynb
 error_analysis copy.ipynb

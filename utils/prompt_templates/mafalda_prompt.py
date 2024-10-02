@@ -93,6 +93,11 @@ v2_gen_def = {
 1:'''Based on the definitions you provided, given the following segment of text,\n{segment}\ndetermine whether or not any of the defined fallacies is present in the argument of the text? Output your answer in JSON format {{"fallacy": name_of_the_fallacy}}. If none of these fallacies is present, output {{"fallacy": "No Fallacy"}}. Only output JSON.'''
 }
 
+v2_gen_def_qf = {
+0:'''Give a definition to each of the following types of fallacies: {fallacies}.'''.format(fallacies=fal_name_str),
+1:'''Based on the definitions you provided, given the following segment of text, determine whether or not any of the defined fallacies is present in the argument of the text? Segment: {segment}\nOutput your answer in JSON format {{"fallacy": name_of_the_fallacy}}. If none of these fallacies is present, output {{"fallacy": "No Fallacy"}}. Only output JSON.'''
+}
+
 v21_gen_def = {
 0:'''Give a definition to each of the following types of fallacies: {fallacies}.'''.format(fallacies=fal_name_str),
 1:'''Given the following segment of text,\n{segment}\nContrast each of the fallacy definitions you provided with the argument of the text and determine whether or not that fallacy is present in the text.''',
@@ -151,6 +156,7 @@ mafalda_multiround_prompts = {
     'v13_wo_def': v13_wo_def,
     'v14_wo_def': v14_wo_def,
     'v2_gen_def': v2_gen_def,
+    'v2_gen_def_qf': v2_gen_def_qf,
     'v21_gen_def': v21_gen_def,
     'v3_cot_wo_def': v3_cot_wo_def,
     'v3_cot_w_def': v3_cot_w_def,

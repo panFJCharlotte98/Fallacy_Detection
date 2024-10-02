@@ -43,36 +43,15 @@ export CUDA_VISIBLE_DEVICES=0
 #   done
 # done
 
-for model in gpt4; do
-  for seed in 42; do
-    for scheme in w_def_cf wo_def_cf; do
-      torchrun --nproc_per_node 1 --master_port 1236 run.py \
-        --context_window 0 \
-        --which_task=logic \
-        --cfg experiment/${model}_baseline.cfg \
-        --scheme ${scheme} \
-        --max_new_tokens 256 \
-        --report_to none \
-        --output_dir=./results \
-        --overwrite_output_dir \
-        --do_predict \
-        --per_device_eval_batch_size 1 \
-        --remove_unused_columns False \
-        --seed ${seed}
-    done
-  done
-done
-
-#argotario,logic,elecdebate,reddit,covid,mafalda
-# for model in gpt; do
-#   for seed in 0; do
-#     for scheme in v3_cot_wo_def_ff; do
+# for model in gpt4; do
+#   for seed in 42; do
+#     for scheme in w_def_cf wo_def_cf; do
 #       torchrun --nproc_per_node 1 --master_port 1236 run.py \
 #         --context_window 0 \
-#         --which_task=argotario,covid,elecdebate,logic,mafalda,propaganda,reddit \
-#         --cfg experiment/${model}_multiprompt.cfg \
+#         --which_task=logic \
+#         --cfg experiment/${model}_baseline.cfg \
 #         --scheme ${scheme} \
-#         --max_new_tokens 512 \
+#         --max_new_tokens 256 \
 #         --report_to none \
 #         --output_dir=./results \
 #         --overwrite_output_dir \
@@ -83,6 +62,27 @@ done
 #     done
 #   done
 # done
+
+#argotario,logic,elecdebate,reddit,covid,mafalda
+for model in gpt; do
+  for seed in 123; do
+    for scheme in v2_gen_def_qf; do
+      torchrun --nproc_per_node 1 --master_port 1236 run.py \
+        --context_window 0 \
+        --which_task=covid,logic,mafalda \
+        --cfg experiment/${model}_multiprompt.cfg \
+        --scheme ${scheme} \
+        --max_new_tokens 1536 \
+        --report_to none \
+        --output_dir=./results/v2_gen_def_qf \
+        --overwrite_output_dir \
+        --do_predict \
+        --per_device_eval_batch_size 1 \
+        --remove_unused_columns False \
+        --seed ${seed}
+    done
+  done
+done
 
 
 # for model in gpt gpt4; do

@@ -19,18 +19,18 @@ B_SYS, E_SYS = "<<SYS>>\n", "\n<</SYS>>\n\n"
 def mistral_format_tokens(dialog, tokenizer):
     # split the system prompt as one round of user-assitant conversation
     assert dialog[0]['role'] == 'system'
-    # chat_history = dialog[1:]
-    # sys_instructions = dialog[0]['content'].split('\n')
-    # new_sys_inst = '\n'.join([sys_instructions[0].replace("You are", "I will be"),
-    #            sys_instructions[1].replace("Please ensure that your responses are", "I will give responses that are"),
-    #            sys_instructions[2].replace("Your response should", "My response will"),
-    #            "I will always " + sys_instructions[3].replace("Answer", "answer"),
-    #            ])
-    # pseudo_system = [
-    #     {"role": "user", "content": "Hi, I'm User. In the following conversations, you should take the role as a fallacy detection expert."},
-    #     {"role": "assistant", "content": "Hi, User! Sure, in the following conversations, " + new_sys_inst}
-    # ]
-    # dialog = pseudo_system + chat_history
+    chat_history = dialog[1:]
+    sys_instructions = dialog[0]['content'].split('\n')
+    new_sys_inst = '\n'.join([sys_instructions[0].replace("You are", "I will be"),
+               sys_instructions[1].replace("Please ensure that your responses are", "I will give responses that are"),
+               sys_instructions[2].replace("Your response should", "My response will"),
+               "I will always " + sys_instructions[3].replace("Answer", "answer"),
+               ])
+    pseudo_system = [
+        {"role": "user", "content": "Hi, I'm User. In the following conversations, you should take the role as a fallacy detection expert."},
+        {"role": "assistant", "content": "Hi, User! Sure, in the following conversations, " + new_sys_inst}
+    ]
+    dialog = pseudo_system + chat_history
     
     dialog_tokens = tokenizer.apply_chat_template(
         dialog,

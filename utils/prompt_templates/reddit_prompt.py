@@ -82,6 +82,12 @@ v2_gen_def = {
 1:'''Based on the definitions you provided, given the following snippet of reddit comments for a certain topic:\n{snippet}\ndetermine which of the defined fallacies is present in the comment's argument highlighted by '<>'? Output your answer in JSON format {{"fallacy": name_of_the_fallacy}}. Only output JSON.'''
 }
 
+# Snippet:
+v2_gen_def_qf = {
+0:'''Give a definition to each of the following eight types of fallacies in {fallacies}.'''.format(fallacies=fal_name_str),
+1:'''Based on the definitions you provided, given the following snippet of reddit comments for a certain topic, determine which of the defined fallacies is present in the comment's argument highlighted by '<>'? Snippet: {snippet}\nOutput your answer in JSON format {{"fallacy": name_of_the_fallacy}}. Only output JSON.'''
+}
+
 v21_gen_def = {
 0:'''Give a definition to each of the following types of fallacies: {fallacies}.'''.format(fallacies=fal_name_str),
 1:'''Given the following snippet of reddit comments for a certain topic:\n{snippet}\nContrast each of the fallacy definitions you provided with the comment's argument highlighted by '<>' and determine whether or not that fallacy is present in this highlighted argument.''',
@@ -125,6 +131,7 @@ reddit_multiround_prompts = {
     'v13_wo_def': v13_wo_def,
     'v14_wo_def': v14_wo_def,
     'v2_gen_def': v2_gen_def,
+    'v2_gen_def_qf': v2_gen_def_qf,
     'v21_gen_def': v21_gen_def,
     'v3_cot_wo_def': v3_cot_wo_def,
     'v3_cot_w_def': v3_cot_w_def,
