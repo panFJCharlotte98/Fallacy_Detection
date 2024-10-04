@@ -23,25 +23,24 @@ export CUDA_VISIBLE_DEVICES=0
 #   done
 # done
 
-# for model in gpt; do
-#   for seed in 42; do
-#     for scheme in w_def w_def_qf; do
-#       torchrun --nproc_per_node 1 --master_port 1236 run.py \
-#         --context_window 0 \
-#         --which_task=reddit,mafalda \
-#         --cfg experiment/${model}_baseline.cfg \
-#         --scheme ${scheme} \
-#         --max_new_tokens 256 \
-#         --report_to none \
-#         --output_dir=./results \
-#         --overwrite_output_dir \
-#         --do_predict \
-#         --per_device_eval_batch_size 1 \
-#         --remove_unused_columns False \
-#         --seed ${seed}
-#     done
-#   done
-# done
+for model in gpt; do
+  for seed in 42; do
+    for scheme in w_logic_def_qf; do
+      torchrun --nproc_per_node 1 --master_port 1236 run.py \
+        --which_task=mafalda \
+        --cfg experiment/${model}_baseline.cfg \
+        --scheme ${scheme} \
+        --max_new_tokens 256 \
+        --report_to none \
+        --output_dir=./results/w_logic_def_qf \
+        --overwrite_output_dir \
+        --do_predict \
+        --per_device_eval_batch_size 1 \
+        --remove_unused_columns False \
+        --seed ${seed}
+    done
+  done
+done
 
 # for model in gpt4; do
 #   for seed in 42; do
@@ -64,25 +63,25 @@ export CUDA_VISIBLE_DEVICES=0
 # done
 
 #argotario,logic,elecdebate,reddit,covid,mafalda
-for model in gpt; do
-  for seed in 123; do
-    for scheme in v2_gen_def_qf; do
-      torchrun --nproc_per_node 1 --master_port 1236 run.py \
-        --context_window 0 \
-        --which_task=covid,logic,mafalda \
-        --cfg experiment/${model}_multiprompt.cfg \
-        --scheme ${scheme} \
-        --max_new_tokens 1536 \
-        --report_to none \
-        --output_dir=./results/v2_gen_def_qf \
-        --overwrite_output_dir \
-        --do_predict \
-        --per_device_eval_batch_size 1 \
-        --remove_unused_columns False \
-        --seed ${seed}
-    done
-  done
-done
+# for model in gpt; do
+#   for seed in 123; do
+#     for scheme in v2_gen_def_qf; do
+#       torchrun --nproc_per_node 1 --master_port 1236 run.py \
+#         --context_window 0 \
+#         --which_task=covid,logic,mafalda \
+#         --cfg experiment/${model}_multiprompt.cfg \
+#         --scheme ${scheme} \
+#         --max_new_tokens 1536 \
+#         --report_to none \
+#         --output_dir=./results/v2_gen_def_qf \
+#         --overwrite_output_dir \
+#         --do_predict \
+#         --per_device_eval_batch_size 1 \
+#         --remove_unused_columns False \
+#         --seed ${seed}
+#     done
+#   done
+# done
 
 
 # for model in gpt gpt4; do

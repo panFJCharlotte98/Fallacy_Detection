@@ -61,8 +61,19 @@ v1_wo_def = {
 2: """According to your previous analysis, given five types of fallacies, namely, {fallacies}, determine which of these fallacies is present in the speech's argument highlighted by '<>'? Output your answer in JSON format {{"fallacy": name_of_the_fallacy}}. DO NOT output fallacy that is not in the given types. Only output JSON.""".format(fallacies=fal_name_str),
 }
 
+v1_wo_def_qf = {
+0:"""Given the following part of a political speech extracted from one of the US presidential campaign debates, summarize the possible topic in debate and the central argument of the part highlighted by '<>'. Speech: {argument}\n""",
+1:"""Is the speech's argument highlighted by '<>' logically reasonable or potentially fallacious? Give your analysis.""",
+2: """According to your previous analysis, given five types of fallacies, namely, {fallacies}, determine which of these fallacies is present in the speech's argument highlighted by '<>'? Output your answer in JSON format {{"fallacy": name_of_the_fallacy}}. DO NOT output fallacy that is not in the given types. Only output JSON.""".format(fallacies=fal_name_str),
+}
+
 v12_wo_def = {
 0:"""Given the following part of a political speech extracted from one of the US presidential campaign debates: {argument}\nIs the speech's argument highlighted by '<>' logically reasonable or potentially fallacious? Give your analysis.""",
+1: """According to your previous analysis, considering five types of fallacies: {fallacies}, determine which of these listed fallacies is present in the speech's argument highlighted by '<>'? Output your answer in JSON format {{"fallacy": name_of_the_fallacy}}. Only output JSON.""".format(fallacies=fal_name_str),
+}
+
+v12_wo_def_qf = {
+0:"""Given the following part of a political speech extracted from one of the US presidential campaign debates, is the speech's argument highlighted by '<>' logically reasonable or potentially fallacious? Speech:{argument}\nGive your analysis.""",
 1: """According to your previous analysis, considering five types of fallacies: {fallacies}, determine which of these listed fallacies is present in the speech's argument highlighted by '<>'? Output your answer in JSON format {{"fallacy": name_of_the_fallacy}}. Only output JSON.""".format(fallacies=fal_name_str),
 }
 
@@ -145,7 +156,9 @@ elecdebate_multiround_prompts = {
     'v3_cot_wo_def': v3_cot_wo_def,
     'v3_cot_w_def': v3_cot_w_def,
     'v3_cot_wo_def_ff': v3_cot_wo_def_ff,
-    'v4_wo_def': v4_wo_def
+    'v4_wo_def': v4_wo_def,
+    'v1_wo_def_qf' : v1_wo_def_qf,
+    'v12_wo_def_qf': v12_wo_def_qf
 }
 
 #{'Appeal to Emotion': 777, 'Appeal to False Authority': 180, 'Ad Hominem': 171, 'False Causality (Post Hoc Fallacy)': 50, 'Slippery Slope': 44}

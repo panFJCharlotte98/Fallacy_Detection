@@ -58,6 +58,11 @@ v12_wo_def = {
 1: """According to your previous analysis, considering 9 types of fallacies: {fallacies}, determine whether any of these fallacies is present in this focal argument of the discourse. Output your answer in JSON format {{"fallacy": name_of_the_fallacy}}. If none of these fallacies is found, output {{"fallacy": "No Fallacy"}}. Only output JSON.""".format(fallacies=fal_name_str),
 }
 
+v12_wo_def_qf = {
+0:"""Given the following discourse about covid pandemic, is the focal argument of the discourse logically reasonable or potentially fallacious? Discourse: {segment}\nGive your analysis.""",
+1: """According to your previous analysis, considering 9 types of fallacies: {fallacies}, determine whether any of these fallacies is present in this focal argument of the discourse. Output your answer in JSON format {{"fallacy": name_of_the_fallacy}}. If none of these fallacies is found, output {{"fallacy": "No Fallacy"}}. Only output JSON.""".format(fallacies=fal_name_str),
+}
+
 v13_wo_def = {
 0:"""Given the following discourse about covid pandemic,\n{segment}\nExtract and summarize the focal argument by pointing out the premise(s) and conclusion of the argument.""",
 1:"""Whether or not the argument's premise(s) entail the conclusion? Give your analysis.""",
@@ -128,7 +133,8 @@ covid_multiround_prompts = {
     'v3_cot_wo_def': v3_cot_wo_def,
     'v3_cot_w_def': v3_cot_w_def,
     'v3_cot_wo_def_ff': v3_cot_wo_def_ff,
-    'v4_wo_def': v4_wo_def
+    'v4_wo_def': v4_wo_def,
+    'v12_wo_def_qf':v12_wo_def_qf
 }
 
 def prompt_covid(args, js):

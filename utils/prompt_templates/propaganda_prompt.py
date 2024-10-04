@@ -66,8 +66,19 @@ v1_wo_def = {
 2: """Reflecting on your previous analysis, given 13 types of fallacies, namely, {fallacies}, determine which of these listed fallacies is present in the news fragment highlighted by '<>'? Output your answer in JSON format {{"fallacy": name_of_the_fallacy}}. DO NOT output fallacy that is not in the given types. Only output JSON.""".format(fallacies=fal_name_str),
 }
 
+v1_wo_def_qf = {
+0:"""Given the following segment of a news article, summarize 1) what the news means by the fragment highlighted by '<>' and 2) the focal argument of the fragment highlighted by '<>'. News article segment: {segment}""",
+1:"""Is this fragment highlighted by '<>' logically reasonable or potentially fallacious? Explain why.""",
+2: """Reflecting on your previous analysis, given 13 types of fallacies, namely, {fallacies}, determine which of these listed fallacies is present in the news fragment highlighted by '<>'? Output your answer in JSON format {{"fallacy": name_of_the_fallacy}}. DO NOT output fallacy that is not in the given types. Only output JSON.""".format(fallacies=fal_name_str),
+}
+
 v12_wo_def = {
 0:"""Given the following segment of a news article,\n{segment}\nIs the fragment highlighted by '<>' logically reasonable or potentially fallacious? Give your analysis.""",
+1: """According to your previous analysis, considering 13 types of fallacies: {fallacies}, determine which of these listed fallacies is present in the news fragment highlighted by '<>'? Output your answer in JSON format {{"fallacy": name_of_the_fallacy}}. Only output JSON.""".format(fallacies=fal_name_str),
+}
+
+v12_wo_def_qf = {
+0:"""Given the following segment of a news article, is the fragment highlighted by '<>' logically reasonable or potentially fallacious? News article segment: {segment}\nGive your analysis.""",
 1: """According to your previous analysis, considering 13 types of fallacies: {fallacies}, determine which of these listed fallacies is present in the news fragment highlighted by '<>'? Output your answer in JSON format {{"fallacy": name_of_the_fallacy}}. Only output JSON.""".format(fallacies=fal_name_str),
 }
 
@@ -142,7 +153,9 @@ propaganda_multiround_prompts = {
     'v3_cot_wo_def': v3_cot_wo_def,
     'v3_cot_w_def': v3_cot_w_def,
     'v3_cot_wo_def_ff': v3_cot_wo_def_ff,
-    'v4_wo_def': v4_wo_def
+    'v4_wo_def': v4_wo_def,
+    'v1_wo_def_qf' : v1_wo_def_qf,
+    'v12_wo_def_qf': v12_wo_def_qf
 }
 
 

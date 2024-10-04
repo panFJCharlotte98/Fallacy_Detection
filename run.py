@@ -531,6 +531,8 @@ def main():
             model_size = int(args.exp_args.model.model_tag.split("-")[-1].strip('bf'))
         for task, task_arg_path in args.exp_args.arg_paths:
             if task in active_task_list:
+                if (args.scheme == 'v1_wo_def_qf') and (task in ['mafalda', 'covid', 'logic']):
+                    continue
                 args.per_device_eval_batch_size = ori_per_device_eval_batch_size
                 args.max_new_tokens = ori_max_new_tokens
                 args.output_dir = ori_output_dir
@@ -546,7 +548,7 @@ def main():
                         if model_type in ["mistral", "llama3"]:
                             args.per_device_eval_batch_size = 12
                 if task in ['reddit','logic', 'propaganda', 'mafalda', 'covid']:
-                    if args.scheme in ["v2_gen_def", "v21_gen_def", "v4_wo_def"]:
+                    if args.scheme in ["v2_gen_def", "v2_gen_def_qf", "v21_gen_def", "v4_wo_def"]:
                         args.max_new_tokens = 1536
 
                 args.task_arg_path = task_arg_path

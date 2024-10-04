@@ -47,9 +47,11 @@ Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation
     # question comes before discourse
     'w_def_qf':'''Based on the following definitions of fallacies,
 {fallacies}
-Given the conversation below, determine whether any of the fallacies defined above is present in B's argument replied to A?
-{dialog}
+Given the conversation below, determine whether any of the fallacies defined above is present in B's argument replied to A? Conversation: {dialog}
 Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. If none of the fallacies is found, output {{"fallacy": "No Fallacy", "explanation": in_a_sentence_or_two}}. Only output JSON.''',
+    'wo_def_qf':'''Given five types of fallacies, namely, {fallacies}, and given the conversation below, determine whether any of the fallacies given is present in B's argument replied to A? Conversation: {dialog}
+Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. If none of the fallacies is found, output {{"fallacy": "No Fallacy", "explanation": in_a_sentence_or_two}}. Only output JSON.''',
+    
     # discourse text comes before fallacies ()
     'wo_def_tf':'''Given the conversation below,
 {dialog}
@@ -81,6 +83,12 @@ v1_wo_def = {
 2: """Reflecting on your previous answers, given five types of fallacies, namely, {fallacies}, determine whether any of these fallacies is present in B's argument replied to A? Output your answer in JSON format {{"fallacy": name_of_the_fallacy}}. DO NOT output fallacy that is not in the five types. If none of these fallacies is found, output {{"fallacy": "No Fallacy"}}. Only output JSON.""".format(fallacies=fal_name_str),
 }
 
+v1_wo_def_qf = {
+0:"""In the following conversation, is B in favor of or against the topic proposed by A? Conversation:\n{dialog}\n""",
+1:"""Considering B's stance, is B's argument logically reasonable or potentially fallacious? Explain why.""",
+2: """Reflecting on your previous answers, given five types of fallacies, namely, {fallacies}, determine whether any of these fallacies is present in B's argument replied to A? Output your answer in JSON format {{"fallacy": name_of_the_fallacy}}. DO NOT output fallacy that is not in the five types. If none of these fallacies is found, output {{"fallacy": "No Fallacy"}}. Only output JSON.""".format(fallacies=fal_name_str),
+}
+
 v11_wo_def = {
 0:"""In the following conversation,\n{dialog}\nIs B in favor of or against the topic proposed by A?""",
 1:"""Considering B's stance, is B's argument logically reasonable or potentially fallacious? Explain why.""",
@@ -89,6 +97,11 @@ v11_wo_def = {
 
 v12_wo_def = {
 0:"""Given the following conversation,\n{dialog}\nConsidering B's stance towards the topic proposed by A, is B's argument logically reasonable or potentially fallacious? Give your analysis.""",
+1: """According to your previous analysis, considering five types of fallacies: {fallacies}, determine whether any of these listed fallacies is present in B's argument replied to A? Output your answer in JSON format {{"fallacy": name_of_the_fallacy}}. If none of these fallacies is present, output {{"fallacy": "No Fallacy"}}. Only output JSON.""".format(fallacies=fal_name_str),
+}
+
+v12_wo_def_qf = {
+0:"""Given the following conversation, considering B's stance towards the topic proposed by A, is B's argument logically reasonable or potentially fallacious? Conversation:\n{dialog}\nGive your analysis.""",
 1: """According to your previous analysis, considering five types of fallacies: {fallacies}, determine whether any of these listed fallacies is present in B's argument replied to A? Output your answer in JSON format {{"fallacy": name_of_the_fallacy}}. If none of these fallacies is present, output {{"fallacy": "No Fallacy"}}. Only output JSON.""".format(fallacies=fal_name_str),
 }
 
@@ -203,6 +216,8 @@ argotario_multiround_prompts = {
     'v4_wo_def': v4_wo_def,
     'v5_wo_def': v5_wo_def,
     'v6_wo_def': v6_wo_def,
+    'v1_wo_def_qf' : v1_wo_def_qf,
+    'v12_wo_def_qf': v12_wo_def_qf
 }
 
 def prompt_argotario(args, js):

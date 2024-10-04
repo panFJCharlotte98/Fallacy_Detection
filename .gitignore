@@ -15,6 +15,7 @@ res_analysis
 error_analysis.ipynb
 error_analysis copy.ipynb
 error_analysis_py.py
+error_analysis_latest.ipynb
 sh_cmd
 regen_results.py
 run copy.py

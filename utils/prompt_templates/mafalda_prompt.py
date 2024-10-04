@@ -58,7 +58,14 @@ The formal definitions of various types of fallacies are given below:
 Based on the above definitions of fallacies, given the segment of text below,
 {segment}
 Determine whether or not any of the fallacies defined above is present in the argument of the text?
-Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. If none of the fallacies is found, output {{"fallacy": "No Fallacy", "explanation": in_a_sentence_or_two}}. Only output JSON.'''
+Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. If none of the fallacies is found, output {{"fallacy": "No Fallacy", "explanation": in_a_sentence_or_two}}. Only output JSON.''',
+    'w_logic_def_qf': '''An argument consists of an assertion called the conclusion and one or more assertions called premises, where the premises are intended to establish the truth of the conclusion. Premises or conclusions can be implicit in an argument. A fallacy is an argument where the premises do not entail the conclusion. Following the notations:
+Let E stand for entity (persons, organizations) or group of entities; Let P or P1, P2, P3, etc. stand for premises, properties, or possibilities; Let A stand for attack; Let C stand for conclusion.
+The formal definitions of various types of fallacies are given below:
+{fallacies}
+Based on the above definitions of fallacies, given the segment of text below, determine whether or not any of the fallacies defined above is present in the argument of the text?
+Segment: {segment}
+Output your answer in JSON format {{"fallacy": name_of_the_fallacy, "explanation": in_a_sentence_or_two}}. If none of the fallacies is found, output {{"fallacy": "No Fallacy", "explanation": in_a_sentence_or_two}}. Only output JSON.''',
 }
 
 SINGLE_PROMPTS = {
@@ -73,6 +80,11 @@ v1_wo_def = {
 
 v12_wo_def = {
 0:"""Given the following segment of text,\n{segment}\nIs the argument of the text logically reasonable or potentially fallacious? Give your analysis.""",
+1: """According to your previous analysis, considering the following types of fallacies: {fallacies}, determine whether or not any of these listed fallacies is present in the argument of the text? Output your answer in JSON format {{"fallacy": name_of_the_fallacy}}. If none of these fallacies is present, output {{"fallacy": "No Fallacy"}}. Only output JSON.""".format(fallacies=fal_name_str),
+}
+
+v12_wo_def_qf = {
+0:"""Given the following segment of text, is the argument of the text logically reasonable or potentially fallacious? Segment: {segment}\nGive your analysis.""",
 1: """According to your previous analysis, considering the following types of fallacies: {fallacies}, determine whether or not any of these listed fallacies is present in the argument of the text? Output your answer in JSON format {{"fallacy": name_of_the_fallacy}}. If none of these fallacies is present, output {{"fallacy": "No Fallacy"}}. Only output JSON.""".format(fallacies=fal_name_str),
 }
 
@@ -161,7 +173,8 @@ mafalda_multiround_prompts = {
     'v3_cot_wo_def': v3_cot_wo_def,
     'v3_cot_w_def': v3_cot_w_def,
     'v3_cot_wo_def_ff': v3_cot_wo_def_ff,
-    'v4_wo_def': v4_wo_def
+    'v4_wo_def': v4_wo_def,
+    'v12_wo_def_qf': v12_wo_def_qf
 }
 
 def prompt_mafalda(args, js):

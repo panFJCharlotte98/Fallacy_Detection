@@ -60,8 +60,19 @@ v1_wo_def = {
 2: """According to your previous analysis, given eight types of fallacies, namely, {fallacies}, determine which of these fallacies is present in the comment's argument highlighted by '<>'? Output your answer in JSON format {{"fallacy": name_of_the_fallacy}}. DO NOT output fallacy that is not in the given types. Only output JSON.""".format(fallacies=fal_name_str),
 }
 
+v1_wo_def_qf = {
+0:"""Given the following snippet of reddit comments for a certain topic, summarize the central argument of the part(s) of comment highlighted by '<>'. Snippet: {snippet}""",
+1:"""Is the comment's argument highlighted by '<>' logically reasonable or potentially fallacious? Give your analysis.""",
+2: """According to your previous analysis, given eight types of fallacies, namely, {fallacies}, determine which of these fallacies is present in the comment's argument highlighted by '<>'? Output your answer in JSON format {{"fallacy": name_of_the_fallacy}}. DO NOT output fallacy that is not in the given types. Only output JSON.""".format(fallacies=fal_name_str),
+}
+
 v12_wo_def = {
 0:"""Given the following snippet of reddit comments for a certain topic:\n{snippet}\nIs the comment's argument highlighted by '<>' logically reasonable or potentially fallacious? Give your analysis.""",
+1: """According to your previous analysis, considering eight types of fallacies: {fallacies}, determine which of these listed fallacies is present in the comment's argument highlighted by '<>'? Output your answer in JSON format {{"fallacy": name_of_the_fallacy}}. Only output JSON.""".format(fallacies=fal_name_str),
+}
+
+v12_wo_def_qf = {
+0:"""Given the following snippet of reddit comments for a certain topic, is the comment's argument highlighted by '<>' logically reasonable or potentially fallacious? Snippet: {snippet}\nGive your analysis.""",
 1: """According to your previous analysis, considering eight types of fallacies: {fallacies}, determine which of these listed fallacies is present in the comment's argument highlighted by '<>'? Output your answer in JSON format {{"fallacy": name_of_the_fallacy}}. Only output JSON.""".format(fallacies=fal_name_str),
 }
 
@@ -136,7 +147,9 @@ reddit_multiround_prompts = {
     'v3_cot_wo_def': v3_cot_wo_def,
     'v3_cot_w_def': v3_cot_w_def,
     'v3_cot_wo_def_ff': v3_cot_wo_def_ff,
-    'v4_wo_def': v4_wo_def
+    'v4_wo_def': v4_wo_def,
+    'v1_wo_def_qf' : v1_wo_def_qf,
+    'v12_wo_def_qf': v12_wo_def_qf
 }
 
 def prompt_reddit(args, js):
