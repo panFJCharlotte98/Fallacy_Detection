@@ -4,7 +4,7 @@
 [EMNLP 2024](https://aclanthology.org/2024.emnlp-main.794.pdf)
 
 <div align="center">
-<img src="./img/prompt_schemes.png" width="70%" align="center">
+<img src="./img/prompt_schemes.png" width="100%" align="center">
 </div>
 
 ## Usage
