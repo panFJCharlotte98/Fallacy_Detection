@@ -26,12 +26,15 @@ Download the hugging face checkpoints of LLMs ([Llama2](https://huggingface.co/m
 We provide shell script templates `./run_cmd/run_xxx.sh` for different types of models to reproduce the experiment results in our paper.
 
 Run this command to evaluate T5 (T5-large or T5-3B):
+    
     sh ./run_cmd/run_t5.sh
 
 Run this command to evaluate GPT-3.5 or GPT-4:
+    
     sh ./run_cmd/run_gpt.sh
 
 Run this command to evaluate small LLMs (Llama3, Llama2, Mistral and Qwen2.5)
+    
     sh ./run_cmd/run_llama.sh
 
 
